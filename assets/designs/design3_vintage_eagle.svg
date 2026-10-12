@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="100%" height="100%">
+  <!-- Vintage Tour Badge -->
+  <circle cx="250" cy="250" r="230" fill="none" stroke="#d97706" stroke-width="6"/>
+  <circle cx="250" cy="250" r="215" fill="none" stroke="#f59e0b" stroke-width="2" stroke-dasharray="8 6"/>
+  
+  <!-- Curved/Arched Text Effect -->
+  <path id="curveTop" d="M 60 250 A 190 190 0 0 1 440 250" fill="none"/>
+  <text font-family="'Impact', 'Arial Black', sans-serif" font-size="34" fill="#fbbf24" letter-spacing="8" font-weight="900">
+    <textPath href="#curveTop" startOffset="50%" text-anchor="middle">
+      NIGHTHAWKS '92
+    </textPath>
+  </text>
+  
+  <path id="curveBottom" d="M 440 250 A 190 190 0 0 1 60 250" fill="none"/>
+  <text font-family="'Impact', 'Arial Black', sans-serif" font-size="28" fill="#fbbf24" letter-spacing="8" font-weight="900">
+    <textPath href="#curveBottom" startOffset="50%" text-anchor="middle">
+      WORLD TOUR CONCERT
+    </textPath>
+  </text>
+
+  <!-- Center Eagle Silhouette & Wings -->
+  <g transform="translate(250, 240)">
+    <!-- Wings spread -->
+    <path d="M0,-50 C40,-110 130,-120 190,-70 C140,-50 110,-20 90,30 C60,0 30,-10 0,0 C-30,-10 -60,0 -90,30 C-110,-20 -140,-50 -190,-70 C-130,-120 -40,-110 0,-50 Z" fill="#f59e0b"/>
+    <path d="M0,-40 C35,-85 100,-95 150,-55 C115,-40 90,-15 70,25 C45,5 25,-5 0,0 C-25,-5 -45,5 -70,25 C-90,-15 -115,-40 -150,-55 C-100,-95 -35,-85 0,-40 Z" fill="#d97706"/>
+    <!-- Eagle Body & Head -->
+    <polygon points="0,-80 18,-45 0,-30 -18,-45" fill="#fef3c7"/>
+    <polygon points="0,-85 8,-75 0,-68 -8,-75" fill="#ffffff"/>
+    <!-- Tail feathers -->
+    <polygon points="0,15 35,65 0,55 -35,65" fill="#f59e0b"/>
+    <!-- Lightning Bolt through center -->
+    <polygon points="12,-20 -8,10 5,10 -15,50 18,15 4,15" fill="#ffffff" stroke="#d97706" stroke-width="2"/>
+  </g>
+
+  <!-- Stars -->
+  <polygon points="120,250 126,268 145,268 130,279 135,297 120,286 105,297 110,279 95,268 114,268" fill="#fbbf24"/>
+  <polygon points="380,250 386,268 405,268 390,279 395,297 380,286 365,297 370,279 355,268 374,268" fill="#fbbf24"/>
+  
+  <!-- Year / Sub-Badge -->
+  <text x="250" y="325" font-family="'Arial Black', sans-serif" font-size="16" fill="#ffffff" text-anchor="middle" letter-spacing="4">ORIGINAL HEAVY METAL</text>
+  <text x="250" y="348" font-family="'Courier New', monospace" font-size="13" fill="#d97706" text-anchor="middle" letter-spacing="6">★ LIVE &amp; LOUD ★</text>
+</svg>

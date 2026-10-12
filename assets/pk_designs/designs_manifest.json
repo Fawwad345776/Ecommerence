@@ -1,0 +1,425 @@
+[
+  {
+    "id": "prod-tee-truck-art-pop",
+    "name": "Modern Truck Art Peacock Pop-Art Tee (240 GSM)",
+    "category": "tees",
+    "designSrc": "assets/pk_designs/design_tee_truck_art_pop.png",
+    "badgeTitle": "KARACHI TRUCK ART",
+    "subTitle": "چمک پٹی آرٹ • 2026",
+    "theme": "truck_art"
+  },
+  {
+    "id": "prod-tee-faiz-bol",
+    "name": "Faiz Ahmad Faiz 'Bol Ke Lab Azaad' Calligraphy Tee",
+    "category": "tees",
+    "designSrc": "assets/pk_designs/design_tee_faiz_bol.png",
+    "badgeTitle": "FAIZ AHMAD FAIZ",
+    "subTitle": "بول کہ لب آزاد ہیں ترے",
+    "theme": "urdu_poetry"
+  },
+  {
+    "id": "prod-tee-chai-dhaba",
+    "name": "'Pehlay Chai Phir Baat' Street Dhabba Graphic Tee",
+    "category": "tees",
+    "designSrc": "assets/pk_designs/design_tee_chai_dhaba.png",
+    "badgeTitle": "KARAK CHAI CLUB",
+    "subTitle": "پہلے چائے پھر بات ☕",
+    "theme": "chai_culture"
+  },
+  {
+    "id": "prod-tee-karachi-cyberpunk",
+    "name": "Karachi Lights 2099 Cyberpunk Streetwear Tee",
+    "category": "tees",
+    "designSrc": "assets/pk_designs/design_tee_karachi_cyberpunk.png",
+    "badgeTitle": "KARACHI 2099",
+    "subTitle": "CITY OF LIGHTS // عروس البلاد",
+    "theme": "cyber_pakistan"
+  },
+  {
+    "id": "prod-tee-lahore-heritage",
+    "name": "Lahore Fort Fresco Modernist Tile Tee",
+    "category": "tees",
+    "designSrc": "assets/pk_designs/design_tee_lahore_heritage.png",
+    "badgeTitle": "LAHORE ARCHIVES",
+    "subTitle": "شاہی قلعہ لاہور • MUGHAL MOSAIC",
+    "theme": "heritage"
+  },
+  {
+    "id": "prod-tee-sukoon-urdu",
+    "name": "'Sukoon' (سکون) High-Density Minimal Typography Tee",
+    "category": "tees",
+    "designSrc": "assets/pk_designs/design_tee_sukoon_urdu.png",
+    "badgeTitle": "SUKOON // سکون",
+    "subTitle": "SERENITY IN CHAOS",
+    "theme": "urdu_minimal"
+  },
+  {
+    "id": "prod-tee-rickshaw-drift",
+    "name": "Karachi Rickshaw Drift Society Retro Graphic Tee",
+    "category": "tees",
+    "designSrc": "assets/pk_designs/design_tee_rickshaw_drift.png",
+    "badgeTitle": "RICKSHAW DRIFT CLUB",
+    "subTitle": "دیکھ مگر پیار سے • KHI",
+    "theme": "retro_vehicle"
+  },
+  {
+    "id": "prod-tee-gully-cricket",
+    "name": "Tape-Ball Gully Cricket Legends 1996 Graphic Tee",
+    "category": "tees",
+    "designSrc": "assets/pk_designs/design_tee_gully_cricket.png",
+    "badgeTitle": "GULLY CRICKET '96",
+    "subTitle": "TAPE BALL CHAMPIONSHIP",
+    "theme": "cricket_nostalgia"
+  },
+  {
+    "id": "prod-hoodie-karakoram",
+    "name": "Karakoram K2 8611m Expedition Streetwear Hoodie",
+    "category": "hoodies",
+    "designSrc": "assets/pk_designs/design_hoodie_karakoram.png",
+    "badgeTitle": "KARAKORAM RANGE // K2",
+    "subTitle": "8,611 METERS • SAVAGE MOUNTAIN",
+    "theme": "alpine_k2"
+  },
+  {
+    "id": "prod-hoodie-qalandar",
+    "name": "'Mast Qalandar' Modern Sufi Grunge Street Hoodie",
+    "category": "hoodies",
+    "designSrc": "assets/pk_designs/design_hoodie_qalandar.png",
+    "badgeTitle": "DAM MAST QALANDAR",
+    "subTitle": "صوفیانا جادو // SUFI MYSTIC",
+    "theme": "sufi_grunge"
+  },
+  {
+    "id": "prod-hoodie-islamabad-monsoon",
+    "name": "Islamabad Margalla Forest Club Heavyweight Hoodie",
+    "category": "hoodies",
+    "designSrc": "assets/pk_designs/design_hoodie_islamabad_monsoon.png",
+    "badgeTitle": "MARGALLA EXPEDITIONS",
+    "subTitle": "ISLAMABAD 051 // PINE TRAIL",
+    "theme": "nature_isb"
+  },
+  {
+    "id": "prod-hoodie-faiz-hum-dekhenge",
+    "name": "'Hum Dekhenge' Revolutionary Poetry Street Hoodie",
+    "category": "hoodies",
+    "designSrc": "assets/pk_designs/design_hoodie_faiz_hum_dekhenge.png",
+    "badgeTitle": "HUM DEKHENGE // ہم دیکھیں گے",
+    "subTitle": "FAIZ AHMAD FAIZ • 1979",
+    "theme": "faiz_poetry"
+  },
+  {
+    "id": "prod-hoodie-multan-kashigari",
+    "name": "Multan Blue Pottery Kashigari Geometric Hoodie",
+    "category": "hoodies",
+    "designSrc": "assets/pk_designs/design_hoodie_multan_kashigari.png",
+    "badgeTitle": "MULTAN KASHIGARI",
+    "subTitle": "BLUE POTTERY MOSAIC • ملتان",
+    "theme": "multan_art"
+  },
+  {
+    "id": "prod-hoodie-mohenjodaro",
+    "name": "Indus Valley King Priest Line-Art Hoodie",
+    "category": "hoodies",
+    "designSrc": "assets/pk_designs/design_hoodie_mohenjodaro.png",
+    "badgeTitle": "INDUS VALLEY 2500 BCE",
+    "subTitle": "KING PRIEST // موہنجودڑو",
+    "theme": "ancient_indus"
+  },
+  {
+    "id": "prod-hoodie-sabran-jameela",
+    "name": "'Sabran Jameela' Islamic Geometric Arch Hoodie",
+    "category": "hoodies",
+    "designSrc": "assets/pk_designs/design_hoodie_sabran_jameela.png",
+    "badgeTitle": "SABRAN JAMEELA",
+    "subTitle": "صَبْرًا جَمِيلًا // NOBLE PATIENCE",
+    "theme": "islamic_arch"
+  },
+  {
+    "id": "prod-hoodie-pindi-boyz",
+    "name": "Pindi Boyz Rawalpindi Metro Street Hoodie",
+    "category": "hoodies",
+    "designSrc": "assets/pk_designs/design_hoodie_pindi_boyz.png",
+    "badgeTitle": "PINDI EXPRESS",
+    "subTitle": "RAWALPINDI 051 // STREETWEAR",
+    "theme": "pindi_metro"
+  },
+  {
+    "id": "prod-mug-chai-charcha",
+    "name": "'Pehlay Chai Phir Kaam' Modern Dhabba Mug",
+    "category": "mugs",
+    "designSrc": "assets/pk_designs/design_mug_chai_charcha.png",
+    "badgeTitle": "PEHLAY CHAI",
+    "subTitle": "پہلے چائے پھر کام ☕",
+    "theme": "chai_mug"
+  },
+  {
+    "id": "prod-mug-dekh-magar-pyar",
+    "name": "'Dekh Magar Pyar Se' Truck Art Ceramic Mug",
+    "category": "mugs",
+    "designSrc": "assets/pk_designs/design_mug_dekh_magar_pyar.png",
+    "badgeTitle": "DEKH MAGAR PYAR SE",
+    "subTitle": "دیکھ مگر پیار سے ❤️",
+    "theme": "truck_art_mug"
+  },
+  {
+    "id": "prod-mug-iqbal-khudi",
+    "name": "Allama Iqbal 'Khudi' Gold & Black Ceramic Mug",
+    "category": "mugs",
+    "designSrc": "assets/pk_designs/design_mug_iqbal_khudi.png",
+    "badgeTitle": "ALLAMA IQBAL",
+    "subTitle": "خودی کو کر بلند اتنا",
+    "theme": "gold_poetry_mug"
+  },
+  {
+    "id": "prod-mug-multan-kashigari",
+    "name": "Multan Blue Kashigari Cobalt Ceramic Mug",
+    "category": "mugs",
+    "designSrc": "assets/pk_designs/design_mug_multan_kashigari.png",
+    "badgeTitle": "MULTANI KASHIGARI",
+    "subTitle": "کاشیکاری ملتان • COBALT",
+    "theme": "kashigari_mug"
+  },
+  {
+    "id": "prod-mug-karachi-se-lahore",
+    "name": "'Karachi Se Lahore' GT Road Milestone Mug",
+    "category": "mugs",
+    "designSrc": "assets/pk_designs/design_mug_karachi_se_lahore.png",
+    "badgeTitle": "N-5 HIGHWAY",
+    "subTitle": "KARACHI ➔ LAHORE • 1200 KM",
+    "theme": "road_milestone"
+  },
+  {
+    "id": "prod-mug-sitaron-se-aagay",
+    "name": "'Sitaron Se Aagay' Cosmic Astronomy Urdu Mug",
+    "category": "mugs",
+    "designSrc": "assets/pk_designs/design_mug_sitaron_se_aagay.png",
+    "badgeTitle": "SITARON SE AAGAY",
+    "subTitle": "ستاروں سے آگے جہاں اور بھی ہیں",
+    "theme": "cosmic_urdu"
+  },
+  {
+    "id": "prod-mug-horn-ahista",
+    "name": "'Horn Ahista Bajao' Street Humor Ceramic Mug",
+    "category": "mugs",
+    "designSrc": "assets/pk_designs/design_mug_horn_ahista.png",
+    "badgeTitle": "HORN AHISTA BAJAO",
+    "subTitle": "ہارن آہستہ بجاؤ • NO NOISE",
+    "theme": "horn_humor"
+  },
+  {
+    "id": "prod-cap-1992-tigers",
+    "name": "Pakistan '92 Cornered Tigers Championship Cap",
+    "category": "caps",
+    "designSrc": "assets/pk_designs/design_cap_1992_tigers.png",
+    "badgeTitle": "CORNERED TIGERS",
+    "subTitle": "PAKISTAN 1992 ★ CHAMPIONS",
+    "theme": "sports_cap"
+  },
+  {
+    "id": "prod-cap-truck-art-crest",
+    "name": "Truck Art Floral Crest Embroidered Strapback Cap",
+    "category": "caps",
+    "designSrc": "assets/pk_designs/design_cap_truck_art_crest.png",
+    "badgeTitle": "CHAMAK PATTI CREST",
+    "subTitle": "TRUCK ART FLORAL // 2026",
+    "theme": "truck_art_cap"
+  },
+  {
+    "id": "prod-cap-karakoram-alpine",
+    "name": "Karakoram Mountain Alpine Club Explorer Cap",
+    "category": "caps",
+    "designSrc": "assets/pk_designs/design_cap_karakoram_alpine.png",
+    "badgeTitle": "KARAKORAM CLUB",
+    "subTitle": "NORTHERN EXPLORERS // 8611M",
+    "theme": "alpine_cap"
+  },
+  {
+    "id": "prod-cap-lahore-zindadilan",
+    "name": "'Zinda Dilan' Lahore Heritage Structured Cap",
+    "category": "caps",
+    "designSrc": "assets/pk_designs/design_cap_lahore_zindadilan.png",
+    "badgeTitle": "ZINDA DILAN LHR",
+    "subTitle": "زندہ دلان لاہور • 1021",
+    "theme": "lahore_cap"
+  },
+  {
+    "id": "prod-cap-sukoon-script",
+    "name": "'Sukoon' (سکون) Minimalist Script Black Cap",
+    "category": "caps",
+    "designSrc": "assets/pk_designs/design_cap_sukoon_script.png",
+    "badgeTitle": "SUKOON // سکون",
+    "subTitle": "PEACE OF MIND",
+    "theme": "sukoon_cap"
+  },
+  {
+    "id": "prod-cap-islamabad-051",
+    "name": "Islamabad 051 Capital District Vintage Cap",
+    "category": "caps",
+    "designSrc": "assets/pk_designs/design_cap_islamabad_051.png",
+    "badgeTitle": "ISLAMABAD 051",
+    "subTitle": "CAPITAL TERRITORY",
+    "theme": "isb_cap"
+  },
+  {
+    "id": "prod-cap-karachi-harbor",
+    "name": "Karachi Port Grand Maritime Anchor Cap",
+    "category": "caps",
+    "designSrc": "assets/pk_designs/design_cap_karachi_harbor.png",
+    "badgeTitle": "KARACHI HARBOR",
+    "subTitle": "PORT GRAND // MANORA PT",
+    "theme": "maritime_cap"
+  },
+  {
+    "id": "prod-bag-multan-kashigari",
+    "name": "Multan Kashigari Cobalt Ceramic Laptop Sleeve (15.6\")",
+    "category": "laptop-bags",
+    "designSrc": "assets/pk_designs/design_bag_multan_kashigari.png",
+    "badgeTitle": "MULTANI KASHIGARI",
+    "subTitle": "COBALT CERAMIC ART • 2026",
+    "theme": "kashigari_bag"
+  },
+  {
+    "id": "prod-bag-karakoram-topo",
+    "name": "Karakoram Topographic Contour Laptop Briefcase",
+    "category": "laptop-bags",
+    "designSrc": "assets/pk_designs/design_bag_karakoram_topo.png",
+    "badgeTitle": "KARAKORAM TOPO MAP",
+    "subTitle": "K2 SUMMIT 8611M • NORTHERN ARC",
+    "theme": "topo_bag"
+  },
+  {
+    "id": "prod-bag-truck-art-kaleidoscope",
+    "name": "Truck Art Pop Kaleidoscope Laptop Briefcase",
+    "category": "laptop-bags",
+    "designSrc": "assets/pk_designs/design_bag_truck_art_kaleidoscope.png",
+    "badgeTitle": "CHAMAK PATTI DESIGN",
+    "subTitle": "PAKISTANI TRUCK ART • FOLK POP",
+    "theme": "truck_art_bag"
+  },
+  {
+    "id": "prod-bag-lahore-fort-mosaic",
+    "name": "Lahore Fort Fresco Mosaic Executive Bag",
+    "category": "laptop-bags",
+    "designSrc": "assets/pk_designs/design_bag_lahore_fort_mosaic.png",
+    "badgeTitle": "LAHORE FORT FRESCO",
+    "subTitle": "SHEESH MAHAL GEOMETRY • 1631",
+    "theme": "heritage_bag"
+  },
+  {
+    "id": "prod-bag-taxila-gandhara",
+    "name": "Taxila Gandhara Minimalist Line-Art Laptop Sleeve",
+    "category": "laptop-bags",
+    "designSrc": "assets/pk_designs/design_bag_taxila_gandhara.png",
+    "badgeTitle": "TAXILA ARCHIVES",
+    "subTitle": "GANDHARA HERITAGE • 500 BCE",
+    "theme": "taxila_bag"
+  },
+  {
+    "id": "prod-bag-urdu-calligraphy",
+    "name": "'Ilm O Hunar' (علم و ہنر) Modern Calligraphy Bag",
+    "category": "laptop-bags",
+    "designSrc": "assets/pk_designs/design_bag_urdu_calligraphy.png",
+    "badgeTitle": "ILM O HUNAR",
+    "subTitle": "علم و ہنر • KNOWLEDGE & CRAFT",
+    "theme": "calligraphy_bag"
+  },
+  {
+    "id": "prod-bag-monument-wireframe",
+    "name": "Pakistan Monument 3D Wireframe CAD Briefcase",
+    "category": "laptop-bags",
+    "designSrc": "assets/pk_designs/design_bag_monument_wireframe.png",
+    "badgeTitle": "PAKISTAN MONUMENT",
+    "subTitle": "3D CAD BLUEPRINT // SHAKARPARIAN",
+    "theme": "monument_bag"
+  },
+  {
+    "id": "prod-bag-karachi-harbor",
+    "name": "Karachi Maritime Deep-Sea Navigational Bag",
+    "category": "laptop-bags",
+    "designSrc": "assets/pk_designs/design_bag_karachi_harbor.png",
+    "badgeTitle": "ARABIAN SEA CHARTS",
+    "subTitle": "PORT OF KARACHI // 24.86° N",
+    "theme": "maritime_bag"
+  },
+  {
+    "id": "prod-diary-iqbal-khudi",
+    "name": "Allama Iqbal 'Khudi' Gold Foil Hardcover Journal",
+    "category": "diaries",
+    "designSrc": "assets/pk_designs/design_diary_iqbal_khudi.png",
+    "badgeTitle": "ALLAMA IQBAL",
+    "subTitle": "خودی کو کر بلند اتنا • GOLD FOIL",
+    "theme": "gold_diary"
+  },
+  {
+    "id": "prod-diary-multan-kashigari",
+    "name": "Multani Kashigari Cobalt Blue Hardcover Notebook",
+    "category": "diaries",
+    "designSrc": "assets/pk_designs/design_diary_multan_kashigari.png",
+    "badgeTitle": "MULTANI KASHIGARI",
+    "subTitle": "BLUE POTTERY NOTEBOOK • ملتان",
+    "theme": "kashigari_diary"
+  },
+  {
+    "id": "prod-diary-faiz-bol",
+    "name": "Faiz Poetry Collection A5 Executive Notebook",
+    "category": "diaries",
+    "designSrc": "assets/pk_designs/design_diary_faiz_bol.png",
+    "badgeTitle": "FAIZ AHMAD FAIZ",
+    "subTitle": "نقش فریادی • POETRY JOURNAL",
+    "theme": "faiz_diary"
+  },
+  {
+    "id": "prod-diary-truck-art-radiant",
+    "name": "Radiant Truck Art Chamakpatti Art Journal",
+    "category": "diaries",
+    "designSrc": "assets/pk_designs/design_diary_truck_art_radiant.png",
+    "badgeTitle": "TRUCK ART RADIANT",
+    "subTitle": "چمک پٹی آرٹ ڈائری • FOLK POP",
+    "theme": "truck_art_diary"
+  },
+  {
+    "id": "prod-diary-karakoram-field",
+    "name": "Karakoram Mountaineer Expedition Field Log",
+    "category": "diaries",
+    "designSrc": "assets/pk_designs/design_diary_karakoram_field.png",
+    "badgeTitle": "KARAKORAM FIELD LOG",
+    "subTitle": "BALTORO EXPEDITION • K2 8611M",
+    "theme": "field_diary"
+  },
+  {
+    "id": "prod-diary-sukoon-minimal",
+    "name": "'Sukoon' (سکون) Minimalist Sage Cloth Notebook",
+    "category": "diaries",
+    "designSrc": "assets/pk_designs/design_diary_sukoon_minimal.png",
+    "badgeTitle": "SUKOON // سکون",
+    "subTitle": "SERENITY JOURNAL",
+    "theme": "sukoon_diary"
+  },
+  {
+    "id": "prod-diary-badshahi-blueprint",
+    "name": "Badshahi Mosque Architectural Blueprint Journal",
+    "category": "diaries",
+    "designSrc": "assets/pk_designs/design_diary_badshahi_blueprint.png",
+    "badgeTitle": "BADSHAHI MOSQUE",
+    "subTitle": "LAHORE ARCHITECTURE • 1673",
+    "theme": "badshahi_diary"
+  },
+  {
+    "id": "prod-diary-dhabba-chai",
+    "name": "Dhabba Chronicles Cutting Chai Pocket Diary",
+    "category": "diaries",
+    "designSrc": "assets/pk_designs/design_diary_dhabba_chai.png",
+    "badgeTitle": "DHABBA CHRONICLES",
+    "subTitle": "چائے کا وقت // KARAK CHAI",
+    "theme": "chai_diary"
+  },
+  {
+    "id": "prod-diary-mohenjodaro",
+    "name": "Indus Seal Script Archaeologist Notebook",
+    "category": "diaries",
+    "designSrc": "assets/pk_designs/design_diary_mohenjodaro.png",
+    "badgeTitle": "INDUS EXCAVATION",
+    "subTitle": "MOHENJO-DARO 2500 BCE",
+    "theme": "mohenjo_diary"
+  }
+]

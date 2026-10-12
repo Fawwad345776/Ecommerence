@@ -1,0 +1,456 @@
+[
+  {
+    "orderId": "MF-4537",
+    "customer": {
+      "name": "Hamza Farooq",
+      "phone": "0300 7654321",
+      "city": "Lahore",
+      "address": "House 42, Sector C, Phase 6, DHA, Lahore"
+    },
+    "paymentPlan": "full_advance",
+    "advancePaid": 1740,
+    "codDue": 0,
+    "total": 1740,
+    "trxId": "N/A",
+    "paymentReceipt": null,
+    "status": "in_production",
+    "statusMessage": "MF Store Studio: Premium Quality Printing & Hand Inspection",
+    "courier": "Trax Logistics (Airway Bill Pending)",
+    "items": [
+      {
+        "cartKey": "prod-custom-jersey-name-number-M-Official Camo Green-BABAR-56",
+        "id": "prod-custom-jersey-name-number",
+        "productId": "prod-custom-jersey-name-number",
+        "name": "Pakistan Official T20 Fan Jersey (Front & Back With Custom Name & Number)",
+        "category": "tees",
+        "price": 1590,
+        "unitPrice": 1590,
+        "baseCost": 990,
+        "profit": 600,
+        "image": "assets/trending/pk_jersey_custom_back.png",
+        "previewImage": "assets/trending/pk_jersey_custom_back.png",
+        "size": "M",
+        "color": "Official Camo Green",
+        "blankSku": "SKU-prod-custom-jersey-name-number",
+        "qty": 1,
+        "isCustom": false,
+        "isCustomJersey": true,
+        "customPlayerName": "BABAR",
+        "customJerseyNumber": "56",
+        "isCouple": false,
+        "menSize": null,
+        "womenSize": null
+      }
+    ],
+    "apiPayload": {
+      "external_order_id": "MF-4537",
+      "store_id": "47wpeRK8jmunkr2NHepqmDR3",
+      "fulfillment_service": "ceeprinto_white_label",
+      "shipping_address": {
+        "full_name": "Hamza Farooq",
+        "phone_number": "0300 7654321",
+        "city": "Lahore",
+        "street_address": "House 42, Sector C, Phase 6, DHA, Lahore",
+        "country": "Pakistan"
+      },
+      "payment": {
+        "type": "prepaid",
+        "payment_plan": "full_advance",
+        "advance_collected_pkr": 1740,
+        "cod_amount_to_collect_pkr": 0,
+        "payment_channel": "meezan_bank_card_gateway",
+        "card_masked": "•••• •••• •••• 9876",
+        "card_holder": "HAMZA FAROOQ",
+        "meezan_auth_code": "MBL-AUTH-359905",
+        "settlement_account": "Meezan Bank Ltd. (02010108920192)",
+        "transaction_reference": "MBL-AUTH-359905",
+        "receipt_proof": null
+      },
+      "line_items": [
+        {
+          "blank_sku": "SKU-prod-custom-jersey-name-number",
+          "product_name": "Pakistan Official T20 Fan Jersey (Front & Back With Custom Name & Number)",
+          "variant_size": "M",
+          "variant_color": "Official Camo Green",
+          "quantity": 1,
+          "unit_base_cost_pkr": 990,
+          "unit_profit_pkr": 500,
+          "unit_retail_pkr": 1490,
+          "custom_artwork": null
+        }
+      ],
+      "created_at": "2026-10-12T00:18:06.261Z"
+    },
+    "date": "12/10/2026",
+    "received_at": "2026-10-12T00:18:06.275Z"
+  },
+  {
+    "orderId": "MF-6959",
+    "customer": {
+      "name": "Ali Khan",
+      "phone": "03001234567",
+      "city": "Karachi",
+      "address": "House 123, Street 5, Gulberg, LahoreHouse 123, Street 5, Gulberg, Lahore"
+    },
+    "paymentPlan": "full_advance",
+    "advancePaid": 1750,
+    "codDue": 0,
+    "total": 1750,
+    "trxId": "TID-9824018",
+    "paymentReceipt": null,
+    "status": "in_production",
+    "statusMessage": "MF Store Studio: Premium Quality Printing & Hand Inspection",
+    "courier": "Trax Logistics (Airway Bill Pending)",
+    "items": [
+      {
+        "cartKey": "custom-1791663849696",
+        "id": "custom-white-tee",
+        "name": "Custom White T-Shirt (100% Combed Cotton) (Front + Back Print)",
+        "price": 1700,
+        "baseCost": 1000,
+        "profit": 600,
+        "image": "assets/designs/design5_streetwear_skull.svg",
+        "size": "S",
+        "color": "Pure White",
+        "blankSku": "CP-CUSTOM-WHITE-TEE",
+        "qty": 1,
+        "isCustom": true,
+        "customSides": {
+          "hasFront": false,
+          "hasBack": true,
+          "front": {
+            "artworkName": null,
+            "artworkSrc": null,
+            "text": null,
+            "textColor": "#000000"
+          },
+          "back": {
+            "artworkName": "Never Surrender",
+            "artworkSrc": "assets/designs/design5_streetwear_skull.svg",
+            "text": null,
+            "textColor": "#000000"
+          }
+        }
+      }
+    ],
+    "apiPayload": {
+      "external_order_id": "MF-6959",
+      "store_id": "47wpeRK8jmunkr2NHepqmDR3",
+      "fulfillment_service": "ceeprinto_white_label",
+      "shipping_address": {
+        "full_name": "Ali Khan",
+        "phone_number": "03001234567",
+        "city": "Karachi",
+        "street_address": "House 123, Street 5, Gulberg, LahoreHouse 123, Street 5, Gulberg, Lahore",
+        "country": "Pakistan"
+      },
+      "payment": {
+        "type": "prepaid",
+        "payment_plan": "full_advance",
+        "advance_collected_pkr": 1750,
+        "cod_amount_to_collect_pkr": 0,
+        "transaction_reference": "TID-9824018",
+        "receipt_proof": null
+      },
+      "line_items": [
+        {
+          "blank_sku": "CP-CUSTOM-WHITE-TEE",
+          "product_name": "Custom White T-Shirt (100% Combed Cotton) (Front + Back Print)",
+          "variant_size": "S",
+          "variant_color": "Pure White",
+          "quantity": 1,
+          "unit_base_cost_pkr": 1000,
+          "unit_profit_pkr": 500,
+          "unit_retail_pkr": 1500
+        }
+      ],
+      "created_at": "2026-10-10T20:48:27.039Z"
+    },
+    "date": "11/10/2026",
+    "received_at": "2026-10-10T20:48:27.064Z"
+  },
+  {
+    "orderId": "MF-3611",
+    "customer": {
+      "name": "Ali Khan",
+      "phone": "03001234567",
+      "city": "Karachi",
+      "address": "Gulshan-e-Iqbal Karachi"
+    },
+    "paymentPlan": "full_advance",
+    "advancePaid": 1400,
+    "codDue": 0,
+    "total": 1400,
+    "trxId": "JAZZ-TRX-998822",
+    "paymentReceipt": null,
+    "status": "in_production",
+    "statusMessage": "MF Store Studio: Premium Quality Printing & Hand Inspection",
+    "courier": "Trax Logistics (Airway Bill Pending)",
+    "items": [
+      {
+        "cartKey": "custom-1791421371300",
+        "id": "custom-mug",
+        "name": "Custom Ceramic Coffee Mug / Cup (11oz)",
+        "price": 1250,
+        "baseCost": 650,
+        "profit": 600,
+        "image": "assets/designs/design1_cyberpunk.svg",
+        "size": "11 oz Standard",
+        "color": "Pure White",
+        "blankSku": "CP-CUSTOM-MUG",
+        "qty": 1,
+        "isCustom": true,
+        "customSides": {
+          "hasFront": true,
+          "hasBack": false,
+          "front": {
+            "artworkName": "Neo-Tokyo Cyberpunk",
+            "artworkSrc": "assets/designs/design1_cyberpunk.svg",
+            "text": null,
+            "textColor": "#000000"
+          },
+          "back": {
+            "artworkName": null,
+            "artworkSrc": null,
+            "text": null,
+            "textColor": "#000000"
+          }
+        }
+      }
+    ],
+    "apiPayload": {
+      "external_order_id": "MF-3611",
+      "store_id": "47wpeRK8jmunkr2NHepqmDR3",
+      "fulfillment_service": "ceeprinto_white_label",
+      "shipping_address": {
+        "full_name": "Ali Khan",
+        "phone_number": "03001234567",
+        "city": "Karachi",
+        "street_address": "Gulshan-e-Iqbal Karachi",
+        "country": "Pakistan"
+      },
+      "payment": {
+        "type": "prepaid",
+        "payment_plan": "full_advance",
+        "advance_collected_pkr": 1400,
+        "cod_amount_to_collect_pkr": 0,
+        "transaction_reference": "JAZZ-TRX-998822",
+        "receipt_proof": null
+      },
+      "line_items": [
+        {
+          "blank_sku": "CP-CUSTOM-MUG",
+          "product_name": "Custom Ceramic Coffee Mug / Cup (11oz)",
+          "variant_size": "11 oz Standard",
+          "variant_color": "Pure White",
+          "quantity": 1,
+          "unit_base_cost_pkr": 650,
+          "unit_profit_pkr": 500,
+          "unit_retail_pkr": 1150
+        }
+      ],
+      "created_at": "2026-10-08T01:40:06.195Z"
+    },
+    "date": "08/10/2026",
+    "received_at": "2026-10-08T01:40:06.201Z"
+  },
+  {
+    "orderId": "MF-7106",
+    "customer": {
+      "name": "Fawwad",
+      "phone": "03145028318",
+      "city": "Karachi",
+      "address": "House"
+    },
+    "paymentPlan": "full_advance",
+    "advancePaid": 1200,
+    "codDue": 0,
+    "total": 1200,
+    "trxId": "Fawwad",
+    "status": "in_production",
+    "statusMessage": "MF Store Studio: Premium Quality Printing & Hand Inspection",
+    "courier": "Trax Logistics (Airway Bill Pending)",
+    "items": [
+      {
+        "cartKey": "prod-case-iPhone 13-16 Pro-Pure White",
+        "id": "prod-case",
+        "name": "Custom Shockproof Mobile Back Cover / Phone Case",
+        "price": 1050,
+        "baseCost": 450,
+        "profit": 600,
+        "image": "assets/blank_phone_case_back.jpg",
+        "size": "iPhone 13-16 Pro",
+        "color": "Pure White",
+        "blankSku": "CP-CASE-IMPACT-HYBRID-UNIVERSAL",
+        "qty": 1
+      }
+    ],
+    "apiPayload": {
+      "external_order_id": "MF-7106",
+      "store_id": "47wpeRK8jmunkr2NHepqmDR3",
+      "fulfillment_service": "ceeprinto_white_label",
+      "shipping_address": {
+        "full_name": "Fawwad",
+        "phone_number": "03145028318",
+        "city": "Karachi",
+        "street_address": "House",
+        "country": "Pakistan"
+      },
+      "payment": {
+        "type": "prepaid",
+        "payment_plan": "full_advance",
+        "advance_collected_pkr": 1200,
+        "cod_amount_to_collect_pkr": 0,
+        "transaction_reference": "Fawwad"
+      },
+      "line_items": [
+        {
+          "blank_sku": "CP-CASE-IMPACT-HYBRID-UNIVERSAL",
+          "product_name": "Custom Shockproof Mobile Back Cover / Phone Case",
+          "variant_size": "iPhone 13-16 Pro",
+          "variant_color": "Pure White",
+          "quantity": 1,
+          "unit_base_cost_pkr": 450,
+          "unit_profit_pkr": 500,
+          "unit_retail_pkr": 950,
+          "custom_artwork": null
+        }
+      ],
+      "created_at": "2026-10-07T18:51:57.899Z"
+    },
+    "date": "07/10/2026",
+    "received_at": "2026-10-07T18:51:57.914Z"
+  },
+  {
+    "orderId": "MF-1611",
+    "customer": {
+      "name": "Fawwad",
+      "phone": "0314028318",
+      "city": "Karachi",
+      "address": "house 23, street 5 area 36/B landhi  5 karachi"
+    },
+    "paymentPlan": "full_advance",
+    "advancePaid": 1600,
+    "codDue": 0,
+    "total": 1600,
+    "trxId": "Fawwad",
+    "status": "in_production",
+    "statusMessage": "MF Store Studio: Premium Quality Printing & Hand Inspection",
+    "courier": "Trax Logistics (Airway Bill Pending)",
+    "items": [
+      {
+        "cartKey": "prod-1-M-Pure White",
+        "id": "prod-1",
+        "name": "Unisex Regular White T-Shirt (100% Combed Cotton)",
+        "price": 1450,
+        "baseCost": 850,
+        "profit": 600,
+        "image": "assets/customizer_blank.jpg",
+        "size": "M",
+        "color": "Pure White",
+        "blankSku": "CP-TEE-REGULAR-WHT-210GSM",
+        "qty": 1
+      }
+    ],
+    "apiPayload": {
+      "external_order_id": "MF-1611",
+      "store_id": "47wpeRK8jmunkr2NHepqmDR3",
+      "fulfillment_service": "ceeprinto_white_label",
+      "shipping_address": {
+        "full_name": "Fawwad",
+        "phone_number": "0314028318",
+        "city": "Karachi",
+        "street_address": "house 23, street 5 area 36/B landhi  5 karachi",
+        "country": "Pakistan"
+      },
+      "payment": {
+        "type": "prepaid",
+        "payment_plan": "full_advance",
+        "advance_collected_pkr": 1600,
+        "cod_amount_to_collect_pkr": 0,
+        "transaction_reference": "Fawwad"
+      },
+      "line_items": [
+        {
+          "blank_sku": "CP-TEE-REGULAR-WHT-210GSM",
+          "product_name": "Unisex Regular White T-Shirt (100% Combed Cotton)",
+          "variant_size": "M",
+          "variant_color": "Pure White",
+          "quantity": 1,
+          "unit_base_cost_pkr": 850,
+          "unit_profit_pkr": 500,
+          "unit_retail_pkr": 1350,
+          "custom_artwork": null
+        }
+      ],
+      "created_at": "2026-10-07T15:28:52.409Z"
+    },
+    "date": "07/10/2026",
+    "received_at": "2026-10-07T15:28:52.421Z"
+  },
+  {
+    "orderId": "MF-771203",
+    "customer": {
+      "name": "Usman Farooq",
+      "phone": "03219876543",
+      "city": "Karachi",
+      "address": "DHA Phase 6"
+    },
+    "paymentPlan": "full_advance",
+    "total": 2150,
+    "advancePaid": 2150,
+    "codDue": 0,
+    "status": "in_production",
+    "items": [
+      {
+        "name": "White T-Shirt (100% Cotton)",
+        "color": "Pure White",
+        "size": "L",
+        "qty": 1,
+        "price": 1900,
+        "isCustom": true,
+        "customSides": {
+          "hasFront": true,
+          "front": {
+            "artworkName": "Neon Cyberpunk Badge"
+          }
+        }
+      }
+    ],
+    "received_at": "2026-10-07T15:17:36.812Z"
+  },
+  {
+    "orderId": "MF-882104",
+    "customer": {
+      "name": "Ali Hassan",
+      "phone": "03123456789",
+      "city": "Lahore",
+      "address": "Model Town, Block C"
+    },
+    "paymentPlan": "half_advance",
+    "total": 2800,
+    "advancePaid": 1400,
+    "codDue": 1400,
+    "status": "in_production",
+    "items": [
+      {
+        "name": "Custom Mug",
+        "color": "#111111",
+        "qty": 2,
+        "price": 1400,
+        "isCustom": true,
+        "customSides": {
+          "hasFront": true,
+          "hasBack": true,
+          "front": {
+            "artworkName": "Gold Vintage Crest"
+          },
+          "back": {
+            "artworkName": "Urban Typography"
+          }
+        }
+      }
+    ],
+    "received_at": "2026-10-07T15:05:14.053Z"
+  }
+]

@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MF STORE | Luxury Custom Apparel & Official Merchandise Catalog</title>
+  <meta name="description" content="Design your own custom t-shirts, mugs, cups, caps, notebooks, and hoodies. Full merchandise catalog with 100% secure card checkout to Meezan Bank Ltd. across Pakistan.">
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Expires" content="0">
+  <link rel="stylesheet" href="style.css?v=3.0">
+  <link rel="icon" href="assets/logo.jpg">
+</head>
+<body>
+
+  <!-- Top Announcement Bar -->
+  <aside class="announcement-bar" aria-label="Announcement">
+    <span>🚚 Express Nationwide Delivery • 100% Secure Card Payment to Meezan Bank Ltd.</span>
+  </aside>
+
+  <!-- Navigation Header -->
+  <header class="header">
+    <div class="container nav-wrapper">
+      <a href="#" class="brand-logo" id="brand-logo-link">
+        <div class="logo-img-wrapper">
+          <img src="assets/logo.jpg" alt="MF Luxury Fashion Logo" class="logo-img">
+        </div>
+        <div class="brand-text">
+          <span class="brand-title">MF STORE</span>
+          <span class="brand-sub">LUXURY APPAREL // PK</span>
+        </div>
+      </a>
+
+      <nav aria-label="Primary Navigation">
+        <ul class="nav-links">
+          <li><a href="#catalog" class="nav-link active" onclick="setCatalogFilter('all')">🛍️ All Products</a></li>
+          <li><a href="#cat-row-tees" class="nav-link" data-cat="tees" onclick="scrollToCategory('tees')">👕 T-Shirts</a></li>
+          <li><a href="#cat-row-full-sleeves" class="nav-link" data-cat="full-sleeves" onclick="scrollToCategory('full-sleeves')">👕 Full Sleeves</a></li>
+          <li><a href="#cat-row-hoodies" class="nav-link" data-cat="hoodies" onclick="scrollToCategory('hoodies')">🧥 Hoodies</a></li>
+          <li><a href="#cat-row-mugs" class="nav-link" data-cat="mugs" onclick="scrollToCategory('mugs')">☕ Mugs</a></li>
+          <li><a href="#cat-row-laptop-bags" class="nav-link" data-cat="laptop-bags" onclick="scrollToCategory('laptop-bags')">💼 Laptop Bags</a></li>
+          <li><a href="#cat-row-caps" class="nav-link" data-cat="caps" onclick="scrollToCategory('caps')">🧢 Caps</a></li>
+          <li><a href="#orders-tracker" class="nav-link">📦 Track Order</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <!-- Direct Jump to Customizer -->
+        <a href="#catalog" class="btn-primary" style="padding: 10px 22px; font-size: 0.84rem; display: inline-flex;">
+          <span>Explore Catalog</span>
+        </a>
+
+        <!-- Shopping Cart Button -->
+        <button class="cart-btn" id="open-cart-btn" aria-label="Open Shopping Bag">
+          <svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z" />
+          </svg>
+          <span class="cart-badge" id="cart-counter">0</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero-section" id="hero">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <div style="display: inline-flex; align-items: center; gap: 8px; background: #ecfdf5; border: 1px solid #a7f3d0; padding: 6px 14px; border-radius: 99px; margin-bottom: 16px;">
+            <span style="font-size: 0.8rem; font-weight: 800; color: #065f46;">🇵🇰 OFFICIAL PAKISTAN MERCHANDISE & GIFTING</span>
+          </div>
+          <h1 class="hero-title" style="font-size: 2.8rem; line-height: 1.15; font-weight: 900; color: #0f172a; margin-bottom: 16px;">
+            Premium Printed Apparel & <br>
+            <span class="serif-accent" style="color: #b45309; font-style: italic;">Memorable Lifestyle Gifts.</span>
+          </h1>
+          <p class="hero-desc" style="font-size: 1.05rem; color: #475569; line-height: 1.6; max-width: 540px; margin-bottom: 24px;">
+            Shop 100% combed cotton T-shirts, 320 GSM heavyweight fleece hoodies, ceramic mugs, padded laptop bags, and structured caps with nationwide express delivery.
+          </p>
+
+          <div class="hero-cta-group" style="display: flex; gap: 10px; flex-wrap: wrap;">
+            <a href="#catalog" class="btn-primary" style="padding: 13px 22px; font-size: 0.92rem; font-weight: 800;">
+              <span>Shop All Products ➔</span>
+            </a>
+            <a href="#cat-row-tees" onclick="scrollToCategory('tees')" class="btn-secondary" style="padding: 13px 18px; font-size: 0.88rem; font-weight: 800; border: 1.5px solid #cbd5e1; background: #ffffff; color: #0f172a;">
+              <span>👕 T-Shirts</span>
+            </a>
+            <a href="#cat-row-hoodies" onclick="scrollToCategory('hoodies')" class="btn-secondary" style="padding: 13px 18px; font-size: 0.88rem; font-weight: 800; border: 1.5px solid #cbd5e1; background: #ffffff; color: #0f172a;">
+              <span>🧥 Hoodies</span>
+            </a>
+            <a href="#cat-row-mugs" onclick="scrollToCategory('mugs')" class="btn-secondary" style="padding: 13px 18px; font-size: 0.88rem; font-weight: 800; border: 1.5px solid #cbd5e1; background: #ffffff; color: #0f172a;">
+              <span>☕ Mugs</span>
+            </a>
+            <a href="#cat-row-laptop-bags" onclick="scrollToCategory('laptop-bags')" class="btn-secondary" style="padding: 13px 18px; font-size: 0.88rem; font-weight: 800; border: 1.5px solid #cbd5e1; background: #ffffff; color: #0f172a;">
+              <span>💼 Laptop Bags</span>
+            </a>
+            <a href="#cat-row-caps" onclick="scrollToCategory('caps')" class="btn-secondary" style="padding: 13px 18px; font-size: 0.88rem; font-weight: 800; border: 1.5px solid #cbd5e1; background: #ffffff; color: #0f172a;">
+              <span>🧢 Caps</span>
+            </a>
+          </div>
+        </div>
+        <div class="hero-media">
+          <div class="hero-banner-card">
+            <img src="assets/hero_men.jpg" alt="MF Store Luxury Menswear" class="hero-img" id="hero-main-img">
+            <div class="hero-banner-overlay">
+              <h2 class="hero-overlay-title">Wear Your Own Creation</h2>
+              <p class="hero-overlay-sub">100% Combed Cotton, Ceramic & Premium Craftsmanship</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         ALL PRODUCTS DASHBOARD (ORGANIZED BY CATEGORY)
+         ========================================================================== -->
+    <section class="products-section" id="catalog">
+      <div class="container">
+        <!-- Top Category Navigation Bar (T-shirt, Hoodie, Mug, Laptop Bag, Cap) -->
+        <div style="margin-bottom: 8px;">
+          <span style="font-size: 0.74rem; font-weight: 800; color: #64748b; text-transform: uppercase; letter-spacing: 0.6px; display: block; margin-bottom: 8px;">
+            ⚡ Quick Jump by Category:
+          </span>
+          <div class="top-category-nav-bar" id="top-category-bar">
+            <div class="top-cat-pill" onclick="scrollToCategory('tees')">
+              <span class="cat-icon">👕</span>
+              <div>
+                <strong>T-Shirts</strong>
+                <small>11 Designs</small>
+              </div>
+            </div>
+            <div class="top-cat-pill" onclick="scrollToCategory('full-sleeves')">
+              <span class="cat-icon">👕</span>
+              <div>
+                <strong>Full Sleeves</strong>
+                <small>12 Designs</small>
+              </div>
+            </div>
+            <div class="top-cat-pill" onclick="scrollToCategory('hoodies')">
+              <span class="cat-icon">🧥</span>
+              <div>
+                <strong>Hoodies</strong>
+                <small>9 Designs</small>
+              </div>
+            </div>
+            <div class="top-cat-pill" onclick="scrollToCategory('mugs')">
+              <span class="cat-icon">☕</span>
+              <div>
+                <strong>Mugs & Cups</strong>
+                <small>9 Designs</small>
+              </div>
+            </div>
+            <div class="top-cat-pill" onclick="scrollToCategory('laptop-bags')">
+              <span class="cat-icon">💼</span>
+              <div>
+                <strong>Laptop Bags</strong>
+                <small>8 Designs</small>
+              </div>
+            </div>
+            <div class="top-cat-pill" onclick="scrollToCategory('caps')">
+              <span class="cat-icon">🧢</span>
+              <div>
+                <strong>Caps</strong>
+                <small>8 Designs</small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="section-header" style="margin-bottom: 24px;">
+          <div>
+            <h2 class="section-heading" style="font-size: 1.6rem; font-weight: 900; color: #0f172a;">Merchandise Collections</h2>
+            <p style="font-size: 0.88rem; color: #64748b; margin-top: 4px;">Explore Pakistani Cricket, Eid Mubarak, Husband & Wife couple sets, and Birthday specials.</p>
+          </div>
+          <div class="filter-tabs" id="catalog-filters" style="display: flex; gap: 8px; flex-wrap: wrap; margin-top: 14px;">
+            <button class="filter-btn active" data-filter="all">All Collections</button>
+            <button class="filter-btn" data-filter="cricket">🏏 Pakistan Cricket</button>
+            <button class="filter-btn" data-filter="eid">🌙 Eid Mubarak</button>
+            <button class="filter-btn" data-filter="couple">💍 Husband & Wife</button>
+            <button class="filter-btn" data-filter="birthday">🎂 Birthday Specials</button>
+            <button class="filter-btn" data-filter="tees">👕 T-Shirts</button>
+            <button class="filter-btn" data-filter="full-sleeves">👕 Full Sleeves</button>
+            <button class="filter-btn" data-filter="hoodies">🧥 Hoodies</button>
+            <button class="filter-btn" data-filter="mugs">☕ Mugs</button>
+            <button class="filter-btn" data-filter="laptop-bags">💼 Laptop Bags</button>
+            <button class="filter-btn" data-filter="caps">🧢 Caps</button>
+          </div>
+        </div>
+
+        <!-- Products Horizontal Rows Container -->
+        <div id="products-grid-container" class="products-horizontal-catalog">
+          <!-- Populated dynamically via JS with 5 horizontal rows -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Order Tracker Section -->
+    <section class="container" id="orders-tracker" style="margin-bottom: 80px;">
+      <div class="feature-box" style="padding: 40px; display: block; background: #ffffff;">
+        <span class="section-label">Live Delivery Status</span>
+        <h2 style="font-size: 1.6rem; margin-bottom: 12px; color: var(--accent-black);">Track Your Order</h2>
+        <p style="color: var(--text-secondary); margin-bottom: 22px;">Enter your Order ID (e.g., MF-8921) or phone number to track live delivery status:</p>
+        
+        <div style="display: flex; gap: 12px; max-width: 520px; flex-wrap: wrap;">
+          <input type="text" id="track-order-input" class="form-input" style="flex: 1;" placeholder="Order ID (e.g. MF-8921) or 03001234567">
+          <button class="btn-primary" id="track-order-btn" style="padding: 12px 24px;">Track Now</button>
+        </div>
+        <div id="tracking-result-box" style="margin-top: 20px; display: none;"></div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Slide-over Cart Drawer -->
+  <div class="cart-drawer-overlay" id="cart-drawer-overlay">
+    <div class="cart-drawer" id="cart-drawer">
+      <div class="cart-header">
+        <h3 class="cart-title">Shopping Bag (<span id="cart-header-count">0</span>)</h3>
+        <button class="close-btn" id="close-cart-btn" aria-label="Close Bag">&times;</button>
+      </div>
+
+      <div class="cart-items-container" id="cart-items-list">
+        <!-- Rendered via JS -->
+      </div>
+
+      <div class="cart-footer" id="cart-footer-box">
+        <div class="summary-row">
+          <span>Subtotal</span>
+          <span id="cart-subtotal" style="font-family: var(--font-heading); font-weight: 700;">Rs. 0</span>
+        </div>
+        <div class="summary-row">
+          <span>Nationwide Express Courier</span>
+          <span id="cart-shipping-fee" style="font-family: var(--font-heading); font-weight: 700;">Rs. 250</span>
+        </div>
+        <div class="summary-row total-row">
+          <span>Estimated Total</span>
+          <span id="cart-total-payable" style="color: var(--accent-black);">Rs. 0</span>
+        </div>
+        <button class="btn-checkout" id="proceed-checkout-btn">
+          <span>Proceed to Checkout ➔</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Checkout Modal -->
+  <div class="modal-overlay" id="checkout-modal-overlay">
+    <div class="modal-box">
+      <div class="modal-header">
+        <h3 class="modal-title">Complete Your Order</h3>
+        <button class="close-btn" id="close-checkout-modal-btn">&times;</button>
+      </div>
+      <div class="modal-body">
+        <form id="checkout-form">
+          <div class="form-group">
+            <label class="form-label" for="customer-name">Full Name *</label>
+            <input type="text" id="customer-name" class="form-input" placeholder="Muhammad Ali" required>
+          </div>
+
+          <div class="form-grid-2">
+            <div class="form-group">
+              <label class="form-label" for="customer-phone">WhatsApp / Contact Number *</label>
+              <input type="tel" id="customer-phone" class="form-input" placeholder="0300 1234567" required>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="customer-city">City *</label>
+              <select id="customer-city" class="form-select" required>
+                <option value="Karachi">Karachi</option>
+                <option value="Lahore">Lahore</option>
+                <option value="Islamabad">Islamabad</option>
+                <option value="Rawalpindi">Rawalpindi</option>
+                <option value="Faisalabad">Faisalabad</option>
+                <option value="Multan">Multan</option>
+                <option value="Peshawar">Peshawar</option>
+                <option value="Quetta">Quetta</option>
+                <option value="Sialkot">Sialkot</option>
+                <option value="Hyderabad">Hyderabad</option>
+                <option value="Gujranwala">Gujranwala</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="customer-address">Delivery Address *</label>
+            <textarea id="customer-address" class="form-textarea" rows="2" placeholder="House / Flat No, Street, Sector, Area" required></textarea>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px;">
+              <span>Select Payment Method *</span>
+              <span style="font-size: 0.74rem; color: var(--accent-green); font-weight: 800; text-transform: none;">✓ 100% Online Card Payment (Meezan Bank Ltd.)</span>
+            </label>
+
+            <!-- Custom Print Policy Notice -->
+            <div id="custom-print-payment-alert" style="display: none; background: #ecfdf5; border: 1.5px solid #a7f3d0; border-radius: 8px; padding: 12px 14px; margin-bottom: 14px; font-size: 0.82rem; color: #065f46; line-height: 1.5;">
+              <div style="display: flex; align-items: flex-start; gap: 8px;">
+                <span style="font-size: 1.1rem; line-height: 1;">✨</span>
+                <div>
+                  <strong>Meezan Bank Card Gateway:</strong><br>
+                  Instant card checkout with direct automated settlement to Meezan Bank Ltd. Account #02010108920192.
+                </div>
+              </div>
+            </div>
+
+            <div class="payment-options-3" id="payment-tier-group" style="grid-template-columns: 1fr 1fr;">
+              <!-- Option 1: Full Online Payment (100% Card Checkout) -->
+              <div class="payment-tier-card active" id="pay-full-advance" data-method="full_advance">
+                <div class="tier-info">
+                  <div style="display: flex; align-items: center; gap: 8px;">
+                    <span class="payment-card-title">💳 100% Full Card Payment</span>
+                    <span class="tier-badge best" id="badge-full-status">Instant Meezan Checkout</span>
+                  </div>
+                  <span class="payment-card-sub" id="sub-full-desc">Pay 100% online now via Debit/Credit Card (Zero Cash on Delivery)</span>
+                </div>
+                <div class="tier-price" id="tier-full-price">Rs. 0</div>
+              </div>
+
+              <!-- Option 2: 50% Card Booking Deposit -->
+              <div class="payment-tier-card" id="pay-half-advance" data-method="half_advance">
+                <div class="tier-info">
+                  <div style="display: flex; align-items: center; gap: 8px;">
+                    <span class="payment-card-title">⚡ 50% Card Deposit Booking</span>
+                    <span class="tier-badge popular" id="badge-half-status">50% Advance Online</span>
+                  </div>
+                  <span class="payment-card-sub" id="sub-half-desc">Pay 50% advance now via Card to begin custom printing</span>
+                </div>
+                <div class="tier-price" id="tier-half-price">Rs. 0</div>
+              </div>
+            </div>
+
+            <!-- Dynamic Price & Split Breakdown -->
+            <div class="payment-breakdown-box" id="payment-breakdown-box">
+              <div class="breakdown-row total-highlight" style="margin-bottom: 12px;">
+                <span id="breakdown-plan-title" style="font-weight: 800; font-size: 0.95rem;">Total Payable Amount:</span>
+                <strong id="breakdown-total-payable" style="font-size: 1.3rem; color: var(--accent-black);">Rs. 0</strong>
+              </div>
+              <div class="breakdown-split-bar" id="breakdown-split-bar" style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px;">
+                <div class="split-col advance-col" style="background: #eff6ff; border: 1.5px solid #bfdbfe; padding: 10px 14px; border-radius: 8px;">
+                  <span class="split-label" style="font-size: 0.76rem; font-weight: 700; color: #1e40af; display: block; margin-bottom: 4px;">💳 Pay via Card to Meezan Bank:</span>
+                  <span class="split-val" id="split-advance-amount" style="font-size: 1.15rem; font-weight: 900; color: #1e3a8a;">Rs. 0</span>
+                </div>
+                <div class="split-col cod-col" style="background: #f0fdf4; border: 1.5px solid #bbf7d0; padding: 10px 14px; border-radius: 8px;">
+                  <span class="split-label" style="font-size: 0.76rem; font-weight: 700; color: #15803d; display: block; margin-bottom: 4px;">💵 Doorstep Cash to Collect:</span>
+                  <span class="split-val" id="split-cod-amount" style="font-size: 1.15rem; font-weight: 900; color: #166534;">Rs. 0 (Zero COD)</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Online Payment Official Card Gateway (Meezan Bank Ltd. Direct Settlement) -->
+            <div class="bank-details-card" id="bank-details-card">
+              <!-- Official Meezan Bank Merchant Banner -->
+              <div style="background: linear-gradient(135deg, #064e3b 0%, #065f46 50%, #047857 100%); border-radius: 12px; padding: 16px 18px; color: #ffffff; margin-bottom: 14px; box-shadow: 0 4px 16px rgba(5, 150, 105, 0.2); position: relative; overflow: hidden;">
+                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;">
+                  <div style="display: flex; align-items: center; gap: 10px;">
+                    <span style="font-size: 1.4rem;">🏛️</span>
+                    <div>
+                      <strong style="font-size: 0.95rem; letter-spacing: 0.5px; text-transform: uppercase; display: block;">Meezan Bank Merchant Gateway</strong>
+                      <span style="font-size: 0.72rem; color: #a7f3d0; font-weight: 600;">Islamic Banking Instant Settlement Engine</span>
+                    </div>
+                  </div>
+                  <span style="font-size: 0.7rem; background: rgba(255,255,255,0.2); backdrop-filter: blur(4px); border: 1px solid rgba(255,255,255,0.3); padding: 3px 10px; border-radius: 99px; font-weight: 800; letter-spacing: 0.5px;">
+                    🔒 3D SECURE
+                  </span>
+                </div>
+
+                <div style="background: rgba(0, 0, 0, 0.22); border-radius: 8px; padding: 10px 14px; margin-top: 8px; display: flex; justify-content: space-between; align-items: center; font-size: 0.78rem;">
+                  <div>
+                    <span style="color: #a7f3d0; font-size: 0.68rem; display: block; text-transform: uppercase; letter-spacing: 0.5px;">Merchant Settlement Account:</span>
+                    <strong style="font-size: 0.85rem; color: #ffffff;">Meezan Bank Ltd. • A/C: 02010108920192</strong>
+                    <div style="font-size: 0.7rem; color: #d1fae5; margin-top: 1px;">Title: <strong>MF Store</strong> (IBAN: PK53MEZN0002010108920192)</div>
+                  </div>
+                  <div style="text-align: right;">
+                    <span style="font-size: 0.66rem; color: #a7f3d0; display: block;">Accepted Cards:</span>
+                    <span style="font-size: 0.8rem; font-weight: 800; letter-spacing: 0.5px;">VISA • MASTERCARD • PAYPAK</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Card Input Entry Form -->
+              <div id="card-entry-form-container" style="background: #ffffff; border: 1.5px solid #cbd5e1; border-radius: 12px; padding: 18px; box-shadow: 0 2px 10px rgba(0,0,0,0.04);">
+                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 14px; border-bottom: 1px solid #f1f5f9; padding-bottom: 10px;">
+                  <strong style="font-size: 0.86rem; color: #0f172a; text-transform: uppercase; letter-spacing: 0.5px;">
+                    💳 Step 1: Add Debit / Credit Card
+                  </strong>
+                  <div style="display: flex; gap: 6px; align-items: center;">
+                    <span class="card-brand-pill" id="card-brand-badge" style="font-size: 0.7rem; font-weight: 800; padding: 2px 8px; border-radius: 4px; background: #e2e8f0; color: #475569;">CARD</span>
+                  </div>
+                </div>
+
+                <!-- Cardholder Name -->
+                <div style="margin-bottom: 12px;">
+                  <label class="form-label" for="card-holder-name" style="font-size: 0.76rem; font-weight: 800; color: #334155; margin-bottom: 4px; display: block;">
+                    Cardholder Name *
+                  </label>
+                  <input type="text" id="card-holder-name" class="form-input" placeholder="e.g. MUHAMMAD ALI" style="text-transform: uppercase; font-weight: 700; font-size: 0.88rem; padding: 10px 12px;">
+                </div>
+
+                <!-- Card Number -->
+                <div style="margin-bottom: 12px;">
+                  <label class="form-label" for="card-number-input" style="font-size: 0.76rem; font-weight: 800; color: #334155; margin-bottom: 4px; display: block;">
+                    Card Number (16 Digits) *
+                  </label>
+                  <div style="position: relative;">
+                    <input type="text" id="card-number-input" class="form-input" placeholder="4214 •••• •••• ••••" maxlength="19" style="font-family: var(--font-mono); font-size: 0.95rem; font-weight: 800; letter-spacing: 1.5px; padding: 10px 12px 10px 38px;">
+                    <span id="card-icon-preview" style="position: absolute; left: 12px; top: 50%; transform: translateY(-50%); font-size: 1.1rem; pointer-events: none;">💳</span>
+                  </div>
+                </div>
+
+                <!-- Expiry & CVV Grid -->
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-bottom: 16px;">
+                  <div>
+                    <label class="form-label" for="card-expiry-input" style="font-size: 0.76rem; font-weight: 800; color: #334155; margin-bottom: 4px; display: block;">
+                      Expiry Date *
+                    </label>
+                    <input type="text" id="card-expiry-input" class="form-input" placeholder="MM / YY" maxlength="7" style="font-family: var(--font-mono); font-size: 0.9rem; font-weight: 800; text-align: center; padding: 10px 12px;">
+                  </div>
+                  <div>
+                    <label class="form-label" for="card-cvv-input" style="font-size: 0.76rem; font-weight: 800; color: #334155; margin-bottom: 4px; display: block;">
+                      CVV / Security Code *
+                    </label>
+                    <input type="password" id="card-cvv-input" class="form-input" placeholder="•••" maxlength="4" style="font-family: var(--font-mono); font-size: 0.9rem; font-weight: 800; text-align: center; padding: 10px 12px;">
+                  </div>
+                </div>
+
+                <!-- Pay Now Button -->
+                <button type="button" id="btn-process-card-pay" style="width: 100%; padding: 14px; background: linear-gradient(135deg, #059669 0%, #047857 100%); color: #ffffff; border: none; border-radius: 8px; font-size: 0.95rem; font-weight: 800; cursor: pointer; display: flex; align-items: center; justify-content: center; gap: 8px; box-shadow: 0 4px 12px rgba(5, 150, 105, 0.25); transition: all 0.2s ease;">
+                  <span id="btn-card-pay-label">🔒 Pay via Card & Deposit to Meezan Bank</span>
+                </button>
+                <div style="text-align: center; margin-top: 8px; font-size: 0.72rem; color: #64748b;">
+                  🔒 Instant deduction from card & auto-credited to Meezan Bank Account # 02010108920192
+                </div>
+              </div>
+
+              <!-- Card Payment Success Box (Displayed after payment is processed) -->
+              <div id="card-payment-success-box" style="display: none; background: #f0fdf4; border: 2px solid #10b981; border-radius: 12px; padding: 20px; box-shadow: 0 4px 16px rgba(16, 185, 129, 0.15); text-align: center;">
+                <div style="width: 50px; height: 50px; background: #dcfce7; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 10px; font-size: 26px; color: #15803d; border: 2px solid #86efac;">
+                  ✓
+                </div>
+                <h4 style="font-size: 1.15rem; font-weight: 900; color: #065f46; margin-bottom: 4px;">Payment Received at Meezan Bank!</h4>
+                <p style="font-size: 0.82rem; color: #166534; margin-bottom: 14px;">
+                  Paisa aapke card se hamare <strong>Meezan Bank Limited</strong> business account mein transfer ho gaya hai.
+                </p>
+
+                <div style="background: #ffffff; border: 1px solid #bbf7d0; border-radius: 8px; padding: 12px 14px; text-align: left; font-size: 0.8rem; margin-bottom: 14px;">
+                  <div style="display: flex; justify-content: space-between; margin-bottom: 6px;">
+                    <span style="color: #64748b;">Beneficiary Account:</span>
+                    <strong style="color: #0f172a;">Meezan Bank Ltd. (02010108920192)</strong>
+                  </div>
+                  <div style="display: flex; justify-content: space-between; margin-bottom: 6px;">
+                    <span style="color: #64748b;">Account Title:</span>
+                    <strong style="color: #0f172a;">MF Store</strong>
+                  </div>
+                  <div style="display: flex; justify-content: space-between; margin-bottom: 6px;">
+                    <span style="color: #64748b;">Transferred Amount:</span>
+                    <strong style="color: #047857; font-size: 0.92rem;" id="success-card-amount">Rs. 0</strong>
+                  </div>
+                  <div style="display: flex; justify-content: space-between; margin-bottom: 6px;">
+                    <span style="color: #64748b;">Card Number:</span>
+                    <strong style="color: #0f172a; font-family: var(--font-mono);" id="success-card-masked">•••• •••• •••• 4214</strong>
+                  </div>
+                  <div style="display: flex; justify-content: space-between;">
+                    <span style="color: #64748b;">Meezan Auth Code:</span>
+                    <strong style="color: #1e40af; font-family: var(--font-mono);" id="success-card-auth">MBL-AUTH-892104</strong>
+                  </div>
+                </div>
+
+                <div style="background: #ecfdf5; border: 1px solid #a7f3d0; border-radius: 6px; padding: 10px 14px; font-size: 0.82rem; color: #047857; font-weight: 800; display: flex; align-items: center; justify-content: center; gap: 6px;">
+                  <span>⚡ Payment Verified! Neeche Check-out button unlock ho chuka hai.</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div style="margin-top: 24px;">
+            <button type="submit" class="btn-checkout" id="submit-order-btn" style="transition: all 0.3s ease;">
+              <span>Complete Order ➔</span>
+            </button>
+          </div>
+        </form>
+
+        <!-- Order Success View -->
+        <div id="order-success-view" class="success-box" style="display: none;">
+          <div class="success-icon">✓</div>
+          <h3 style="font-size: 1.5rem; margin-bottom: 8px; color: var(--accent-black);">Order Confirmed!</h3>
+          <p style="color: var(--text-secondary); font-size: 0.92rem; margin-bottom: 16px;">
+            Thank you! Your order has been placed and queued for production in our studio.
+          </p>
+          <div class="api-key-box" style="margin-bottom: 16px; flex-direction: column; align-items: flex-start; gap: 6px;">
+            <div style="display: flex; justify-content: space-between; width: 100%;">
+              <span>Order Number: <strong id="success-order-id">MF-8921</strong></span>
+              <span style="color: var(--accent-green); font-weight: 700;">Status: In Production</span>
+            </div>
+            <div id="success-payment-notice" style="font-size: 0.8rem; color: #475569; width: 100%; border-top: 1px dashed var(--border-subtle); padding-top: 6px; margin-top: 2px;">
+              Payment Method: <strong>Online Payment Direct Transfer</strong> (Account Title: <strong>MF Store</strong>)
+            </div>
+          </div>
+          <a id="success-whatsapp-share-btn" href="https://wa.me/923001234567" target="_blank" class="btn-primary" style="width: 100%; display: flex; justify-content: center; align-items: center; gap: 8px; margin-bottom: 12px; background: #059669; text-decoration: none; padding: 12px 18px;">
+            <span>💬 Send Order Receipt to MF Store WhatsApp</span>
+          </a>
+          <p style="font-size: 0.8rem; color: var(--text-muted); margin-bottom: 16px;">
+            Your parcel tracking number will be delivered to your WhatsApp number.
+          </p>
+          <button class="btn-secondary" id="close-success-btn" style="width: 100%;">Continue Shopping</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Product Detail & Multi-Angle Showcase Dialog Modal -->
+  <div class="modal-overlay" id="product-dialog-overlay" style="display: none;">
+    <div class="modal-box product-dialog-box">
+      <div class="modal-header" style="position: sticky; top: 0; background: #ffffff; z-index: 10; border-bottom: 1.5px solid var(--border-subtle); padding: 18px 24px;">
+        <div style="display: flex; align-items: center; gap: 10px;">
+          <span class="badge" id="dialog-cat-badge" style="background: #f1f5f9; color: #475569; font-size: 0.72rem; font-weight: 800; padding: 4px 10px; border-radius: 99px;">CATEGORY</span>
+          <h3 class="modal-title" id="dialog-product-title" style="font-size: 1.25rem; font-weight: 900; margin: 0; color: var(--accent-black);">Product Showcase</h3>
+        </div>
+        <button class="close-btn" id="close-product-dialog-btn" aria-label="Close Dialog">&times;</button>
+      </div>
+
+      <div class="modal-body product-dialog-body">
+        <!-- Column 1: Product Showcase Viewport (Front View Only) -->
+        <div class="dialog-showcase-col">
+          <div class="dialog-img-card" style="position: relative; border: 1.5px solid var(--border-subtle); border-radius: 12px; background: #f8fafc; overflow: hidden; aspect-ratio: 1/1; display: flex; align-items: center; justify-content: center;">
+            <img id="dialog-preview-img" src="" alt="Product View" style="width: 100%; height: 100%; object-fit: contain; transition: all 0.25s ease;">
+            <!-- Color Tint Overlay for blanks -->
+            <div id="dialog-color-tint" style="position: absolute; inset: 0; pointer-events: none; mix-blend-mode: multiply; z-index: 2; opacity: 0; transition: background-color 0.25s ease, opacity 0.25s ease;"></div>
+            <!-- Live Custom Jersey Name & Number Overlay (Positioned on Jersey Back) -->
+            <div id="jersey-live-preview-overlay" style="display: none; position: absolute; inset: 0; pointer-events: none; z-index: 5;">
+              <div id="jersey-overlay-name" class="jersey-patch-name">BABAR</div>
+              <div id="jersey-overlay-number" class="jersey-patch-number">56</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Column 2: Product Specs, Color, Size, & Bag Action -->
+        <div class="dialog-info-col" style="display: flex; flex-direction: column;">
+          <p id="dialog-product-desc" style="font-size: 0.86rem; color: var(--text-secondary); line-height: 1.55; margin-bottom: 16px;">
+            Product description goes here.
+          </p>
+          <!-- Custom Jersey Inputs Container -->
+          <div id="dialog-jersey-custom-container" style="display: none;"></div>
+
+          <!-- Price & Payment Tiers -->
+          <div style="background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 10px; padding: 14px; margin-bottom: 18px;">
+            <div style="display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 6px;">
+              <span style="font-size: 0.8rem; font-weight: 700; color: #475569;">Retail Price:</span>
+              <strong id="dialog-product-price" style="font-size: 1.45rem; font-weight: 900; color: var(--accent-black); font-family: var(--font-heading);">Rs. 0</strong>
+            </div>
+            <div style="font-size: 0.74rem; color: #047857; font-weight: 700; display: flex; gap: 12px; flex-wrap: wrap;">
+              <span>💳 100% Secure Card Payment</span>
+              <span>⚡ 50% Card Booking</span>
+              <span>🏛️ Meezan Bank Settlement</span>
+            </div>
+          </div>
+
+          <!-- Color Selector -->
+          <div class="picker-row" style="margin-bottom: 18px;">
+            <div class="picker-label" style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;">
+              <span style="font-size: 0.8rem; font-weight: 800; color: var(--accent-black);">SELECT COLOR:</span>
+              <strong id="dialog-selected-color-label" style="font-size: 0.82rem; color: #0f172a;">Pure White</strong>
+            </div>
+            <div class="color-dots" id="dialog-color-dots" style="display: flex; gap: 10px; flex-wrap: wrap;">
+              <!-- Populated dynamically via JS -->
+            </div>
+          </div>
+
+          <!-- Size Selector -->
+          <div class="picker-row" id="dialog-size-picker-row" style="margin-bottom: 18px;">
+            <div class="picker-label" style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;">
+              <span style="font-size: 0.8rem; font-weight: 800; color: var(--accent-black);">SELECT SIZE / SPEC:</span>
+              <span class="size-guide-link" onclick="openSizeModal()" style="font-size: 0.74rem; color: var(--accent-gold); cursor: pointer; text-decoration: underline;">Size Guide ↗</span>
+            </div>
+            <div class="size-pills" id="dialog-size-pills" style="display: flex; gap: 8px; flex-wrap: wrap;">
+              <!-- Populated dynamically via JS -->
+            </div>
+          </div>
+
+          <!-- Quantity Picker -->
+          <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 22px; padding-top: 10px; border-top: 1px dashed var(--border-subtle);">
+            <span style="font-size: 0.8rem; font-weight: 800; color: var(--accent-black);">QUANTITY:</span>
+            <div style="display: flex; align-items: center; gap: 8px; background: #f8fafc; border: 1.5px solid #cbd5e1; border-radius: 8px; padding: 4px 10px;">
+              <button type="button" id="dialog-qty-minus" style="background: none; border: none; font-size: 1.1rem; font-weight: 900; cursor: pointer; padding: 2px 8px; color: #0f172a;">-</button>
+              <span id="dialog-qty-display" style="font-size: 0.95rem; font-weight: 800; font-family: var(--font-mono); min-width: 24px; text-align: center;">1</span>
+              <button type="button" id="dialog-qty-plus" style="background: none; border: none; font-size: 1.1rem; font-weight: 900; cursor: pointer; padding: 2px 8px; color: #0f172a;">+</button>
+            </div>
+          </div>
+
+          <!-- Action Buttons -->
+          <div style="margin-top: auto;">
+            <button class="btn-primary" id="dialog-add-to-cart-btn" style="width: 100%; padding: 16px 20px; font-size: 0.95rem; font-weight: 900; display: flex; align-items: center; justify-content: center; gap: 8px; background: #0f172a; color: #fff; border-radius: 10px; cursor: pointer; box-shadow: 0 4px 12px rgba(15, 23, 42, 0.25);">
+              <span>🛒 Add to Shopping Bag</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Size Chart Modal -->
+  <div class="modal-overlay" id="size-modal-overlay">
+    <div class="modal-box" style="max-width: 500px;">
+      <div class="modal-header">
+        <h3 class="modal-title">Size Guide (Oversized Drop-Shoulder)</h3>
+        <button class="close-btn" id="close-size-modal-btn">&times;</button>
+      </div>
+      <div class="modal-body">
+        <p style="color: var(--text-secondary); font-size: 0.86rem; margin-bottom: 16px;">
+          All measurements are in inches. True-to-size oversized streetwear fit:
+        </p>
+        <table style="width: 100%; border-collapse: collapse; font-family: var(--font-mono); font-size: 0.86rem;">
+          <thead>
+            <tr style="border-bottom: 2px solid var(--accent-black); color: var(--accent-black); text-align: left;">
+              <th style="padding: 8px;">Size</th>
+              <th style="padding: 8px;">Chest (Inches)</th>
+              <th style="padding: 8px;">Length (Inches)</th>
+              <th style="padding: 8px;">Shoulder</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr style="border-bottom: 1px solid var(--border-subtle);">
+              <td style="padding: 10px 8px; font-weight: 700;">S</td>
+              <td style="padding: 10px 8px;">40"</td>
+              <td style="padding: 10px 8px;">28"</td>
+              <td style="padding: 10px 8px;">Drop Shoulder</td>
+            </tr>
+            <tr style="border-bottom: 1px solid var(--border-subtle);">
+              <td style="padding: 10px 8px; font-weight: 700;">M</td>
+              <td style="padding: 10px 8px;">42"</td>
+              <td style="padding: 10px 8px;">29"</td>
+              <td style="padding: 10px 8px;">Drop Shoulder</td>
+            </tr>
+            <tr style="border-bottom: 1px solid var(--border-subtle);">
+              <td style="padding: 10px 8px; font-weight: 700;">L</td>
+              <td style="padding: 10px 8px;">44"</td>
+              <td style="padding: 10px 8px;">30"</td>
+              <td style="padding: 10px 8px;">Drop Shoulder</td>
+            </tr>
+            <tr style="border-bottom: 1px solid var(--border-subtle);">
+              <td style="padding: 10px 8px; font-weight: 700;">XL</td>
+              <td style="padding: 10px 8px;">46"</td>
+              <td style="padding: 10px 8px;">31"</td>
+              <td style="padding: 10px 8px;">Drop Shoulder</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <!-- Customer Brand Footer -->
+  <footer style="background: var(--bg-secondary); border-top: 1px solid var(--border-subtle); padding: 50px 0 30px;">
+    <div class="container" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 32px; margin-bottom: 40px;">
+      <div>
+        <div class="brand-logo" style="margin-bottom: 14px;">
+          <div class="logo-img-wrapper" style="width: 40px; height: 40px;">
+            <img src="assets/logo.jpg" alt="MF Logo" class="logo-img">
+          </div>
+          <span class="brand-title" style="font-size: 1.2rem;">MF STORE</span>
+        </div>
+        <p style="color: var(--text-secondary); font-size: 0.88rem; line-height: 1.6;">
+          Customizer studio & complete on-demand apparel. Custom printed and delivered nationwide across Pakistan with 100% secure online card checkout.
+        </p>
+      </div>
+
+      <div>
+        <h4 style="font-size: 0.92rem; text-transform: uppercase; font-family: var(--font-heading); margin-bottom: 14px; color: var(--accent-black);">Customer Support</h4>
+        <ul style="list-style: none; font-size: 0.86rem; color: var(--text-secondary); display: flex; flex-direction: column; gap: 8px;">
+          <li><a href="#orders-tracker">Track Your Order</a></li>
+          <li><a href="javascript:void(0)" onclick="openSizeModal()">Size & Fit Guide</a></li>
+          <li><span>7-Day Return & Exchange</span></li>
+          <li><span>WhatsApp Support: Active</span></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4 style="font-size: 0.92rem; text-transform: uppercase; font-family: var(--font-heading); margin-bottom: 14px; color: var(--accent-black);">Product Categories</h4>
+        <ul style="list-style: none; font-size: 0.86rem; color: var(--text-secondary); display: flex; flex-direction: column; gap: 8px;">
+          <li><a href="#customizer-studio">White T-Shirt Studio</a></li>
+          <li><a href="#customizer-studio">Mug, Cup & Bottle Studio</a></li>
+          <li><a href="#catalog">Hoodies & Sweatshirts</a></li>
+          <li><a href="#catalog">Tote Bags & Caps</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4 style="font-size: 0.92rem; text-transform: uppercase; font-family: var(--font-heading); margin-bottom: 14px; color: var(--accent-black);">Merchant Access</h4>
+        <p style="font-size: 0.84rem; color: var(--text-muted); margin-bottom: 10px;">
+          Store management & automated fulfillment portal:
+        </p>
+        <a href="admin.html" class="btn-secondary" style="padding: 8px 16px; font-size: 0.8rem; display: inline-flex;">
+          <span>Merchant Dashboard</span>
+        </a>
+      </div>
+    </div>
+
+    <div class="container" style="border-top: 1px solid var(--border-subtle); padding-top: 20px; display: flex; justify-content: space-between; align-items: center; font-size: 0.78rem; color: var(--text-muted); flex-wrap: wrap; gap: 10px;">
+      <span>© 2026 MF STORE. All rights reserved.</span>
+      <span>Karachi • Lahore • Islamabad • Nationwide Express Shipping</span>
+    </div>
+  </footer>
+
+  <!-- Toast Container -->
+  <div class="toast-container" id="toast-container"></div>
+
+  <script src="app.js?v=6.0"></script>
+</body>
+</html>

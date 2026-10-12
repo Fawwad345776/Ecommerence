@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="cyberGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00f0ff"/>
+      <stop offset="50%" stop-color="#ff0055"/>
+      <stop offset="100%" stop-color="#ffe600"/>
+    </linearGradient>
+    <linearGradient id="glowGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ff0055"/>
+      <stop offset="100%" stop-color="#7000ff"/>
+    </linearGradient>
+  </defs>
+  <!-- Outer Tech Ring -->
+  <circle cx="250" cy="250" r="230" fill="none" stroke="url(#cyberGrad)" stroke-width="4" stroke-dasharray="16 8"/>
+  <circle cx="250" cy="250" r="215" fill="none" stroke="#00f0ff" stroke-width="1.5" opacity="0.6"/>
+  
+  <!-- Cyber Crosshairs & Tech Marks -->
+  <line x1="250" y1="5" x2="250" y2="35" stroke="#00f0ff" stroke-width="3"/>
+  <line x1="250" y1="465" x2="250" y2="495" stroke="#00f0ff" stroke-width="3"/>
+  <line x1="5" y1="250" x2="35" y2="250" stroke="#00f0ff" stroke-width="3"/>
+  <line x1="465" y1="250" x2="495" y2="250" stroke="#00f0ff" stroke-width="3"/>
+  
+  <!-- Center Hexagon / Shield -->
+  <polygon points="250,75 395,155 395,335 250,415 105,335 105,155" fill="#0d0e15" stroke="url(#cyberGrad)" stroke-width="5"/>
+  
+  <!-- Inner Circuit Grid & Mecha Core -->
+  <path d="M140,200 L250,135 L360,200 L360,300 L250,365 L140,300 Z" fill="none" stroke="#ff0055" stroke-width="2" opacity="0.7"/>
+  <polygon points="250,165 315,205 315,285 250,325 185,285 185,205" fill="url(#glowGrad)"/>
+  
+  <!-- Kanji / Graphic Silhouette -->
+  <text x="250" y="260" font-family="'Impact', 'Arial Black', sans-serif" font-size="70" fill="#ffffff" text-anchor="middle" font-weight="900" letter-spacing="4">東京</text>
+  <text x="250" y="295" font-family="'Arial Black', sans-serif" font-size="16" fill="#00f0ff" text-anchor="middle" letter-spacing="8" font-weight="bold">CYBERPUNK</text>
+
+  <!-- Tech Badges -->
+  <text x="250" y="125" font-family="'Courier New', monospace" font-size="13" fill="#00f0ff" text-anchor="middle" letter-spacing="4" font-weight="bold">SYSTEM ACTIVE // 2099</text>
+  <text x="250" y="385" font-family="'Courier New', monospace" font-size="12" fill="#ffe600" text-anchor="middle" letter-spacing="5" font-weight="bold">[ NEO-SHADOW CORPS ]</text>
+</svg>

@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="100%" height="100%">
+  <!-- Flame Streetwear Skull Motif -->
+  <!-- Crossbones background -->
+  <g stroke="#ffffff" stroke-width="18" stroke-linecap="round">
+    <line x1="100" y1="100" x2="400" y2="400"/>
+    <line x1="400" y1="100" x2="100" y2="400"/>
+  </g>
+  <g stroke="#dc2626" stroke-width="8" stroke-linecap="round">
+    <line x1="100" y1="100" x2="400" y2="400"/>
+    <line x1="400" y1="100" x2="100" y2="400"/>
+  </g>
+
+  <!-- Skull Silhouette -->
+  <path d="M150,220 C150,130 190,90 250,90 C310,90 350,130 350,220 C350,270 330,290 310,310 L310,360 L190,360 L190,310 C170,290 150,270 150,220 Z" fill="#09090b" stroke="#ffffff" stroke-width="6"/>
+  
+  <!-- Eyes -->
+  <polygon points="190,210 225,235 200,265" fill="#ef4444"/>
+  <polygon points="310,210 275,235 300,265" fill="#ef4444"/>
+  <!-- Nose cavity -->
+  <polygon points="250,270 240,300 260,300" fill="#ffffff"/>
+  
+  <!-- Teeth -->
+  <g fill="#ffffff">
+    <rect x="205" y="325" width="14" height="28" rx="3"/>
+    <rect x="225" y="325" width="14" height="28" rx="3"/>
+    <rect x="245" y="325" width="14" height="28" rx="3"/>
+    <rect x="265" y="325" width="14" height="28" rx="3"/>
+    <rect x="285" y="325" width="14" height="28" rx="3"/>
+  </g>
+
+  <!-- Flames above head -->
+  <path d="M220,100 Q200,40 230,20 Q240,60 250,40 Q265,10 280,30 Q275,70 290,100 Z" fill="#f97316"/>
+  <path d="M235,90 Q240,60 250,45 Q260,65 265,90 Z" fill="#fde047"/>
+
+  <!-- Streetwear Branding -->
+  <text x="250" y="420" font-family="'Impact', 'Arial Black', sans-serif" font-size="34" fill="#ffffff" text-anchor="middle" letter-spacing="4">NEVER SURRENDER</text>
+  <text x="250" y="450" font-family="'Courier New', monospace" font-size="14" fill="#ef4444" text-anchor="middle" letter-spacing="8">[ MF REBEL DIVISION ]</text>
+</svg>

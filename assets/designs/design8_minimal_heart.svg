@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="100%" height="100%">
+  <!-- Minimalist Fine-Line Butterfly Heart & Aesthetic Quote -->
+  <defs>
+    <linearGradient id="roseGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f43f5e"/>
+      <stop offset="100%" stop-color="#ec4899"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Fine Line Heart -->
+  <path d="M250,330 C200,280 140,220 140,165 C140,120 175,90 215,90 C235,90 245,100 250,110 C255,100 265,90 285,90 C325,90 360,120 360,165 C360,220 300,280 250,330 Z" fill="none" stroke="url(#roseGrad)" stroke-width="4" stroke-linecap="round"/>
+
+  <!-- Butterfly Wings Emerging from Heart -->
+  <path d="M250,190 C210,130 110,130 110,210 C110,270 200,250 250,210 Z" fill="none" stroke="#f43f5e" stroke-width="2.5" stroke-dasharray="6 4"/>
+  <path d="M250,190 C290,130 390,130 390,210 C390,270 300,250 250,210 Z" fill="none" stroke="#f43f5e" stroke-width="2.5" stroke-dasharray="6 4"/>
+
+  <!-- Inner Sparkles & Stars -->
+  <g fill="#fb7185">
+    <polygon points="250,140 253,148 261,151 253,154 250,162 247,154 239,151 247,148"/>
+    <polygon points="190,170 192,176 198,178 192,180 190,186 188,180 182,178 188,176"/>
+    <polygon points="310,170 312,176 318,178 312,180 310,186 308,180 302,178 308,176"/>
+  </g>
+
+  <!-- Aesthetic Typography -->
+  <text x="250" y="390" font-family="'Helvetica Neue', sans-serif" font-size="28" fill="#ffffff" text-anchor="middle" font-weight="800" letter-spacing="6">SELF LOVE CLUB</text>
+  <text x="250" y="425" font-family="'Courier New', monospace" font-size="13" fill="#fb7185" text-anchor="middle" letter-spacing="6">PROTECT YOUR ENERGY // 2026</text>
+</svg>

@@ -1,0 +1,15 @@
+{
+  "rules": {
+    "pricing_rules": {
+      ".read": true,
+      ".write": "newData.hasChildren(['full_advance_profit', 'half_advance_profit', 'cod_profit'])"
+    },
+    "orders": {
+      ".read": true,
+      "$order_id": {
+        ".write": "!data.exists()",
+        ".validate": "newData.hasChildren(['orderId', 'total'])"
+      }
+    }
+  }
+}

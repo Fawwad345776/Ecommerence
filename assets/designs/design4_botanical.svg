@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="100%" height="100%">
+  <!-- Minimalist Fine-Line Botanical Art -->
+  <circle cx="250" cy="250" r="220" fill="none" stroke="#22c55e" stroke-width="2" opacity="0.4"/>
+  <circle cx="250" cy="250" r="210" fill="none" stroke="#15803d" stroke-width="1"/>
+
+  <!-- Aesthetic Sun / Moon Arc -->
+  <circle cx="250" cy="210" r="85" fill="#fef08a" opacity="0.25"/>
+  <path d="M250,110 A 100 100 0 0 1 250 310 A 85 85 0 0 0 250 110 Z" fill="#22c55e" opacity="0.35"/>
+
+  <!-- Delicate Floral Stems & Leaves -->
+  <g fill="none" stroke="#16a34a" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+    <!-- Main stem -->
+    <path d="M250,380 C240,320 260,260 250,160"/>
+    <!-- Leaves -->
+    <path d="M248,320 C220,310 200,285 205,260 C225,275 240,295 248,320 Z" fill="#4ade80" fill-opacity="0.25"/>
+    <path d="M252,290 C280,280 295,255 290,230 C270,245 258,265 252,290 Z" fill="#4ade80" fill-opacity="0.25"/>
+    <path d="M249,240 C225,230 215,205 220,185 C235,198 245,218 249,240 Z" fill="#4ade80" fill-opacity="0.25"/>
+    <path d="M251,200 C270,190 280,170 275,150 C260,160 253,178 251,200 Z" fill="#4ade80" fill-opacity="0.25"/>
+    <!-- Top delicate bud -->
+    <circle cx="250" cy="155" r="6" fill="#86efac"/>
+  </g>
+
+  <!-- Elegant Serif Typography -->
+  <text x="250" y="420" font-family="'Georgia', serif" font-size="28" fill="#15803d" text-anchor="middle" letter-spacing="6" font-style="italic">Moments of Calm</text>
+  <text x="250" y="445" font-family="'Courier New', monospace" font-size="12" fill="#166534" text-anchor="middle" letter-spacing="8">BOTANICAL STUDIO // NATURE</text>
+</svg>

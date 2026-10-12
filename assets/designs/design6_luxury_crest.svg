@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="100%" height="100%">
+  <!-- Gold Heraldic Luxury Monogram Crest -->
+  <defs>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fef08a"/>
+      <stop offset="40%" stop-color="#d97706"/>
+      <stop offset="70%" stop-color="#b45309"/>
+      <stop offset="100%" stop-color="#fbbf24"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Laurel Wreath -->
+  <g fill="none" stroke="url(#goldGrad)" stroke-width="3" stroke-linecap="round">
+    <!-- Left Wreath branch -->
+    <path d="M140,320 C100,240 110,160 160,110"/>
+    <!-- Left Leaves -->
+    <path d="M125,280 C110,270 115,250 130,255" fill="url(#goldGrad)"/>
+    <path d="M115,230 C98,220 102,200 120,208" fill="url(#goldGrad)"/>
+    <path d="M118,180 C105,168 112,150 128,160" fill="url(#goldGrad)"/>
+    <path d="M135,135 C125,120 138,105 150,120" fill="url(#goldGrad)"/>
+
+    <!-- Right Wreath branch -->
+    <path d="M360,320 C400,240 390,160 340,110"/>
+    <!-- Right Leaves -->
+    <path d="M375,280 C390,270 385,250 370,255" fill="url(#goldGrad)"/>
+    <path d="M385,230 C402,220 398,200 380,208" fill="url(#goldGrad)"/>
+    <path d="M382,180 C395,168 388,150 372,160" fill="url(#goldGrad)"/>
+    <path d="M365,135 C375,120 362,105 350,120" fill="url(#goldGrad)"/>
+  </g>
+
+  <!-- Crown at top -->
+  <g transform="translate(250, 95)" fill="url(#goldGrad)">
+    <polygon points="0,-35 18,-15 35,-35 25,0 -25,0 -35,-35 -18,-15"/>
+    <circle cx="-35" cy="-38" r="4"/>
+    <circle cx="0" cy="-38" r="4"/>
+    <circle cx="35" cy="-38" r="4"/>
+    <rect x="-24" y="2" width="48" height="6" rx="2"/>
+  </g>
+
+  <!-- Center Shield -->
+  <path d="M180,140 L320,140 C320,250 250,300 250,300 C250,300 180,250 180,140 Z" fill="#0f172a" stroke="url(#goldGrad)" stroke-width="4"/>
+
+  <!-- Monogram MF inside Shield -->
+  <text x="250" y="240" font-family="'Times New Roman', 'Cinzel', serif" font-size="78" fill="url(#goldGrad)" text-anchor="middle" font-weight="bold" letter-spacing="2">MF</text>
+
+  <!-- Luxury Ribbon & Banner -->
+  <path d="M120,350 L380,350 L360,390 L140,390 Z" fill="url(#goldGrad)"/>
+  <text x="250" y="377" font-family="'Arial Black', sans-serif" font-size="16" fill="#0f172a" text-anchor="middle" letter-spacing="5" font-weight="900">HAUTE COUTURE</text>
+
+  <text x="250" y="425" font-family="'Georgia', serif" font-size="14" fill="#fbbf24" text-anchor="middle" letter-spacing="8" font-style="italic">ATELIER PRIVÉ // EST. 2026</text>
+</svg>

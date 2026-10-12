@@ -1,0 +1,49 @@
+{
+  "categories": {
+    "tees": {
+      "name": "T-Shirts",
+      "cod_profit": 800,
+      "half_advance_profit": 600,
+      "full_advance_profit": 500
+    },
+    "hoodies": {
+      "name": "Hoodies",
+      "cod_profit": 1000,
+      "half_advance_profit": 800,
+      "full_advance_profit": 600
+    },
+    "mugs": {
+      "name": "Cups & Mugs",
+      "cod_profit": 650,
+      "half_advance_profit": 500,
+      "full_advance_profit": 400
+    },
+    "caps": {
+      "name": "Caps",
+      "cod_profit": 650,
+      "half_advance_profit": 500,
+      "full_advance_profit": 400
+    },
+    "diaries": {
+      "name": "Notebooks",
+      "cod_profit": 650,
+      "half_advance_profit": 500,
+      "full_advance_profit": 400
+    },
+    "laptop-bags": {
+      "name": "Laptop Bags",
+      "cod_profit": 1000,
+      "half_advance_profit": 800,
+      "full_advance_profit": 600
+    }
+  },
+  "cod_profit": 800,
+  "half_advance_profit": 600,
+  "full_advance_profit": 500,
+  "bank_name": "Meezan Bank",
+  "bank_account_number": "02010108920192",
+  "wallet_name": "Easypaisa / JazzCash",
+  "wallet_account_number": "03001234567",
+  "account_title": "MF Store",
+  "last_updated": "2026-10-11T10:18:00.000Z"
+}

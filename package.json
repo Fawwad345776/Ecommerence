@@ -1,0 +1,20 @@
+{
+  "name": "ecommerence-mf-store",
+  "version": "1.0.0",
+  "description": "MF STORE — Luxury Custom Apparel & Merchandise E-Commerce Platform with Meezan Bank Card Gateway & Admin Dashboard",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "keywords": [
+    "ecommerce",
+    "custom-apparel",
+    "merchandise",
+    "meezan-bank",
+    "online-store",
+    "admin-dashboard"
+  ],
+  "author": "Fawwad Shamim",
+  "license": "ISC"
+}

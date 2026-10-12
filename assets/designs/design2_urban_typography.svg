@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="100%" height="100%">
+  <defs>
+    <style>
+      .bold-text { font-family: 'Helvetica Neue', 'Arial Black', sans-serif; font-weight: 900; }
+      .mono-text { font-family: 'Courier New', monospace; font-weight: 700; }
+    </style>
+  </defs>
+  <!-- Frame Box -->
+  <rect x="25" y="25" width="450" height="450" fill="none" stroke="#ffffff" stroke-width="6"/>
+  <rect x="35" y="35" width="430" height="430" fill="none" stroke="#111111" stroke-width="2"/>
+  
+  <!-- Corner Tech Crosses -->
+  <path d="M45,45 L65,45 M55,35 L55,55" stroke="#ffffff" stroke-width="3"/>
+  <path d="M435,45 L455,45 M445,35 L445,55" stroke="#ffffff" stroke-width="3"/>
+  <path d="M45,455 L65,455 M55,445 L55,465" stroke="#ffffff" stroke-width="3"/>
+  <path d="M435,455 L455,455 M445,445 L445,465" stroke="#ffffff" stroke-width="3"/>
+
+  <!-- Top Header Subtitle -->
+  <text x="55" y="85" class="mono-text" font-size="14" fill="#ffffff" letter-spacing="6">ISSUE NO. 04 / GLOBAL EDITION</text>
+  <line x1="55" y1="100" x2="445" y2="100" stroke="#ffffff" stroke-width="2"/>
+
+  <!-- Main Giant Typography -->
+  <text x="55" y="175" class="bold-text" font-size="64" fill="#ffffff" letter-spacing="1">URBAN</text>
+  <text x="55" y="240" class="bold-text" font-size="64" fill="#ffffff" letter-spacing="1">ARCHIVE</text>
+
+  <!-- Accent Orange Highlighting Bar -->
+  <rect x="55" y="260" width="220" height="8" fill="#ff4d00"/>
+  
+  <text x="55" y="300" class="bold-text" font-size="20" fill="#ff4d00" letter-spacing="4">LIMITED STREETWEAR LAB</text>
+  <text x="55" y="330" class="mono-text" font-size="13" fill="#cccccc" letter-spacing="3">TOKYO // LONDON // NEW YORK // LAHORE</text>
+  <text x="55" y="355" class="mono-text" font-size="11" fill="#999999" letter-spacing="2">AUTHENTIC MERCHANDISE (C) 2026 MF STORE</text>
+
+  <!-- Bottom Stylized Barcode -->
+  <g transform="translate(55, 385)">
+    <rect x="0" y="0" width="5" height="40" fill="#ffffff"/>
+    <rect x="8" y="0" width="3" height="40" fill="#ffffff"/>
+    <rect x="14" y="0" width="7" height="40" fill="#ffffff"/>
+    <rect x="25" y="0" width="4" height="40" fill="#ffffff"/>
+    <rect x="33" y="0" width="9" height="40" fill="#ffffff"/>
+    <rect x="46" y="0" width="3" height="40" fill="#ffffff"/>
+    <rect x="53" y="0" width="6" height="40" fill="#ffffff"/>
+    <rect x="63" y="0" width="4" height="40" fill="#ffffff"/>
+    <rect x="71" y="0" width="10" height="40" fill="#ffffff"/>
+    <rect x="85" y="0" width="4" height="40" fill="#ffffff"/>
+    <rect x="93" y="0" width="7" height="40" fill="#ffffff"/>
+    <rect x="104" y="0" width="5" height="40" fill="#ffffff"/>
+    <rect x="113" y="0" width="3" height="40" fill="#ffffff"/>
+    <rect x="120" y="0" width="8" height="40" fill="#ffffff"/>
+    <rect x="132" y="0" width="4" height="40" fill="#ffffff"/>
+    <rect x="140" y="0" width="7" height="40" fill="#ffffff"/>
+    <text x="0" y="55" font-family="monospace" font-size="11" fill="#ffffff" letter-spacing="3">9 780201 37962</text>
+  </g>
+</svg>
