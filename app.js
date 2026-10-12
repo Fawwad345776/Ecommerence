@@ -53,11 +53,11 @@ const PRODUCTS = [
     "colors": [
       {
         "name": "Pakistan Green",
-        "hex": "#15803d"
+        "hex": "#047857"
       },
       {
         "name": "Onyx Black",
-        "hex": "#111216"
+        "hex": "#0f172a"
       },
       {
         "name": "Pure White",
@@ -96,11 +96,11 @@ const PRODUCTS = [
       },
       {
         "name": "Onyx Black",
-        "hex": "#111216"
+        "hex": "#0f172a"
       },
       {
         "name": "Pakistan Green",
-        "hex": "#15803d"
+        "hex": "#047857"
       }
     ],
     "sizes": [
@@ -132,18 +132,13 @@ const PRODUCTS = [
       {
         "name": "Pakistan Green",
         "hex": "#15803d"
-      },
-      {
-        "name": "Pure White",
-        "hex": "#ffffff"
       }
     ],
     "sizes": [
       "11 oz Ceramic Mug"
     ],
     "colorImages": {
-      "Pakistan Green": "assets/trending/pk_cricket_mug.jpg",
-      "Pure White": "assets/trending/pk_cricket_mug_white.jpg"
+      "Pakistan Green": "assets/trending/pk_cricket_mug.jpg"
     }
   },
   {
@@ -162,14 +157,6 @@ const PRODUCTS = [
       {
         "name": "Forest Green",
         "hex": "#15803d"
-      },
-      {
-        "name": "Onyx Black",
-        "hex": "#111216"
-      },
-      {
-        "name": "Heather Grey",
-        "hex": "#9ca3af"
       }
     ],
     "sizes": [
@@ -180,9 +167,7 @@ const PRODUCTS = [
       "XXL"
     ],
     "colorImages": {
-      "Forest Green": "assets/trending/pk_cricket_hoodie.jpg",
-      "Onyx Black": "assets/trending/pk_cricket_hoodie_black.jpg",
-      "Heather Grey": "assets/trending/pk_cricket_hoodie_grey.jpg"
+      "Forest Green": "assets/trending/pk_cricket_hoodie.jpg"
     }
   },
   {
@@ -201,23 +186,13 @@ const PRODUCTS = [
       {
         "name": "Forest Green",
         "hex": "#15803d"
-      },
-      {
-        "name": "Onyx Black",
-        "hex": "#111216"
-      },
-      {
-        "name": "Pure White",
-        "hex": "#ffffff"
       }
     ],
     "sizes": [
       "Adjustable Strapback (One Size)"
     ],
     "colorImages": {
-      "Forest Green": "assets/trending/pk_cricket_cap.jpg",
-      "Onyx Black": "assets/trending/pk_cricket_cap_black.jpg",
-      "Pure White": "assets/trending/pk_cricket_cap_white.jpg"
+      "Forest Green": "assets/trending/pk_cricket_cap.jpg"
     }
   },
   {
@@ -236,18 +211,13 @@ const PRODUCTS = [
       {
         "name": "Executive Green",
         "hex": "#15803d"
-      },
-      {
-        "name": "Obsidian Black",
-        "hex": "#111216"
       }
     ],
     "sizes": [
       "15.6\" Padded Briefcase"
     ],
     "colorImages": {
-      "Executive Green": "assets/trending/cricket_laptop_bag.jpg",
-      "Obsidian Black": "assets/trending/cricket_laptop_bag_black.jpg"
+      "Executive Green": "assets/trending/cricket_laptop_bag.jpg"
     }
   },
   {
@@ -265,7 +235,7 @@ const PRODUCTS = [
     "colors": [
       {
         "name": "Onyx Black",
-        "hex": "#111216"
+        "hex": "#0f172a"
       },
       {
         "name": "Pure White",
@@ -273,7 +243,7 @@ const PRODUCTS = [
       },
       {
         "name": "Beige Cream",
-        "hex": "#d4b996"
+        "hex": "#f5f5dc"
       }
     ],
     "sizes": [
@@ -305,18 +275,13 @@ const PRODUCTS = [
       {
         "name": "Pure White",
         "hex": "#ffffff"
-      },
-      {
-        "name": "Glossy Black",
-        "hex": "#111216"
       }
     ],
     "sizes": [
       "11 oz Ceramic Mug"
     ],
     "colorImages": {
-      "Pure White": "assets/trending/eid_mubarak_mug.jpg",
-      "Glossy Black": "assets/trending/eid_mubarak_mug_black.jpg"
+      "Pure White": "assets/trending/eid_mubarak_mug.jpg"
     }
   },
   {
@@ -335,14 +300,6 @@ const PRODUCTS = [
       {
         "name": "Onyx Black",
         "hex": "#111216"
-      },
-      {
-        "name": "Deep Navy",
-        "hex": "#1e3a8a"
-      },
-      {
-        "name": "Forest Green",
-        "hex": "#15803d"
       }
     ],
     "sizes": [
@@ -353,9 +310,7 @@ const PRODUCTS = [
       "XXL"
     ],
     "colorImages": {
-      "Onyx Black": "assets/trending/eid_hoodie.jpg",
-      "Deep Navy": "assets/trending/eid_hoodie_navy.jpg",
-      "Forest Green": "assets/trending/eid_hoodie_green.jpg"
+      "Onyx Black": "assets/trending/eid_hoodie.jpg"
     }
   },
   {
@@ -374,23 +329,13 @@ const PRODUCTS = [
       {
         "name": "Onyx Black",
         "hex": "#111216"
-      },
-      {
-        "name": "Pure White",
-        "hex": "#ffffff"
-      },
-      {
-        "name": "Beige Khaki",
-        "hex": "#d4b996"
       }
     ],
     "sizes": [
       "Adjustable Strapback"
     ],
     "colorImages": {
-      "Onyx Black": "assets/trending/eid_cap.jpg",
-      "Pure White": "assets/trending/eid_cap_white.jpg",
-      "Beige Khaki": "assets/trending/eid_cap_beige.jpg"
+      "Onyx Black": "assets/trending/eid_cap.jpg"
     }
   },
   {
@@ -434,10 +379,6 @@ const PRODUCTS = [
       {
         "name": "Black & White Pair",
         "hex": "#111216"
-      },
-      {
-        "name": "Navy & White Pair",
-        "hex": "#1e3a8a"
       }
     ],
     "sizes": [
@@ -448,8 +389,7 @@ const PRODUCTS = [
       "XXL"
     ],
     "colorImages": {
-      "Black & White Pair": "assets/trending/couple_matching_tee.jpg",
-      "Navy & White Pair": "assets/trending/couple_matching_tee_navy.jpg"
+      "Black & White Pair": "assets/trending/couple_matching_tee.jpg"
     }
   },
   {
@@ -468,14 +408,6 @@ const PRODUCTS = [
       {
         "name": "Charcoal Black",
         "hex": "#18181b"
-      },
-      {
-        "name": "Warm Beige",
-        "hex": "#d4b996"
-      },
-      {
-        "name": "Pure White",
-        "hex": "#ffffff"
       }
     ],
     "sizes": [
@@ -486,9 +418,7 @@ const PRODUCTS = [
       "XXL"
     ],
     "colorImages": {
-      "Charcoal Black": "assets/trending/couple_soulmates_tee.jpg",
-      "Warm Beige": "assets/trending/couple_soulmates_tee_beige.jpg",
-      "Pure White": "assets/trending/couple_soulmates_tee_white.jpg"
+      "Charcoal Black": "assets/trending/couple_soulmates_tee.jpg"
     }
   },
   {
@@ -507,10 +437,6 @@ const PRODUCTS = [
       {
         "name": "Navy & White Duo",
         "hex": "#022c22"
-      },
-      {
-        "name": "Black & Pink Accent",
-        "hex": "#111216"
       }
     ],
     "sizes": [
@@ -521,8 +447,7 @@ const PRODUCTS = [
       "XXL"
     ],
     "colorImages": {
-      "Navy & White Duo": "assets/trending/couple_mr_mrs_right_tee.jpg",
-      "Black & Pink Accent": "assets/trending/couple_mr_mrs_right_tee_black_pink.jpg"
+      "Navy & White Duo": "assets/trending/couple_mr_mrs_right_tee.jpg"
     }
   },
   {
@@ -541,10 +466,6 @@ const PRODUCTS = [
       {
         "name": "White & Navy Contrast Pair",
         "hex": "#ffffff"
-      },
-      {
-        "name": "Pure Black Duo",
-        "hex": "#111216"
       }
     ],
     "sizes": [
@@ -555,8 +476,7 @@ const PRODUCTS = [
       "XXL"
     ],
     "colorImages": {
-      "White & Navy Contrast Pair": "assets/trending/couple_better_together_tee.jpg",
-      "Pure Black Duo": "assets/trending/couple_better_together_tee_black.jpg"
+      "White & Navy Contrast Pair": "assets/trending/couple_better_together_tee.jpg"
     }
   },
   {
@@ -575,14 +495,6 @@ const PRODUCTS = [
       {
         "name": "Onyx Black & White Pair",
         "hex": "#111216"
-      },
-      {
-        "name": "Both Jet Black",
-        "hex": "#000000"
-      },
-      {
-        "name": "Both Pure White",
-        "hex": "#ffffff"
       }
     ],
     "sizes": [
@@ -593,9 +505,7 @@ const PRODUCTS = [
       "XXL"
     ],
     "colorImages": {
-      "Onyx Black & White Pair": "assets/trending/couple_king_queen_tee.jpg",
-      "Both Jet Black": "assets/trending/couple_king_queen_tee_black.jpg",
-      "Both Pure White": "assets/trending/couple_king_queen_tee_white.jpg"
+      "Onyx Black & White Pair": "assets/trending/couple_king_queen_tee.jpg"
     }
   },
   {
@@ -639,10 +549,6 @@ const PRODUCTS = [
       {
         "name": "Black (King) + Grey (Queen)",
         "hex": "#111216"
-      },
-      {
-        "name": "Black (King) + White (Queen)",
-        "hex": "#374151"
       }
     ],
     "sizes": [
@@ -653,8 +559,7 @@ const PRODUCTS = [
       "XXL"
     ],
     "colorImages": {
-      "Black (King) + Grey (Queen)": "assets/trending/couple_hoodie.jpg",
-      "Black (King) + White (Queen)": "assets/trending/couple_hoodie_white.jpg"
+      "Black (King) + Grey (Queen)": "assets/trending/couple_hoodie.jpg"
     }
   },
   {
@@ -698,18 +603,13 @@ const PRODUCTS = [
       {
         "name": "Charcoal Grey",
         "hex": "#374151"
-      },
-      {
-        "name": "Onyx Black",
-        "hex": "#111216"
       }
     ],
     "sizes": [
       "15.6\" Padded Sleeve"
     ],
     "colorImages": {
-      "Charcoal Grey": "assets/trending/couple_laptop_bag.jpg",
-      "Onyx Black": "assets/trending/couple_laptop_bag_black.jpg"
+      "Charcoal Grey": "assets/trending/couple_laptop_bag.jpg"
     }
   },
   {
@@ -728,14 +628,6 @@ const PRODUCTS = [
       {
         "name": "Washed Black",
         "hex": "#1f2937"
-      },
-      {
-        "name": "Pure White",
-        "hex": "#ffffff"
-      },
-      {
-        "name": "Charcoal Grey",
-        "hex": "#374151"
       }
     ],
     "sizes": [
@@ -746,9 +638,7 @@ const PRODUCTS = [
       "XXL"
     ],
     "colorImages": {
-      "Washed Black": "assets/trending/birthday_tee.jpg",
-      "Pure White": "assets/trending/birthday_tee_white.jpg",
-      "Charcoal Grey": "assets/trending/birthday_tee_grey.jpg"
+      "Washed Black": "assets/trending/birthday_tee.jpg"
     }
   },
   {
@@ -792,14 +682,6 @@ const PRODUCTS = [
       {
         "name": "Onyx Black",
         "hex": "#111216"
-      },
-      {
-        "name": "Deep Navy",
-        "hex": "#1e3a8a"
-      },
-      {
-        "name": "Heather Grey",
-        "hex": "#9ca3af"
       }
     ],
     "sizes": [
@@ -810,9 +692,7 @@ const PRODUCTS = [
       "XXL"
     ],
     "colorImages": {
-      "Onyx Black": "assets/trending/birthday_hoodie.jpg",
-      "Deep Navy": "assets/trending/birthday_hoodie_navy.jpg",
-      "Heather Grey": "assets/trending/birthday_hoodie_grey.jpg"
+      "Onyx Black": "assets/trending/birthday_hoodie.jpg"
     }
   },
   {
@@ -831,18 +711,13 @@ const PRODUCTS = [
       {
         "name": "Onyx Black",
         "hex": "#111216"
-      },
-      {
-        "name": "Pure White",
-        "hex": "#ffffff"
       }
     ],
     "sizes": [
       "Adjustable Strapback"
     ],
     "colorImages": {
-      "Onyx Black": "assets/trending/birthday_cap.jpg",
-      "Pure White": "assets/trending/birthday_cap_white.jpg"
+      "Onyx Black": "assets/trending/birthday_cap.jpg"
     }
   },
   {
@@ -861,18 +736,13 @@ const PRODUCTS = [
       {
         "name": "Charcoal Grey",
         "hex": "#374151"
-      },
-      {
-        "name": "Midnight Navy",
-        "hex": "#1e3a8a"
       }
     ],
     "sizes": [
       "15.6\" Padded Sleeve"
     ],
     "colorImages": {
-      "Charcoal Grey": "assets/trending/birthday_laptop_bag.jpg",
-      "Midnight Navy": "assets/trending/birthday_laptop_bag_navy.jpg"
+      "Charcoal Grey": "assets/trending/birthday_laptop_bag.jpg"
     }
   },
   {
@@ -916,14 +786,6 @@ const PRODUCTS = [
       {
         "name": "Pure White",
         "hex": "#ffffff"
-      },
-      {
-        "name": "Onyx Black",
-        "hex": "#111216"
-      },
-      {
-        "name": "Deep Navy",
-        "hex": "#1e3a8a"
       }
     ],
     "sizes": [
@@ -934,9 +796,7 @@ const PRODUCTS = [
       "XXL"
     ],
     "colorImages": {
-      "Pure White": "assets/blank_tshirt_front.jpg",
-      "Onyx Black": "assets/trending/classic_tee_black.jpg",
-      "Deep Navy": "assets/trending/classic_tee_navy.jpg"
+      "Pure White": "assets/blank_tshirt_front.jpg"
     }
   },
   {
@@ -955,10 +815,6 @@ const PRODUCTS = [
       {
         "name": "Onyx Black",
         "hex": "#111216"
-      },
-      {
-        "name": "Heather Grey",
-        "hex": "#9ca3af"
       }
     ],
     "sizes": [
@@ -969,8 +825,7 @@ const PRODUCTS = [
       "XXL"
     ],
     "colorImages": {
-      "Onyx Black": "assets/product3.jpg",
-      "Heather Grey": "assets/trending/classic_hoodie_grey.jpg"
+      "Onyx Black": "assets/product3.jpg"
     }
   },
   {
@@ -988,7 +843,7 @@ const PRODUCTS = [
     "colors": [
       {
         "name": "Black & Beige Duo",
-        "hex": "#111216"
+        "hex": "#0f172a"
       },
       {
         "name": "Black & White Duo",
@@ -1023,14 +878,6 @@ const PRODUCTS = [
       {
         "name": "Onyx Black",
         "hex": "#111216"
-      },
-      {
-        "name": "Heather Grey",
-        "hex": "#9ca3af"
-      },
-      {
-        "name": "Deep Navy",
-        "hex": "#1e3a8a"
       }
     ],
     "sizes": [
@@ -1041,9 +888,7 @@ const PRODUCTS = [
       "XXL"
     ],
     "colorImages": {
-      "Onyx Black": "assets/trending/city_street_hoodie_black.jpg",
-      "Heather Grey": "assets/trending/city_street_hoodie_grey.jpg",
-      "Deep Navy": "assets/trending/city_street_hoodie_navy.jpg"
+      "Onyx Black": "assets/trending/city_street_hoodie_black.jpg"
     }
   },
   {
@@ -1062,14 +907,6 @@ const PRODUCTS = [
       {
         "name": "Mocha Brown",
         "hex": "#78350f"
-      },
-      {
-        "name": "Warm Beige",
-        "hex": "#d4b996"
-      },
-      {
-        "name": "Forest Green",
-        "hex": "#15803d"
       }
     ],
     "sizes": [
@@ -1080,9 +917,7 @@ const PRODUCTS = [
       "XXL"
     ],
     "colorImages": {
-      "Mocha Brown": "assets/trending/chai_winter_hoodie_brown.jpg",
-      "Warm Beige": "assets/trending/chai_winter_hoodie_beige.jpg",
-      "Forest Green": "assets/trending/chai_winter_hoodie_green.jpg"
+      "Mocha Brown": "assets/trending/chai_winter_hoodie_brown.jpg"
     }
   },
   {
@@ -1101,14 +936,6 @@ const PRODUCTS = [
       {
         "name": "Pure White",
         "hex": "#ffffff"
-      },
-      {
-        "name": "Onyx Black",
-        "hex": "#111216"
-      },
-      {
-        "name": "Pakistan Green",
-        "hex": "#15803d"
       }
     ],
     "sizes": [
@@ -1119,9 +946,7 @@ const PRODUCTS = [
       "XXL"
     ],
     "colorImages": {
-      "Pure White": "assets/trending/babar56_hoodie_white.jpg",
-      "Onyx Black": "assets/trending/babar56_hoodie_black.jpg",
-      "Pakistan Green": "assets/trending/babar56_hoodie_green.jpg"
+      "Pure White": "assets/trending/babar56_hoodie_white.jpg"
     }
   },
   {
@@ -1165,18 +990,13 @@ const PRODUCTS = [
       {
         "name": "Pakistan Green",
         "hex": "#15803d"
-      },
-      {
-        "name": "Pure White",
-        "hex": "#ffffff"
       }
     ],
     "sizes": [
       "11 oz Ceramic Mug"
     ],
     "colorImages": {
-      "Pakistan Green": "assets/trending/babar56_mug_green.jpg",
-      "Pure White": "assets/trending/babar56_mug_white.jpg"
+      "Pakistan Green": "assets/trending/babar56_mug_green.jpg"
     }
   },
   {
@@ -1198,7 +1018,7 @@ const PRODUCTS = [
       },
       {
         "name": "Glossy Black",
-        "hex": "#111216"
+        "hex": "#0f172a"
       }
     ],
     "sizes": [
@@ -1249,15 +1069,11 @@ const PRODUCTS = [
     "colors": [
       {
         "name": "Onyx Black",
-        "hex": "#111216"
-      },
-      {
-        "name": "Pure White",
-        "hex": "#ffffff"
+        "hex": "#0f172a"
       },
       {
         "name": "Forest Green",
-        "hex": "#15803d"
+        "hex": "#064e3b"
       }
     ],
     "sizes": [
@@ -1265,7 +1081,6 @@ const PRODUCTS = [
     ],
     "colorImages": {
       "Onyx Black": "assets/trending/babar56_cap_black.jpg",
-      "Pure White": "assets/trending/babar56_cap_white.jpg",
       "Forest Green": "assets/trending/babar56_cap_green.jpg"
     }
   },
@@ -1284,7 +1099,7 @@ const PRODUCTS = [
     "colors": [
       {
         "name": "Black (King) + White (Queen)",
-        "hex": "#111216"
+        "hex": "#0f172a"
       },
       {
         "name": "Both Jet Black",
@@ -1314,11 +1129,7 @@ const PRODUCTS = [
     "colors": [
       {
         "name": "Washed Charcoal",
-        "hex": "#374151"
-      },
-      {
-        "name": "Vintage Khaki",
-        "hex": "#d4b996"
+        "hex": "#334155"
       },
       {
         "name": "Navy Blue",
@@ -1330,7 +1141,6 @@ const PRODUCTS = [
     ],
     "colorImages": {
       "Washed Charcoal": "assets/trending/pakistan_city_cap_charcoal.jpg",
-      "Vintage Khaki": "assets/trending/pakistan_city_cap_khaki.jpg",
       "Navy Blue": "assets/trending/pakistan_city_cap_navy.jpg"
     }
   },
@@ -1349,11 +1159,11 @@ const PRODUCTS = [
     "colors": [
       {
         "name": "Onyx Black",
-        "hex": "#111216"
+        "hex": "#0f172a"
       },
       {
-        "name": "Deep Navy",
-        "hex": "#1e3a8a"
+        "name": "Pure White",
+        "hex": "#ffffff"
       }
     ],
     "sizes": [
@@ -1361,7 +1171,7 @@ const PRODUCTS = [
     ],
     "colorImages": {
       "Onyx Black": "assets/trending/truck_art_cap_black.jpg",
-      "Deep Navy": "assets/trending/truck_art_cap_blue.jpg"
+      "Pure White": "assets/trending/truck_art_cap_white.jpg"
     }
   },
   {
@@ -1380,23 +1190,13 @@ const PRODUCTS = [
       {
         "name": "Charcoal Grey",
         "hex": "#374151"
-      },
-      {
-        "name": "Obsidian Black",
-        "hex": "#111216"
-      },
-      {
-        "name": "Midnight Navy",
-        "hex": "#1e3a8a"
       }
     ],
     "sizes": [
       "15.6\" Padded Laptop Briefcase"
     ],
     "colorImages": {
-      "Charcoal Grey": "assets/trending/executive_tech_bag_grey.jpg",
-      "Obsidian Black": "assets/trending/executive_tech_bag_black.jpg",
-      "Midnight Navy": "assets/trending/executive_tech_bag_navy.jpg"
+      "Charcoal Grey": "assets/trending/executive_tech_bag_grey.jpg"
     }
   },
   {
@@ -1415,18 +1215,13 @@ const PRODUCTS = [
       {
         "name": "Chamakpatti Yellow",
         "hex": "#eab308"
-      },
-      {
-        "name": "Midnight Black",
-        "hex": "#111216"
       }
     ],
     "sizes": [
       "14\"-15.6\" Universal Laptop Sleeve"
     ],
     "colorImages": {
-      "Chamakpatti Yellow": "assets/trending/truck_art_laptop_sleeve_yellow.jpg",
-      "Midnight Black": "assets/trending/truck_art_laptop_sleeve_black.jpg"
+      "Chamakpatti Yellow": "assets/trending/truck_art_laptop_sleeve_yellow.jpg"
     }
   },
   {
@@ -1444,11 +1239,11 @@ const PRODUCTS = [
     "colors": [
       {
         "name": "Obsidian Black",
-        "hex": "#111216"
+        "hex": "#0f172a"
       },
       {
-        "name": "Deep Forest Green",
-        "hex": "#15803d"
+        "name": "Midnight Navy",
+        "hex": "#1e3a8a"
       }
     ],
     "sizes": [
@@ -1456,7 +1251,7 @@ const PRODUCTS = [
     ],
     "colorImages": {
       "Obsidian Black": "assets/trending/babar56_laptop_bag_black.jpg",
-      "Deep Forest Green": "assets/trending/babar56_laptop_bag_green.jpg"
+      "Midnight Navy": "assets/trending/babar56_laptop_bag_navy.jpg"
     }
   },
   {
@@ -1475,18 +1270,13 @@ const PRODUCTS = [
       {
         "name": "Matte Black Monogram",
         "hex": "#111216"
-      },
-      {
-        "name": "Vintage Brown Monogram",
-        "hex": "#78350f"
       }
     ],
     "sizes": [
       "15.6\" Travel Briefcase"
     ],
     "colorImages": {
-      "Matte Black Monogram": "assets/trending/king_queen_laptop_bag_black.jpg",
-      "Vintage Brown Monogram": "assets/trending/king_queen_laptop_bag_brown.jpg"
+      "Matte Black Monogram": "assets/trending/king_queen_laptop_bag_black.jpg"
     }
   },
   {
@@ -1505,10 +1295,6 @@ const PRODUCTS = [
       {
         "name": "Onyx Black",
         "hex": "#111216"
-      },
-      {
-        "name": "Harajuku Jet Black",
-        "hex": "#000000"
       }
     ],
     "sizes": [
@@ -1519,8 +1305,7 @@ const PRODUCTS = [
       "XXL"
     ],
     "colorImages": {
-      "Onyx Black": "assets/trending/fs_tokyo_cyberpunk_black.jpg",
-      "Harajuku Jet Black": "assets/trending/fs_harajuku_samurai_black.jpg"
+      "Onyx Black": "assets/trending/fs_tokyo_cyberpunk_black.jpg"
     }
   },
   {
@@ -1539,10 +1324,6 @@ const PRODUCTS = [
       {
         "name": "Forest Green",
         "hex": "#15803d"
-      },
-      {
-        "name": "Alpine Sage",
-        "hex": "#22c55e"
       }
     ],
     "sizes": [
@@ -1553,8 +1334,7 @@ const PRODUCTS = [
       "XXL"
     ],
     "colorImages": {
-      "Forest Green": "assets/trending/fs_pacific_outdoors_green.jpg",
-      "Alpine Sage": "assets/trending/fs_botanical_fern_cream.jpg"
+      "Forest Green": "assets/trending/fs_pacific_outdoors_green.jpg"
     }
   },
   {
@@ -1573,10 +1353,6 @@ const PRODUCTS = [
       {
         "name": "Pure White",
         "hex": "#ffffff"
-      },
-      {
-        "name": "Bauhaus Cream",
-        "hex": "#f1f1ee"
       }
     ],
     "sizes": [
@@ -1587,8 +1363,7 @@ const PRODUCTS = [
       "XXL"
     ],
     "colorImages": {
-      "Pure White": "assets/trending/fs_brutalist_archive_white.jpg",
-      "Bauhaus Cream": "assets/trending/fs_bauhaus_geometric_cream.jpg"
+      "Pure White": "assets/trending/fs_brutalist_archive_white.jpg"
     }
   },
   {
@@ -1607,10 +1382,6 @@ const PRODUCTS = [
       {
         "name": "Mineral Charcoal",
         "hex": "#374151"
-      },
-      {
-        "name": "Onyx Black",
-        "hex": "#111216"
       }
     ],
     "sizes": [
@@ -1621,8 +1392,7 @@ const PRODUCTS = [
       "XXL"
     ],
     "colorImages": {
-      "Mineral Charcoal": "assets/trending/fs_cyber_butterfly_charcoal.jpg",
-      "Onyx Black": "assets/trending/fs_tokyo_cyberpunk_black.jpg"
+      "Mineral Charcoal": "assets/trending/fs_cyber_butterfly_charcoal.jpg"
     }
   },
   {
@@ -1641,10 +1411,6 @@ const PRODUCTS = [
       {
         "name": "Vintage Cream",
         "hex": "#fdfbf7"
-      },
-      {
-        "name": "Pure White",
-        "hex": "#ffffff"
       }
     ],
     "sizes": [
@@ -1655,8 +1421,7 @@ const PRODUCTS = [
       "XXL"
     ],
     "colorImages": {
-      "Vintage Cream": "assets/trending/fs_monaco_motorsport_cream.jpg",
-      "Pure White": "assets/trending/fs_coffee_vinyl_white.jpg"
+      "Vintage Cream": "assets/trending/fs_monaco_motorsport_cream.jpg"
     }
   },
   {
@@ -1675,10 +1440,6 @@ const PRODUCTS = [
       {
         "name": "Midnight Navy",
         "hex": "#1e3a8a"
-      },
-      {
-        "name": "Onyx Black",
-        "hex": "#111216"
       }
     ],
     "sizes": [
@@ -1689,8 +1450,7 @@ const PRODUCTS = [
       "XXL"
     ],
     "colorImages": {
-      "Midnight Navy": "assets/trending/fs_celestial_deepspace_navy.jpg",
-      "Onyx Black": "assets/trending/fs_tokyo_cyberpunk_black.jpg"
+      "Midnight Navy": "assets/trending/fs_celestial_deepspace_navy.jpg"
     }
   },
   {
@@ -1709,10 +1469,6 @@ const PRODUCTS = [
       {
         "name": "Jet Black",
         "hex": "#000000"
-      },
-      {
-        "name": "Tokyo Black",
-        "hex": "#111216"
       }
     ],
     "sizes": [
@@ -1723,8 +1479,7 @@ const PRODUCTS = [
       "XXL"
     ],
     "colorImages": {
-      "Jet Black": "assets/trending/fs_harajuku_samurai_black.jpg",
-      "Tokyo Black": "assets/trending/fs_tokyo_cyberpunk_black.jpg"
+      "Jet Black": "assets/trending/fs_harajuku_samurai_black.jpg"
     }
   },
   {
@@ -1743,10 +1498,6 @@ const PRODUCTS = [
       {
         "name": "Bauhaus Cream",
         "hex": "#f1f1ee"
-      },
-      {
-        "name": "Pure White",
-        "hex": "#ffffff"
       }
     ],
     "sizes": [
@@ -1757,8 +1508,7 @@ const PRODUCTS = [
       "XXL"
     ],
     "colorImages": {
-      "Bauhaus Cream": "assets/trending/fs_bauhaus_geometric_cream.jpg",
-      "Pure White": "assets/trending/fs_brutalist_archive_white.jpg"
+      "Bauhaus Cream": "assets/trending/fs_bauhaus_geometric_cream.jpg"
     }
   },
   {
@@ -1777,10 +1527,6 @@ const PRODUCTS = [
       {
         "name": "Crisp White",
         "hex": "#ffffff"
-      },
-      {
-        "name": "Vintage Cream",
-        "hex": "#fdfbf7"
       }
     ],
     "sizes": [
@@ -1791,8 +1537,7 @@ const PRODUCTS = [
       "XXL"
     ],
     "colorImages": {
-      "Crisp White": "assets/trending/fs_coffee_vinyl_white.jpg",
-      "Vintage Cream": "assets/trending/fs_monaco_motorsport_cream.jpg"
+      "Crisp White": "assets/trending/fs_coffee_vinyl_white.jpg"
     }
   },
   {
@@ -1811,10 +1556,6 @@ const PRODUCTS = [
       {
         "name": "Natural Ecru",
         "hex": "#f5f5f0"
-      },
-      {
-        "name": "Forest Green",
-        "hex": "#15803d"
       }
     ],
     "sizes": [
@@ -1825,8 +1566,7 @@ const PRODUCTS = [
       "XXL"
     ],
     "colorImages": {
-      "Natural Ecru": "assets/trending/fs_botanical_fern_cream.jpg",
-      "Forest Green": "assets/trending/fs_pacific_outdoors_green.jpg"
+      "Natural Ecru": "assets/trending/fs_botanical_fern_cream.jpg"
     }
   },
   {
@@ -1845,10 +1585,6 @@ const PRODUCTS = [
       {
         "name": "Pure White",
         "hex": "#ffffff"
-      },
-      {
-        "name": "Onyx Black",
-        "hex": "#111216"
       }
     ],
     "sizes": [
@@ -1859,8 +1595,7 @@ const PRODUCTS = [
       "XXL"
     ],
     "colorImages": {
-      "Pure White": "assets/trending/fs_faiz_poetry_white.jpg",
-      "Onyx Black": "assets/trending/fs_luxury_urdu_black.jpg"
+      "Pure White": "assets/trending/fs_faiz_poetry_white.jpg"
     }
   },
   {
@@ -1879,10 +1614,6 @@ const PRODUCTS = [
       {
         "name": "Heather Grey",
         "hex": "#94a3b8"
-      },
-      {
-        "name": "Onyx Black",
-        "hex": "#111216"
       }
     ],
     "sizes": [
@@ -1893,11 +1624,10 @@ const PRODUCTS = [
       "XXL"
     ],
     "colorImages": {
-      "Heather Grey": "assets/trending/fs_synthwave_sunset_grey.jpg",
-      "Onyx Black": "assets/trending/fs_tokyo_cyberpunk_black.jpg"
+      "Heather Grey": "assets/trending/fs_synthwave_sunset_grey.jpg"
     }
   }
-];
+];;
 
 // 47 Modern Pakistani Standalone Print Badges for Studio Library
 const PK_READY_DESIGNS = [
