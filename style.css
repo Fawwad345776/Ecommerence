@@ -2824,53 +2824,6 @@ img {
 }
 
 
-/* Custom Jersey Live Name & Number Overlay */
-.jersey-patch-name {
-  position: absolute;
-  top: 26.5%;
-  left: 56.8%;
-  transform: translate(-50%, -50%);
-  width: 250px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  font-family: 'Arial Black', 'Impact', sans-serif;
-  font-size: 24px;
-  font-weight: 900;
-  color: #ffffff;
-  letter-spacing: 2.5px;
-  text-transform: uppercase;
-  background: transparent !important;
-  border: none !important;
-  box-shadow: none !important;
-  text-shadow: 0 2px 5px rgba(0,0,0,0.65);
-  pointer-events: none;
-}
-
-.jersey-patch-number {
-  position: absolute;
-  top: 48.5%;
-  left: 56.8%;
-  transform: translate(-50%, -50%);
-  width: 215px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  font-family: 'Impact', 'Arial Black', sans-serif;
-  font-size: 130px;
-  font-weight: 900;
-  color: #ffffff;
-  line-height: 1;
-  letter-spacing: 2px;
-  background: transparent !important;
-  border: none !important;
-  box-shadow: none !important;
-  text-shadow: 0 4px 10px rgba(0,0,0,0.7);
-  pointer-events: none;
-}
-
 .product-dialog-size-pill {
   padding: 8px 16px;
   border-radius: 8px;
@@ -3470,18 +3423,6 @@ img {
     max-width: 250px !important;
     margin: 0 auto !important;
     width: 100% !important;
-  }
-  /* Jersey Custom Patch Scaling on Mobile */
-  .jersey-patch-name {
-    font-size: 14px !important;
-    width: 170px !important;
-    top: 27% !important;
-    letter-spacing: 1.5px !important;
-  }
-  .jersey-patch-number {
-    font-size: 80px !important;
-    width: 140px !important;
-    top: 50% !important;
   }
   .dialog-info-col {
     padding: 0 !important;

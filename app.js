@@ -9,75 +9,6 @@
 // Covering: T-Shirts, Hoodies, Cups/Mugs, Caps, and Bags with Multi-Angle Previews & Rich Colors
 const PRODUCTS = [
   {
-    "id": "prod-custom-jersey-name-number",
-    "name": "Pakistan Official T20 Fan Jersey (Front & Back With Custom Name & Number)",
-    "theme": "cricket",
-    "category": "tees",
-    "categoryName": "Custom Player Jersey",
-    "badge": "⭐ CUSTOM NAME & NUMBER",
-    "baseCost": 990,
-    "profit": 860,
-    "retailPrice": 1850,
-    "image": "assets/trending/pk_jersey_custom_back.png",
-    "isCustomJersey": true,
-    "description": "Official Pakistan National T20 camouflage green team kit. Type your desired custom player name and jersey number for instant real-time back view preview and official athletic high-density printing.",
-    "colors": [
-      {
-        "name": "Official Camo Green",
-        "hex": "#15803d"
-      }
-    ],
-    "sizes": [
-      "S",
-      "M",
-      "L",
-      "XL",
-      "XXL"
-    ],
-    "colorImages": {
-      "Official Camo Green": "assets/trending/pk_jersey_custom_back.png"
-    }
-  },
-  {
-    "id": "prod-cricket-jersey-tee",
-    "name": "Pakistan Cricket Official '92-26 National Green Jersey Tee",
-    "theme": "cricket",
-    "category": "tees",
-    "categoryName": "National Cricket Edition",
-    "badge": "🏏 CRICKET SPECIAL",
-    "baseCost": 850,
-    "profit": 800,
-    "retailPrice": 1650,
-    "image": "assets/trending/pk_cricket_tee.jpg",
-    "description": "Official Pakistan national cricket emerald green jersey print with gold-foil crescent and crossed bats crest on 240 GSM breathable combed cotton.",
-    "colors": [
-      {
-        "name": "Pakistan Green",
-        "hex": "#047857"
-      },
-      {
-        "name": "Onyx Black",
-        "hex": "#0f172a"
-      },
-      {
-        "name": "Pure White",
-        "hex": "#ffffff"
-      }
-    ],
-    "sizes": [
-      "S",
-      "M",
-      "L",
-      "XL",
-      "XXL"
-    ],
-    "colorImages": {
-      "Pakistan Green": "assets/trending/pk_cricket_tee.jpg",
-      "Onyx Black": "assets/trending/pk_cricket_tee_black.jpg",
-      "Pure White": "assets/trending/pk_cricket_tee_white.jpg"
-    }
-  },
-  {
     "id": "prod-cricket-babar56-tee",
     "name": "Babar Azam 56 'Cover Drive King' Fan Edition Tee",
     "theme": "cricket",
@@ -93,14 +24,6 @@ const PRODUCTS = [
       {
         "name": "Pure White",
         "hex": "#ffffff"
-      },
-      {
-        "name": "Onyx Black",
-        "hex": "#0f172a"
-      },
-      {
-        "name": "Pakistan Green",
-        "hex": "#047857"
       }
     ],
     "sizes": [
@@ -111,9 +34,7 @@ const PRODUCTS = [
       "XXL"
     ],
     "colorImages": {
-      "Pure White": "assets/trending/babar56_tee.jpg",
-      "Onyx Black": "assets/trending/babar56_tee_black.jpg",
-      "Pakistan Green": "assets/trending/babar56_tee_green.jpg"
+      "Pure White": "assets/trending/babar56_tee.jpg"
     }
   },
   {
@@ -236,14 +157,6 @@ const PRODUCTS = [
       {
         "name": "Onyx Black",
         "hex": "#0f172a"
-      },
-      {
-        "name": "Pure White",
-        "hex": "#ffffff"
-      },
-      {
-        "name": "Beige Cream",
-        "hex": "#f5f5dc"
       }
     ],
     "sizes": [
@@ -254,9 +167,7 @@ const PRODUCTS = [
       "XXL"
     ],
     "colorImages": {
-      "Onyx Black": "assets/trending/eid_mubarak_tee.jpg",
-      "Pure White": "assets/trending/eid_mubarak_tee_white.jpg",
-      "Beige Cream": "assets/trending/eid_mubarak_tee_beige.jpg"
+      "Onyx Black": "assets/trending/eid_mubarak_tee.jpg"
     }
   },
   {
@@ -842,12 +753,8 @@ const PRODUCTS = [
     "description": "Premium 380 GSM thermal brushed fleece matching hoodies for husband & wife. Left hoodie in black, right in warm beige with golden Urdu calligraphy 'دو دل ایک جان'.",
     "colors": [
       {
-        "name": "Black & Beige Duo",
-        "hex": "#0f172a"
-      },
-      {
         "name": "Black & White Duo",
-        "hex": "#ffffff"
+        "hex": "#0f172a"
       }
     ],
     "sizes": [
@@ -858,8 +765,7 @@ const PRODUCTS = [
       "XXL"
     ],
     "colorImages": {
-      "Black & Beige Duo": "assets/trending/soulmates_hoodie_pair.jpg",
-      "Black & White Duo": "assets/trending/soulmates_hoodie_white.jpg"
+      "Black & White Duo": "assets/trending/soulmates_hoodie_pair.jpg"
     }
   },
   {
@@ -1013,10 +919,6 @@ const PRODUCTS = [
     "description": "Romantic moonlight poetry ceramic mug with gold crescent star and 'سنو چندا' Urdu calligraphy. Perfect bedside or chai station accessory.",
     "colors": [
       {
-        "name": "Midnight Blue",
-        "hex": "#1e3a8a"
-      },
-      {
         "name": "Glossy Black",
         "hex": "#0f172a"
       }
@@ -1025,8 +927,7 @@ const PRODUCTS = [
       "11 oz Ceramic Mug"
     ],
     "colorImages": {
-      "Midnight Blue": "assets/trending/suno_chanda_mug_blue.jpg",
-      "Glossy Black": "assets/trending/suno_chanda_mug_black.jpg"
+      "Glossy Black": "assets/trending/suno_chanda_mug_blue.jpg"
     }
   },
   {
@@ -1068,20 +969,15 @@ const PRODUCTS = [
     "description": "Structured 6-panel twill baseball cap with 3D raised embroidery of Babar Azam's iconic #56. Curved brim with antique buckle strapback.",
     "colors": [
       {
-        "name": "Onyx Black",
-        "hex": "#0f172a"
-      },
-      {
-        "name": "Forest Green",
-        "hex": "#064e3b"
+        "name": "Crisp White",
+        "hex": "#ffffff"
       }
     ],
     "sizes": [
       "Adjustable Strapback (One Size)"
     ],
     "colorImages": {
-      "Onyx Black": "assets/trending/babar56_cap_black.jpg",
-      "Forest Green": "assets/trending/babar56_cap_green.jpg"
+      "Crisp White": "assets/trending/babar56_cap_black.jpg"
     }
   },
   {
@@ -1098,20 +994,15 @@ const PRODUCTS = [
     "description": "Matching King & Queen couple caps set with raised 3D gold-thread crown embroidery. Breathable cotton eyelets and custom metal strap closure.",
     "colors": [
       {
-        "name": "Black (King) + White (Queen)",
-        "hex": "#0f172a"
-      },
-      {
-        "name": "Both Jet Black",
-        "hex": "#000000"
+        "name": "Crisp White Duo",
+        "hex": "#ffffff"
       }
     ],
     "sizes": [
       "Adjustable Strapback Pair"
     ],
     "colorImages": {
-      "Black (King) + White (Queen)": "assets/trending/king_queen_caps.jpg",
-      "Both Jet Black": "assets/trending/king_queen_caps_black.jpg"
+      "Crisp White Duo": "assets/trending/king_queen_caps.jpg"
     }
   },
   {
@@ -1128,20 +1019,15 @@ const PRODUCTS = [
     "description": "Relaxed unstructured dad cap crafted from vintage washed cotton twill. Minimalist 'KHI • LHR' embroidery with soft sweatband.",
     "colors": [
       {
-        "name": "Washed Charcoal",
-        "hex": "#334155"
-      },
-      {
-        "name": "Navy Blue",
-        "hex": "#1e3a8a"
+        "name": "Crisp White",
+        "hex": "#ffffff"
       }
     ],
     "sizes": [
       "Adjustable Brass Buckle (One Size)"
     ],
     "colorImages": {
-      "Washed Charcoal": "assets/trending/pakistan_city_cap_charcoal.jpg",
-      "Navy Blue": "assets/trending/pakistan_city_cap_navy.jpg"
+      "Crisp White": "assets/trending/pakistan_city_cap_charcoal.jpg"
     }
   },
   {
@@ -1158,11 +1044,7 @@ const PRODUCTS = [
     "description": "Celebrate Pakistani truck art chamakpatti culture with multi-color neon peacock embroidery on heavy structured twill.",
     "colors": [
       {
-        "name": "Onyx Black",
-        "hex": "#0f172a"
-      },
-      {
-        "name": "Pure White",
+        "name": "Crisp White",
         "hex": "#ffffff"
       }
     ],
@@ -1170,8 +1052,7 @@ const PRODUCTS = [
       "Adjustable Strapback (One Size)"
     ],
     "colorImages": {
-      "Onyx Black": "assets/trending/truck_art_cap_black.jpg",
-      "Pure White": "assets/trending/truck_art_cap_white.jpg"
+      "Crisp White": "assets/trending/truck_art_cap_black.jpg"
     }
   },
   {
@@ -1238,20 +1119,15 @@ const PRODUCTS = [
     "description": "High-durability athlete tech messenger with #56 Babar Azam cover drive crest. Dedicated 15.6\" shockproof sleeve, tablet pouch, and water bottle pocket.",
     "colors": [
       {
-        "name": "Obsidian Black",
-        "hex": "#0f172a"
-      },
-      {
-        "name": "Midnight Navy",
-        "hex": "#1e3a8a"
+        "name": "Crisp White Briefcase",
+        "hex": "#ffffff"
       }
     ],
     "sizes": [
       "15.6\" Messenger Briefcase"
     ],
     "colorImages": {
-      "Obsidian Black": "assets/trending/babar56_laptop_bag_black.jpg",
-      "Midnight Navy": "assets/trending/babar56_laptop_bag_navy.jpg"
+      "Crisp White Briefcase": "assets/trending/babar56_laptop_bag_black.jpg"
     }
   },
   {
@@ -1627,7 +1503,7 @@ const PRODUCTS = [
       "Heather Grey": "assets/trending/fs_synthwave_sunset_grey.jpg"
     }
   }
-];;
+];;;
 
 // 47 Modern Pakistani Standalone Print Badges for Studio Library
 const PK_READY_DESIGNS = [
@@ -3925,9 +3801,7 @@ window.addToCart = function(productId, options = {}) {
   const itemImage = options.image || colorImg;
 
   let cartKey = `${productId}-${selectedSize}-${selectedColor}`;
-  if (options.isCustomJersey) {
-    cartKey = `${productId}-${selectedSize}-${selectedColor}-${options.customPlayerName || 'BABAR'}-${options.customJerseyNumber || '56'}`;
-  } else if (options.isCouple) {
+  if (options.isCouple) {
     cartKey = `${productId}-couple-${options.menSize || 'L'}-${options.womenSize || 'M'}-${selectedColor}`;
   }
 
@@ -3960,9 +3834,6 @@ window.addToCart = function(productId, options = {}) {
       blankSku: product.blankSku || `SKU-${product.id}`,
       qty: qtyToAdd,
       isCustom: false,
-      isCustomJersey: !!options.isCustomJersey,
-      customPlayerName: options.customPlayerName || null,
-      customJerseyNumber: options.customJerseyNumber || null,
       isCouple: !!options.isCouple,
       menSize: options.menSize || null,
       womenSize: options.womenSize || null
@@ -4061,11 +3932,6 @@ function updateCartUI() {
         <div class="cart-item-details">
           <h4 class="cart-item-title">${item.name}</h4>
           <div class="cart-item-meta">
-            ${item.isCustomJersey ? `
-              <div style="font-size: 0.74rem; background: #ecfdf5; color: #047857; font-weight: 800; padding: 2px 8px; border-radius: 4px; display: inline-block; margin-bottom: 4px; border: 1px solid #a7f3d0;">
-                🏏 Custom Fan Print: <strong>${item.customPlayerName} #${item.customJerseyNumber}</strong>
-              </div>
-            ` : ''}
             ${item.isCouple ? `
               <div style="font-size: 0.74rem; background: #fdf2f8; color: #be185d; font-weight: 800; padding: 2px 8px; border-radius: 4px; display: inline-block; margin-bottom: 4px; border: 1px solid #fbcfe8;">
                 💍 Couple Duo: 👔 Men ${item.menSize || 'L'} + 👗 Women ${item.womenSize || 'M'}
@@ -4325,131 +4191,16 @@ function openProductDialog(productId) {
   // Render Sizes (Dual sizes if Couple set)
   renderDialogSizes(product);
 
-  // Custom Jersey Live Inputs & Overlay Handling
-  const jerseyOverlay = document.getElementById("jersey-live-preview-overlay");
+  // Setup Add to Cart Button
   const addToCartBtn = document.getElementById("dialog-add-to-cart-btn");
-  const customInputsContainer = document.getElementById("dialog-jersey-custom-container");
-
-  if (product.isCustomJersey) {
-    AppState.activeDialog.customJerseyName = AppState.activeDialog.customJerseyName || "BABAR";
-    AppState.activeDialog.customJerseyNumber = AppState.activeDialog.customJerseyNumber || "56";
-    AppState.activeDialog.customSaved = false;
-
-    if (jerseyOverlay) {
-      jerseyOverlay.style.display = "block";
-      const nameEl = document.getElementById("jersey-overlay-name");
-      const numEl = document.getElementById("jersey-overlay-number");
-      if (nameEl) nameEl.textContent = AppState.activeDialog.customJerseyName;
-      if (numEl) numEl.textContent = AppState.activeDialog.customJerseyNumber;
-    }
-
-    if (customInputsContainer) {
-      customInputsContainer.style.display = "block";
-      customInputsContainer.innerHTML = `
-        <div style="background: #f0fdf4; border: 1.5px solid #86efac; border-radius: 12px; padding: 14px; margin-bottom: 16px;">
-          <div style="font-size: 0.84rem; font-weight: 800; color: #166534; margin-bottom: 8px; display: flex; align-items: center; gap: 6px;">
-            <span>⚡ Customize Your Official Kit (Live Back View):</span>
-          </div>
-          <div style="display: grid; grid-template-columns: 2fr 1fr; gap: 10px; margin-bottom: 10px;">
-            <div>
-              <label style="display: block; font-size: 0.76rem; font-weight: 800; color: #374151; margin-bottom: 4px;">Player / Your Name</label>
-              <input type="text" id="jersey-input-name" maxlength="12" value="${AppState.activeDialog.customJerseyName}" style="width: 100%; padding: 8px 10px; border: 1.5px solid #cbd5e1; border-radius: 6px; font-weight: 800; font-size: 0.95rem; text-transform: uppercase; color: #0f172a;" placeholder="e.g. BABAR, HAMZA">
-            </div>
-            <div>
-              <label style="display: block; font-size: 0.76rem; font-weight: 800; color: #374151; margin-bottom: 4px;">Jersey Number</label>
-              <input type="text" id="jersey-input-number" maxlength="2" value="${AppState.activeDialog.customJerseyNumber}" style="width: 100%; padding: 8px 10px; border: 1.5px solid #cbd5e1; border-radius: 6px; font-weight: 800; font-size: 0.95rem; text-align: center; color: #0f172a;" placeholder="56">
-            </div>
-          </div>
-          <button type="button" id="jersey-save-details-btn" style="background: #15803d; color: #ffffff; width: 100%; padding: 11px 14px; font-size: 0.9rem; font-weight: 800; border-radius: 6px; border: none; cursor: pointer; display: flex; align-items: center; justify-content: center; gap: 6px; transition: all 0.2s ease;">
-            <span>💾 Save Custom Details</span>
-          </button>
-          <div id="jersey-saved-success-msg" style="display: none; margin-top: 8px; font-size: 0.78rem; font-weight: 800; color: #15803d; text-align: center; background: #dcfce7; padding: 6px 10px; border-radius: 6px; border: 1px solid #86efac;"></div>
-          <small style="display: block; color: #166534; font-size: 0.72rem; margin-top: 6px; font-weight: 600;">✓ Jo bhi name/number aap enter karenge wo jersey par real-time dikhega.</small>
-        </div>
-      `;
-
-      const nameInput = document.getElementById("jersey-input-name");
-      const numInput = document.getElementById("jersey-input-number");
-      const saveBtn = document.getElementById("jersey-save-details-btn");
-      const successMsg = document.getElementById("jersey-saved-success-msg");
-      const nameOverlay = document.getElementById("jersey-overlay-name");
-      const numOverlay = document.getElementById("jersey-overlay-number");
-
-      // Lock Add to Cart initially until user clicks Save
-      if (addToCartBtn) {
-        addToCartBtn.disabled = true;
-        addToCartBtn.style.opacity = "0.5";
-        addToCartBtn.style.cursor = "not-allowed";
-        addToCartBtn.innerHTML = `<span>🔒 Click "Save Custom Details" Above First</span>`;
-      }
-
-      const updateLiveText = () => {
-        const nameVal = (nameInput?.value || "").trim().toUpperCase() || "NAME";
-        const numVal = (numInput?.value || "").replace(/[^0-9]/g, '') || "00";
-        if (nameOverlay) nameOverlay.textContent = nameVal;
-        if (numOverlay) numOverlay.textContent = numVal;
-
-        // Reset saved status on edit
-        AppState.activeDialog.customSaved = false;
-        if (addToCartBtn) {
-          addToCartBtn.disabled = true;
-          addToCartBtn.style.opacity = "0.5";
-          addToCartBtn.style.cursor = "not-allowed";
-          addToCartBtn.innerHTML = `<span>🔒 Click "Save Custom Details" Above First</span>`;
-        }
-        if (saveBtn) {
-          saveBtn.innerHTML = `<span>💾 Save Custom Details</span>`;
-          saveBtn.style.background = "#15803d";
-        }
-        if (successMsg) successMsg.style.display = "none";
-      };
-
-      if (nameInput) nameInput.addEventListener("input", updateLiveText);
-      if (numInput) numInput.addEventListener("input", updateLiveText);
-
-      if (saveBtn) {
-        saveBtn.addEventListener("click", () => {
-          const finalName = (nameInput?.value || "").trim().toUpperCase() || "BABAR";
-          const finalNum = (numInput?.value || "").replace(/[^0-9]/g, '') || "56";
-          AppState.activeDialog.customJerseyName = finalName;
-          AppState.activeDialog.customJerseyNumber = finalNum;
-          AppState.activeDialog.customSaved = true;
-
-          if (nameOverlay) nameOverlay.textContent = finalName;
-          if (numOverlay) numOverlay.textContent = finalNum;
-
-          saveBtn.innerHTML = `<span>✓ Saved (${finalName} #${finalNum})</span>`;
-          saveBtn.style.background = "#059669";
-
-          if (successMsg) {
-            successMsg.style.display = "block";
-            successMsg.innerHTML = `✓ Custom Details Saved: <strong>${finalName} #${finalNum}</strong>! Add to Shopping Bag unlocked below.`;
-          }
-
-          if (addToCartBtn) {
-            addToCartBtn.disabled = false;
-            addToCartBtn.style.opacity = "1";
-            addToCartBtn.style.cursor = "pointer";
-            addToCartBtn.innerHTML = `<svg width="18" height="18" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"/></svg> <span>ADD TO SHOPPING BAG</span>`;
-          }
-        });
-      }
-    }
-  } else {
-    if (jerseyOverlay) jerseyOverlay.style.display = "none";
-    if (customInputsContainer) {
-      customInputsContainer.style.display = "none";
-      customInputsContainer.innerHTML = "";
-    }
-    if (addToCartBtn) {
-      addToCartBtn.disabled = false;
-      addToCartBtn.style.opacity = "1";
-      addToCartBtn.style.cursor = "pointer";
-      if (isCouple) {
-        addToCartBtn.innerHTML = `<svg width="18" height="18" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"/></svg> <span>ADD COUPLE SET (Men: ${AppState.activeDialog.menSize || 'L'} + Women: ${AppState.activeDialog.womenSize || 'M'}) ➔</span>`;
-      } else {
-        addToCartBtn.innerHTML = `<svg width="18" height="18" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"/></svg> <span>ADD TO SHOPPING BAG</span>`;
-      }
+  if (addToCartBtn) {
+    addToCartBtn.disabled = false;
+    addToCartBtn.style.opacity = "1";
+    addToCartBtn.style.cursor = "pointer";
+    if (isCouple) {
+      addToCartBtn.innerHTML = `<svg width="18" height="18" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"/></svg> <span>ADD COUPLE SET (Men: ${AppState.activeDialog.menSize || 'L'} + Women: ${AppState.activeDialog.womenSize || 'M'}) ➔</span>`;
+    } else {
+      addToCartBtn.innerHTML = `<svg width="18" height="18" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"/></svg> <span>ADD TO SHOPPING BAG</span>`;
     }
   }
 
@@ -4696,23 +4447,7 @@ function setupProductDialogEventListeners() {
       const thumb = (product.colorImages && product.colorImages[chosenColor]) || product.image;
       const qty = parseInt(AppState.activeDialog.qty || 1);
 
-      if (product.isCustomJersey) {
-        if (!AppState.activeDialog.customSaved) {
-          const saveBtn = document.getElementById("jersey-save-details-btn");
-          if (saveBtn) saveBtn.click();
-        }
-        const customName = AppState.activeDialog.customJerseyName || "BABAR";
-        const customNumber = AppState.activeDialog.customJerseyNumber || "56";
-        window.addToCart(product.id, {
-          size: AppState.activeDialog.activeSize || "L",
-          color: chosenColor,
-          qty: qty,
-          image: thumb,
-          isCustomJersey: true,
-          customPlayerName: customName,
-          customJerseyNumber: customNumber
-        });
-      } else if (AppState.activeDialog.isCouple) {
+      if (AppState.activeDialog.isCouple) {
         const menSize = AppState.activeDialog.menSize || "L";
         const womenSize = AppState.activeDialog.womenSize || "M";
         window.addToCart(product.id, {
