@@ -1502,6 +1502,255 @@ const PRODUCTS = [
     "colorImages": {
       "Heather Grey": "assets/trending/fs_synthwave_sunset_grey.jpg"
     }
+  },
+  {
+    "id": "prod-tee-sukoon-urdu",
+    "name": "Sukoon (سکون) High-Density Minimal Typography Graphic Tee",
+    "theme": "urdu-aesthetic",
+    "category": "tees",
+    "categoryName": "Typography Streetwear Edition",
+    "badge": "✨ AESTHETIC PRINT",
+    "baseCost": 950,
+    "profit": 800,
+    "retailPrice": 1750,
+    "image": "assets/pk_products/tee_sukoon_urdu.jpg",
+    "description": "Modern Nastaliq letterform 'سکون' (Peace & Serenity) centered in clean Japanese-streetwear minimalist badge layout on 220 GSM super combed cotton.",
+    "colors": [
+      {
+        "name": "Pure White",
+        "hex": "#ffffff"
+      }
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "colorImages": {
+      "Pure White": "assets/pk_products/tee_sukoon_urdu.jpg"
+    }
+  },
+  {
+    "id": "prod-tee-truck-art-pop",
+    "name": "Karachi Truck Art Peacock Pop-Art Heavyweight Tee",
+    "theme": "truck-art",
+    "category": "tees",
+    "categoryName": "Modern Streetwear Graphic Tee",
+    "badge": "🎨 ARTIST SERIES",
+    "baseCost": 990,
+    "profit": 800,
+    "retailPrice": 1790,
+    "image": "assets/pk_products/tee_truck_art_pop.jpg",
+    "description": "240 GSM heavy combed cotton. Vibrant Karachi truck art chamakpatti peacock motif fused with contemporary streetwear pop-art framing.",
+    "colors": [
+      {
+        "name": "Pure White",
+        "hex": "#ffffff"
+      }
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "colorImages": {
+      "Pure White": "assets/pk_products/tee_truck_art_pop.jpg"
+    }
+  },
+  {
+    "id": "prod-tee-karachi-cyberpunk",
+    "name": "Karachi 2099 'City of Lights' Cyberpunk Graphic Tee",
+    "theme": "cyberpunk",
+    "category": "tees",
+    "categoryName": "Cyberpunk Streetwear Edition",
+    "badge": "⚡ CYBER SERIES",
+    "baseCost": 990,
+    "profit": 800,
+    "retailPrice": 1790,
+    "image": "assets/pk_products/tee_karachi_cyberpunk.jpg",
+    "description": "Saddar neon skyline & Clifton coastal highway in 1980s retro-futuristic synthwave vector with technical grid coordinates on 240 GSM cotton.",
+    "colors": [
+      {
+        "name": "Pure White",
+        "hex": "#ffffff"
+      }
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "colorImages": {
+      "Pure White": "assets/pk_products/tee_karachi_cyberpunk.jpg"
+    }
+  },
+  {
+    "id": "prod-hoodie-qalandar",
+    "name": "Lal Qalandar (قلندر) Mystical Sufi Heritage Heavy Hoodie",
+    "theme": "sufi-heritage",
+    "category": "hoodies",
+    "categoryName": "Sufi Heritage Streetwear Hoodie",
+    "badge": "🔥 BESTSELLER",
+    "baseCost": 2300,
+    "profit": 800,
+    "retailPrice": 3100,
+    "image": "assets/pk_products/hoodie_qalandar.jpg",
+    "description": "Abstract whirling dervish silhouette and mystic Urdu typography 'مست قلندر' with premium puff print badge on 380 GSM thermal brushed fleece.",
+    "colors": [
+      {
+        "name": "Pure White",
+        "hex": "#ffffff"
+      }
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "colorImages": {
+      "Pure White": "assets/pk_products/hoodie_qalandar.jpg"
+    }
+  },
+  {
+    "id": "prod-hoodie-karakoram",
+    "name": "Karakoram K2 8611m Expedition Streetwear Heavy Hoodie",
+    "theme": "alpine-k2",
+    "category": "hoodies",
+    "categoryName": "Expedition Alpine Hoodie",
+    "badge": "🏔️ ALPINE CLUB",
+    "baseCost": 2300,
+    "profit": 800,
+    "retailPrice": 3100,
+    "image": "assets/pk_products/hoodie_karakoram.jpg",
+    "description": "Topographic contour line art of K2 summit (8,611m) and Concordia glacier with minimal alpine club coordinates badge on 380 GSM brushed fleece.",
+    "colors": [
+      {
+        "name": "Pure White",
+        "hex": "#ffffff"
+      }
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "colorImages": {
+      "Pure White": "assets/pk_products/hoodie_karakoram.jpg"
+    }
+  },
+  {
+    "id": "prod-hoodie-pk-forest-gold",
+    "name": "Pakistan National 'Gold Star & Crescent' Forest Fleece Hoodie",
+    "theme": "heritage",
+    "category": "hoodies",
+    "categoryName": "Heavyweight Fleece Streetwear",
+    "badge": "⭐ NATIONAL EDITION",
+    "baseCost": 2100,
+    "profit": 1150,
+    "retailPrice": 3250,
+    "image": "assets/trending/pk_cricket_hoodie_black.jpg",
+    "description": "380 GSM thermal brushed fleece hoodie in deep forest green heather with metallic gold crescent & star emblem on chest. Warm kangaroo pocket and ribbed cuffs.",
+    "colors": [
+      {
+        "name": "Forest Green",
+        "hex": "#143a2b"
+      }
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "colorImages": {
+      "Forest Green": "assets/trending/pk_cricket_hoodie_black.jpg"
+    }
+  },
+  {
+    "id": "prod-mug-multan-kashigari",
+    "name": "Multani Kashigari Blue Pottery Ceramic Mug",
+    "theme": "heritage-art",
+    "category": "mugs",
+    "categoryName": "Heritage Ceramic Drinkware",
+    "badge": "🏺 HANDCRAFTED ART",
+    "baseCost": 600,
+    "profit": 550,
+    "retailPrice": 1150,
+    "image": "assets/pk_products/mug_multan_kashigari.jpg",
+    "description": "Traditional Multan tomb ceramic tilework badge with cobalt indigo spirals and Persian turquoise floral rosettes on glossy white glazed ceramic.",
+    "colors": [
+      {
+        "name": "Pure White",
+        "hex": "#ffffff"
+      }
+    ],
+    "sizes": [
+      "11 oz Ceramic Mug"
+    ],
+    "colorImages": {
+      "Pure White": "assets/pk_products/mug_multan_kashigari.jpg"
+    }
+  },
+  {
+    "id": "prod-mug-chai-charcha",
+    "name": "Pehlay Chai Phir Kaam (پہلے چائے) Dhabba Edition Mug",
+    "theme": "chai-culture",
+    "category": "mugs",
+    "categoryName": "Chai Culture Drinkware",
+    "badge": "☕ CHAI LOVERS",
+    "baseCost": 600,
+    "profit": 550,
+    "retailPrice": 1150,
+    "image": "assets/pk_products/mug_chai_charcha.jpg",
+    "description": "Steaming cutting glass chai kettle artwork with witty Urdu slogan 'پہلے چائے پھر کام'. Perfect everyday ceramic mug for tea enthusiasts.",
+    "colors": [
+      {
+        "name": "Pure White",
+        "hex": "#ffffff"
+      }
+    ],
+    "sizes": [
+      "11 oz Ceramic Mug"
+    ],
+    "colorImages": {
+      "Pure White": "assets/pk_products/mug_chai_charcha.jpg"
+    }
+  },
+  {
+    "id": "prod-mug-dekh-magar-pyar",
+    "name": "Dekh Magar Pyar Se (دیکھ مگر پیار سے) Truck Art Mug",
+    "theme": "truck-art",
+    "category": "mugs",
+    "categoryName": "Truck Art Ceramic Drinkware",
+    "badge": "❤️ TRUCK ART SPECIAL",
+    "baseCost": 600,
+    "profit": 550,
+    "retailPrice": 1150,
+    "image": "assets/pk_products/mug_dekh_magar_pyar.jpg",
+    "description": "Legendary road catchphrase 'دیکھ مگر پیار سے' with vibrant Karachi truck art floral border and peacock crest on durable 11 oz ceramic.",
+    "colors": [
+      {
+        "name": "Pure White",
+        "hex": "#ffffff"
+      }
+    ],
+    "sizes": [
+      "11 oz Ceramic Mug"
+    ],
+    "colorImages": {
+      "Pure White": "assets/pk_products/mug_dekh_magar_pyar.jpg"
+    }
   }
 ];;;
 
