@@ -8,7 +8,7 @@
   <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
   <meta http-equiv="Pragma" content="no-cache">
   <meta http-equiv="Expires" content="0">
-  <link rel="stylesheet" href="style.css?v=3.0">
+  <link rel="stylesheet" href="style.css?v=4.0">
   <link rel="icon" href="assets/logo.jpg">
 </head>
 <body>
@@ -46,7 +46,7 @@
 
       <div class="nav-actions">
         <!-- Direct Jump to Customizer -->
-        <a href="#catalog" class="btn-primary" style="padding: 10px 22px; font-size: 0.84rem; display: inline-flex;">
+        <a href="#catalog" class="btn-primary nav-explore-btn" style="padding: 10px 22px; font-size: 0.84rem; display: inline-flex;">
           <span>Explore Catalog</span>
         </a>
 
@@ -57,9 +57,62 @@
           </svg>
           <span class="cart-badge" id="cart-counter">0</span>
         </button>
+
+        <!-- Mobile Hamburger Button -->
+        <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Open Mobile Menu" onclick="openMobileNav()">
+          <svg width="22" height="22" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+        </button>
       </div>
     </div>
   </header>
+
+  <!-- Mobile Slide-Out Navigation Drawer Overlay -->
+  <div class="mobile-nav-overlay" id="mobile-nav-overlay" onclick="closeMobileNav()">
+    <div class="mobile-nav-drawer" id="mobile-nav-drawer" onclick="event.stopPropagation()">
+      <div class="mobile-nav-header">
+        <div class="brand-text">
+          <span class="brand-title">MF STORE</span>
+          <span class="brand-sub">LUXURY APPAREL // PK</span>
+        </div>
+        <button class="close-btn" id="close-mobile-nav-btn" onclick="closeMobileNav()" aria-label="Close Navigation">&times;</button>
+      </div>
+
+      <div class="mobile-nav-body">
+        <div class="mobile-nav-section-title">CATEGORIES</div>
+        <ul class="mobile-nav-links">
+          <li><a href="#catalog" onclick="closeMobileNav(); setCatalogFilter('all');"><span>🛍️</span> All Products (57 Designs)</a></li>
+          <li><a href="#cat-row-tees" onclick="closeMobileNav(); scrollToCategory('tees');"><span>👕</span> T-Shirts (11 Designs)</a></li>
+          <li><a href="#cat-row-full-sleeves" onclick="closeMobileNav(); scrollToCategory('full-sleeves');"><span>👕</span> Full Sleeves (12 Designs)</a></li>
+          <li><a href="#cat-row-hoodies" onclick="closeMobileNav(); scrollToCategory('hoodies');"><span>🧥</span> Hoodies (9 Designs)</a></li>
+          <li><a href="#cat-row-mugs" onclick="closeMobileNav(); scrollToCategory('mugs');"><span>☕</span> Mugs & Cups (9 Designs)</a></li>
+          <li><a href="#cat-row-laptop-bags" onclick="closeMobileNav(); scrollToCategory('laptop-bags');"><span>💼</span> Laptop Bags (8 Designs)</a></li>
+          <li><a href="#cat-row-caps" onclick="closeMobileNav(); scrollToCategory('caps');"><span>🧢</span> Caps (8 Designs)</a></li>
+        </ul>
+
+        <div class="mobile-nav-section-title">THEMED COLLECTIONS</div>
+        <div class="mobile-nav-chips">
+          <button class="mobile-nav-chip" onclick="closeMobileNav(); setCatalogFilter('cricket');">🏏 Pakistan Cricket</button>
+          <button class="mobile-nav-chip" onclick="closeMobileNav(); setCatalogFilter('eid');">🌙 Eid Mubarak</button>
+          <button class="mobile-nav-chip" onclick="closeMobileNav(); setCatalogFilter('couple');">💍 Husband & Wife</button>
+          <button class="mobile-nav-chip" onclick="closeMobileNav(); setCatalogFilter('birthday');">🎂 Birthday Specials</button>
+        </div>
+
+        <div class="mobile-nav-section-title">CUSTOMER SERVICES</div>
+        <ul class="mobile-nav-links">
+          <li><a href="#orders-tracker" onclick="closeMobileNav();"><span>📦</span> Track Your Order</a></li>
+          <li><a href="admin.html" onclick="closeMobileNav();"><span>🏢</span> Merchant Dashboard</a></li>
+          <li><a href="https://wa.me/923001234567" target="_blank" style="color: #059669; font-weight: 800;"><span>💬</span> WhatsApp Live Support</a></li>
+        </ul>
+
+        <div class="mobile-nav-footer">
+          <p>🚚 Nationwide Express Delivery</p>
+          <p>💳 100% Card Payment to Meezan Bank Ltd.</p>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <main>
     <!-- Hero Section -->
@@ -697,9 +750,36 @@
     </div>
   </footer>
 
+  <!-- Fixed Mobile Bottom Navigation Bar -->
+  <nav class="mobile-bottom-bar" id="mobile-bottom-bar" aria-label="Mobile Navigation">
+    <a href="#hero" class="bnav-item active" id="bnav-home">
+      <span class="bnav-icon">🏠</span>
+      <span class="bnav-label">Home</span>
+    </a>
+    <a href="#catalog" class="bnav-item" id="bnav-shop" onclick="setCatalogFilter('all');">
+      <span class="bnav-icon">🛍️</span>
+      <span class="bnav-label">Shop</span>
+    </a>
+    <button type="button" class="bnav-item" id="bnav-menu" onclick="openMobileNav();" aria-label="Categories Menu">
+      <span class="bnav-icon">📑</span>
+      <span class="bnav-label">Categories</span>
+    </button>
+    <a href="#orders-tracker" class="bnav-item" id="bnav-track">
+      <span class="bnav-icon">📦</span>
+      <span class="bnav-label">Track</span>
+    </a>
+    <button type="button" class="bnav-item" id="bnav-cart" onclick="openCart();" aria-label="Shopping Bag">
+      <div class="bnav-cart-wrapper">
+        <span class="bnav-icon">🛒</span>
+        <span class="bnav-badge" id="bnav-cart-counter">0</span>
+      </div>
+      <span class="bnav-label">Bag</span>
+    </button>
+  </nav>
+
   <!-- Toast Container -->
   <div class="toast-container" id="toast-container"></div>
 
-  <script src="app.js?v=6.0"></script>
+  <script src="app.js?v=7.0"></script>
 </body>
 </html>

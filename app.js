@@ -4020,8 +4020,10 @@ function updateCartUI() {
   const totalPayable = totalItems > 0 ? (subtotal + (Number(AppState.shippingFee) || 250)) : 0;
 
   const counter = document.getElementById("cart-counter");
+  const bnavCounter = document.getElementById("bnav-cart-counter");
   const headerCount = document.getElementById("cart-header-count");
   if (counter) counter.textContent = totalItems;
+  if (bnavCounter) bnavCounter.textContent = totalItems;
   if (headerCount) headerCount.textContent = totalItems;
 
   const subtotalEl = document.getElementById("cart-subtotal");
@@ -5401,3 +5403,28 @@ window.setCatalogFilter = function(filterId) {
   const catalogEl = document.getElementById("catalog");
   if (catalogEl) catalogEl.scrollIntoView({ behavior: "smooth" });
 };
+
+// Mobile Drawer Navigation Controllers
+window.openMobileNav = function() {
+  const overlay = document.getElementById("mobile-nav-overlay");
+  if (overlay) {
+    overlay.classList.add("active");
+    document.body.style.overflow = "hidden";
+  }
+};
+
+window.closeMobileNav = function() {
+  const overlay = document.getElementById("mobile-nav-overlay");
+  if (overlay) {
+    overlay.classList.remove("active");
+    document.body.style.overflow = "";
+  }
+};
+
+// Handle Bottom Nav Active State & Esc Key
+document.addEventListener("keydown", (e) => {
+  if (e.key === "Escape") {
+    closeMobileNav();
+  }
+});
+
