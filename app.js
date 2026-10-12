@@ -2779,7 +2779,7 @@ window.CustomStudio = {
 
     if (rowGarmentLabel) rowGarmentLabel.textContent = `Garment Base (${garment.name.split('(')[0].trim()}):`;
     if (rowGarmentVal) rowGarmentVal.textContent = `Rs. ${garmentCost.toLocaleString()}`;
-    if (rowPrintLabel) rowPrintLabel.textContent = `Ceeprinto Print Fee (Option ${this.state.option}):`;
+    if (rowPrintLabel) rowPrintLabel.textContent = `Print Customization Fee (Option ${this.state.option}):`;
     if (rowPrintVal) rowPrintVal.textContent = `+Rs. ${printFee.toLocaleString()}`;
     if (rowProfitVal) rowProfitVal.textContent = `+Rs. ${profit.toLocaleString()}`;
     if (totalDisplay) totalDisplay.textContent = `Rs. ${total.toLocaleString()}`;

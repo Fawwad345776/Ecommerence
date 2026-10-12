@@ -306,7 +306,7 @@
                   Merchant Profit Markup per Custom Apparel Piece:
                 </label>
                 <p style="font-size: 0.76rem; color: #64748b; margin: 0; line-height: 1.45;">
-                  Ceeprinto base garment rate + Ceeprinto print fee (Option 1: Rs. 150 | Option 2 & 3: Rs. 200 | Option 4: Rs. 700) + Fixed Merchant Profit (Rs. 250 = Rs. 200 base profit + Rs. 50 extra markup).
+                  Base garment rate + Print fee (Option 1: Rs. 150 | Option 2 & 3: Rs. 200 | Option 4: Rs. 700) + Fixed Merchant Profit (Rs. 250 = Rs. 200 base profit + Rs. 50 extra markup).
                 </p>
               </div>
               <div style="display: flex; align-items: center; gap: 8px;">
@@ -804,9 +804,9 @@
                                 ` : ''}
                               </div>
 
-                              <!-- Ceeprinto Cost Breakdown -->
+                              <!-- Item Cost Breakdown -->
                               <div style="display: flex; justify-content: space-between; font-size: 0.72rem; color: #475569; border-top: 1px dashed #d8b4fe; padding-top: 6px;">
-                                <span>Ceeprinto Base: <strong>Rs. ${(cfg.ceeprintoBaseCost || 0).toLocaleString()}</strong></span>
+                                <span>Garment Base: <strong>Rs. ${(cfg.ceeprintoBaseCost || 0).toLocaleString()}</strong></span>
                                 <span>Print Fee: <strong>Rs. ${(cfg.printFee || 0).toLocaleString()}</strong></span>
                                 <span style="color: #047857; font-weight: 800;">💰 Merchant Profit: <strong>Rs. ${(cfg.merchantProfit || 250).toLocaleString()}</strong></span>
                               </div>
