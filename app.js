@@ -18,12 +18,16 @@ const PRODUCTS = [
     "baseCost": 850,
     "profit": 740,
     "retailPrice": 1590,
-    "image": "assets/trending/babar56_tee.jpg",
-    "description": "Iconic #56 Babar Azam cover drive typographic tribute on 210 GSM heavyweight cotton. High-density gold and green inks.",
+    "image": "assets/trending/babar56_tee_green.jpg",
+    "description": "Iconic #56 Babar Azam cover drive typographic tribute on 210 GSM heavyweight cotton. High-density gold and green inks on Forest Green.",
     "colors": [
       {
-        "name": "Pure White",
-        "hex": "#ffffff"
+        "name": "Forest Green",
+        "hex": "#0f5132"
+      },
+      {
+        "name": "Onyx Black",
+        "hex": "#111216"
       }
     ],
     "sizes": [
@@ -34,7 +38,8 @@ const PRODUCTS = [
       "XXL"
     ],
     "colorImages": {
-      "Pure White": "assets/trending/babar56_tee.jpg"
+      "Forest Green": "assets/trending/babar56_tee_green.jpg",
+      "Onyx Black": "assets/trending/babar56_tee_black.jpg"
     }
   },
   {
@@ -157,6 +162,10 @@ const PRODUCTS = [
       {
         "name": "Onyx Black",
         "hex": "#0f172a"
+      },
+      {
+        "name": "Deep Navy",
+        "hex": "#1e293b"
       }
     ],
     "sizes": [
@@ -167,7 +176,8 @@ const PRODUCTS = [
       "XXL"
     ],
     "colorImages": {
-      "Onyx Black": "assets/trending/eid_mubarak_tee.jpg"
+      "Onyx Black": "assets/trending/eid_mubarak_tee.jpg",
+      "Deep Navy": "assets/trending/eid_mubarak_tee.jpg"
     }
   },
   {
@@ -284,11 +294,15 @@ const PRODUCTS = [
     "baseCost": 1600,
     "profit": 1250,
     "retailPrice": 2850,
-    "image": "assets/trending/couple_matching_tee.jpg",
+    "image": "assets/trending/couple_matching_tee_navy.jpg",
     "description": "Includes TWO premium tees: 1 Black 'Hubby' Tee + 1 White 'Wifey' Tee with elegant gold hearts and modern flowing script calligraphy. 100% Combed Cotton.",
     "colors": [
       {
-        "name": "Black & White Pair",
+        "name": "Deep Navy Pair",
+        "hex": "#1e3a8a"
+      },
+      {
+        "name": "Onyx Black Pair",
         "hex": "#111216"
       }
     ],
@@ -300,7 +314,8 @@ const PRODUCTS = [
       "XXL"
     ],
     "colorImages": {
-      "Black & White Pair": "assets/trending/couple_matching_tee.jpg"
+      "Deep Navy Pair": "assets/trending/couple_matching_tee_navy.jpg",
+      "Onyx Black Pair": "assets/trending/couple_matching_tee_navy.jpg"
     }
   },
   {
@@ -319,6 +334,10 @@ const PRODUCTS = [
       {
         "name": "Charcoal Black",
         "hex": "#18181b"
+      },
+      {
+        "name": "Deep Navy",
+        "hex": "#1e293b"
       }
     ],
     "sizes": [
@@ -329,7 +348,8 @@ const PRODUCTS = [
       "XXL"
     ],
     "colorImages": {
-      "Charcoal Black": "assets/trending/couple_soulmates_tee.jpg"
+      "Charcoal Black": "assets/trending/couple_soulmates_tee.jpg",
+      "Deep Navy": "assets/trending/couple_soulmates_tee.jpg"
     }
   },
   {
@@ -342,12 +362,16 @@ const PRODUCTS = [
     "baseCost": 1350,
     "profit": 950,
     "retailPrice": 2300,
-    "image": "assets/trending/couple_mr_mrs_right_tee.jpg",
+    "image": "assets/trending/couple_mr_mrs_right_tee_black_pink.jpg",
     "description": "Hilarious and adorable wedding/anniversary couple set: 'Mr. Right' with bowtie and 'Mrs. ALWAYS Right ➔' with hand-drawn arrow. Guaranteed smile on every outing.",
     "colors": [
       {
-        "name": "Navy & White Duo",
-        "hex": "#022c22"
+        "name": "Black & Rose Duo",
+        "hex": "#111216"
+      },
+      {
+        "name": "Deep Navy Duo",
+        "hex": "#1e3a8a"
       }
     ],
     "sizes": [
@@ -358,7 +382,8 @@ const PRODUCTS = [
       "XXL"
     ],
     "colorImages": {
-      "Navy & White Duo": "assets/trending/couple_mr_mrs_right_tee.jpg"
+      "Black & Rose Duo": "assets/trending/couple_mr_mrs_right_tee_black_pink.jpg",
+      "Deep Navy Duo": "assets/trending/couple_mr_mrs_right_tee_black_pink.jpg"
     }
   },
   {
@@ -371,12 +396,16 @@ const PRODUCTS = [
     "baseCost": 1350,
     "profit": 950,
     "retailPrice": 2300,
-    "image": "assets/trending/couple_better_together_tee.jpg",
+    "image": "assets/trending/couple_better_together_tee_black.jpg",
     "description": "Interlocking graphic couple t-shirts. Features 'BETTER' half of heart on husband tee and 'TOGETHER' matching half on wife tee. High-density screen print on breathable cotton jersey.",
     "colors": [
       {
-        "name": "White & Navy Contrast Pair",
-        "hex": "#ffffff"
+        "name": "Onyx Black Pair",
+        "hex": "#111216"
+      },
+      {
+        "name": "Deep Navy Pair",
+        "hex": "#1e3a8a"
       }
     ],
     "sizes": [
@@ -387,7 +416,8 @@ const PRODUCTS = [
       "XXL"
     ],
     "colorImages": {
-      "White & Navy Contrast Pair": "assets/trending/couple_better_together_tee.jpg"
+      "Onyx Black Pair": "assets/trending/couple_better_together_tee_black.jpg",
+      "Deep Navy Pair": "assets/trending/couple_better_together_tee_black.jpg"
     }
   },
   {
@@ -400,12 +430,16 @@ const PRODUCTS = [
     "baseCost": 1400,
     "profit": 1050,
     "retailPrice": 2450,
-    "image": "assets/trending/couple_king_queen_tee.jpg",
+    "image": "assets/trending/couple_king_queen_tee_black.jpg",
     "description": "Complete pair of 2 matching luxury streetwear tees. Bold metallic gold 'KING' crown for him and elegant 'QUEEN' tiara for her. Made from 240 GSM combed cotton.",
     "colors": [
       {
-        "name": "Onyx Black & White Pair",
+        "name": "Onyx Black Pair",
         "hex": "#111216"
+      },
+      {
+        "name": "Royal Navy Pair",
+        "hex": "#1e3a8a"
       }
     ],
     "sizes": [
@@ -416,7 +450,8 @@ const PRODUCTS = [
       "XXL"
     ],
     "colorImages": {
-      "Onyx Black & White Pair": "assets/trending/couple_king_queen_tee.jpg"
+      "Onyx Black Pair": "assets/trending/couple_king_queen_tee_black.jpg",
+      "Royal Navy Pair": "assets/trending/couple_king_queen_tee_black.jpg"
     }
   },
   {
@@ -539,6 +574,10 @@ const PRODUCTS = [
       {
         "name": "Washed Black",
         "hex": "#1f2937"
+      },
+      {
+        "name": "Vintage Navy",
+        "hex": "#1e3a8a"
       }
     ],
     "sizes": [
@@ -549,7 +588,8 @@ const PRODUCTS = [
       "XXL"
     ],
     "colorImages": {
-      "Washed Black": "assets/trending/birthday_tee.jpg"
+      "Washed Black": "assets/trending/birthday_tee.jpg",
+      "Vintage Navy": "assets/trending/birthday_tee.jpg"
     }
   },
   {
@@ -683,20 +723,28 @@ const PRODUCTS = [
   },
   {
     "id": "prod-classic-white-tee",
-    "name": "Unisex Luxury Heavyweight White Tee (210 GSM Combed Cotton)",
+    "name": "Dhabba Chai 'Karak Chai & Charcha' Streetwear Graphic Tee",
     "theme": "basics",
     "category": "tees",
-    "categoryName": "Luxury Everyday Basics",
-    "badge": "⭐ BEST SELLER",
+    "categoryName": "Pakistani Streetwear Graphic Tee",
+    "badge": "🔥 TRENDING",
     "baseCost": 850,
     "profit": 600,
     "retailPrice": 1450,
-    "image": "assets/blank_tshirt_front.jpg",
-    "description": "210 GSM super combed cotton regular cut tee with reinforced collar ribbing, ultra-soft feel, and breathable weave.",
+    "image": "assets/trending/tee_chai_dhaba_navy.jpg",
+    "description": "Authentic Pakistani chai dhabba culture typographic graphic print on premium 210 GSM combed heavyweight cotton. Deep navy finish with rich amber-gold and white accents.",
     "colors": [
       {
-        "name": "Pure White",
-        "hex": "#ffffff"
+        "name": "Deep Navy",
+        "hex": "#1e293b"
+      },
+      {
+        "name": "Onyx Black",
+        "hex": "#111216"
+      },
+      {
+        "name": "Crimson Maroon",
+        "hex": "#881337"
       }
     ],
     "sizes": [
@@ -707,7 +755,9 @@ const PRODUCTS = [
       "XXL"
     ],
     "colorImages": {
-      "Pure White": "assets/blank_tshirt_front.jpg"
+      "Deep Navy": "assets/trending/tee_chai_dhaba_navy.jpg",
+      "Onyx Black": "assets/trending/tee_chai_dhaba_navy.jpg",
+      "Crimson Maroon": "assets/trending/tee_chai_dhaba_navy.jpg"
     }
   },
   {
@@ -836,12 +886,16 @@ const PRODUCTS = [
     "baseCost": 1900,
     "profit": 1200,
     "retailPrice": 3100,
-    "image": "assets/trending/babar56_hoodie_white.jpg",
+    "image": "assets/trending/babar56_hoodie_green.jpg",
     "description": "Iconic #56 cover drive typographic tribute printed on 380 GSM thermal combed fleece. Thick drawstrings and double-stitched kangaroo pocket.",
     "colors": [
       {
-        "name": "Pure White",
-        "hex": "#ffffff"
+        "name": "Forest Green",
+        "hex": "#0f5132"
+      },
+      {
+        "name": "Onyx Black",
+        "hex": "#111216"
       }
     ],
     "sizes": [
@@ -852,7 +906,8 @@ const PRODUCTS = [
       "XXL"
     ],
     "colorImages": {
-      "Pure White": "assets/trending/babar56_hoodie_white.jpg"
+      "Forest Green": "assets/trending/babar56_hoodie_green.jpg",
+      "Onyx Black": "assets/trending/babar56_hoodie_black.jpg"
     }
   },
   {
@@ -1171,6 +1226,10 @@ const PRODUCTS = [
       {
         "name": "Onyx Black",
         "hex": "#111216"
+      },
+      {
+        "name": "Midnight Navy",
+        "hex": "#1e3a8a"
       }
     ],
     "sizes": [
@@ -1181,7 +1240,8 @@ const PRODUCTS = [
       "XXL"
     ],
     "colorImages": {
-      "Onyx Black": "assets/trending/fs_tokyo_cyberpunk_black.jpg"
+      "Onyx Black": "assets/trending/fs_tokyo_cyberpunk_black.jpg",
+      "Midnight Navy": "assets/trending/fs_tokyo_cyberpunk_black.jpg"
     }
   },
   {
@@ -1200,6 +1260,10 @@ const PRODUCTS = [
       {
         "name": "Forest Green",
         "hex": "#15803d"
+      },
+      {
+        "name": "Onyx Black",
+        "hex": "#111216"
       }
     ],
     "sizes": [
@@ -1210,7 +1274,8 @@ const PRODUCTS = [
       "XXL"
     ],
     "colorImages": {
-      "Forest Green": "assets/trending/fs_pacific_outdoors_green.jpg"
+      "Forest Green": "assets/trending/fs_pacific_outdoors_green.jpg",
+      "Onyx Black": "assets/trending/fs_pacific_outdoors_green.jpg"
     }
   },
   {
@@ -1223,12 +1288,20 @@ const PRODUCTS = [
     "baseCost": 980,
     "profit": 810,
     "retailPrice": 1790,
-    "image": "assets/trending/fs_brutalist_archive_white.jpg",
-    "description": "High-fashion brutalist typography with geographic Zurich coordinates, barcode badge and full-length vertical sleeve print. Heavyweight pure white combed cotton.",
+    "image": "assets/trending/fs_brutalist_navy.jpg",
+    "description": "Swiss typography brutalist graphic print on heavy 240 GSM combed cotton full-sleeve shirt. Deep Navy garment with high-contrast architectural prints.",
     "colors": [
       {
-        "name": "Pure White",
-        "hex": "#ffffff"
+        "name": "Deep Navy",
+        "hex": "#1e3a8a"
+      },
+      {
+        "name": "Onyx Black",
+        "hex": "#111216"
+      },
+      {
+        "name": "Heather Grey",
+        "hex": "#64748b"
       }
     ],
     "sizes": [
@@ -1239,7 +1312,9 @@ const PRODUCTS = [
       "XXL"
     ],
     "colorImages": {
-      "Pure White": "assets/trending/fs_brutalist_archive_white.jpg"
+      "Deep Navy": "assets/trending/fs_brutalist_navy.jpg",
+      "Onyx Black": "assets/trending/fs_brutalist_navy.jpg",
+      "Heather Grey": "assets/trending/fs_brutalist_navy.jpg"
     }
   },
   {
@@ -1258,6 +1333,10 @@ const PRODUCTS = [
       {
         "name": "Mineral Charcoal",
         "hex": "#374151"
+      },
+      {
+        "name": "Jet Black",
+        "hex": "#000000"
       }
     ],
     "sizes": [
@@ -1268,7 +1347,8 @@ const PRODUCTS = [
       "XXL"
     ],
     "colorImages": {
-      "Mineral Charcoal": "assets/trending/fs_cyber_butterfly_charcoal.jpg"
+      "Mineral Charcoal": "assets/trending/fs_cyber_butterfly_charcoal.jpg",
+      "Jet Black": "assets/trending/fs_cyber_butterfly_charcoal.jpg"
     }
   },
   {
@@ -1281,12 +1361,20 @@ const PRODUCTS = [
     "baseCost": 980,
     "profit": 810,
     "retailPrice": 1790,
-    "image": "assets/trending/fs_monaco_motorsport_cream.jpg",
-    "description": "Authentic 1977 Monaco GP racing division graphic with crossed checkered flags, #77 racing badge, and vintage navy/orange inks on heavyweight cream cotton.",
+    "image": "assets/trending/fs_monaco_maroon.jpg",
+    "description": "Vintage Formula 1 Monaco GP 1977 heritage graphic printed on luxury Crimson Maroon 240 GSM heavyweight long-sleeve tee with golden crest and racing stripes.",
     "colors": [
       {
-        "name": "Vintage Cream",
-        "hex": "#fdfbf7"
+        "name": "Crimson Maroon",
+        "hex": "#881337"
+      },
+      {
+        "name": "Racing Navy",
+        "hex": "#1e3a8a"
+      },
+      {
+        "name": "Onyx Black",
+        "hex": "#111216"
       }
     ],
     "sizes": [
@@ -1297,7 +1385,9 @@ const PRODUCTS = [
       "XXL"
     ],
     "colorImages": {
-      "Vintage Cream": "assets/trending/fs_monaco_motorsport_cream.jpg"
+      "Crimson Maroon": "assets/trending/fs_monaco_maroon.jpg",
+      "Racing Navy": "assets/trending/fs_monaco_maroon.jpg",
+      "Onyx Black": "assets/trending/fs_monaco_maroon.jpg"
     }
   },
   {
@@ -1316,6 +1406,10 @@ const PRODUCTS = [
       {
         "name": "Midnight Navy",
         "hex": "#1e3a8a"
+      },
+      {
+        "name": "Cosmic Black",
+        "hex": "#111216"
       }
     ],
     "sizes": [
@@ -1326,7 +1420,8 @@ const PRODUCTS = [
       "XXL"
     ],
     "colorImages": {
-      "Midnight Navy": "assets/trending/fs_celestial_deepspace_navy.jpg"
+      "Midnight Navy": "assets/trending/fs_celestial_deepspace_navy.jpg",
+      "Cosmic Black": "assets/trending/fs_celestial_deepspace_navy.jpg"
     }
   },
   {
@@ -1345,6 +1440,10 @@ const PRODUCTS = [
       {
         "name": "Jet Black",
         "hex": "#000000"
+      },
+      {
+        "name": "Blood Crimson",
+        "hex": "#881337"
       }
     ],
     "sizes": [
@@ -1355,7 +1454,8 @@ const PRODUCTS = [
       "XXL"
     ],
     "colorImages": {
-      "Jet Black": "assets/trending/fs_harajuku_samurai_black.jpg"
+      "Jet Black": "assets/trending/fs_harajuku_samurai_black.jpg",
+      "Blood Crimson": "assets/trending/fs_harajuku_samurai_black.jpg"
     }
   },
   {
@@ -1368,12 +1468,20 @@ const PRODUCTS = [
     "baseCost": 950,
     "profit": 740,
     "retailPrice": 1690,
-    "image": "assets/trending/fs_bauhaus_geometric_cream.jpg",
-    "description": "Iconic primary geometric shapes (red circle, blue square, yellow triangle) celebrating Bauhaus Weimar 1919 exhibition. Screenprinted on heavyweight cream combed knit.",
+    "image": "assets/trending/fs_bauhaus_black.jpg",
+    "description": "Geometric Bauhaus Weimar constructivist composition printed on premium Onyx Black 240 GSM long-sleeve tee with primary color geometry.",
     "colors": [
       {
-        "name": "Bauhaus Cream",
-        "hex": "#f1f1ee"
+        "name": "Onyx Black",
+        "hex": "#111216"
+      },
+      {
+        "name": "Deep Navy",
+        "hex": "#1e3a8a"
+      },
+      {
+        "name": "Heather Grey",
+        "hex": "#64748b"
       }
     ],
     "sizes": [
@@ -1384,7 +1492,9 @@ const PRODUCTS = [
       "XXL"
     ],
     "colorImages": {
-      "Bauhaus Cream": "assets/trending/fs_bauhaus_geometric_cream.jpg"
+      "Onyx Black": "assets/trending/fs_bauhaus_black.jpg",
+      "Deep Navy": "assets/trending/fs_bauhaus_black.jpg",
+      "Heather Grey": "assets/trending/fs_bauhaus_black.jpg"
     }
   },
   {
@@ -1397,12 +1507,20 @@ const PRODUCTS = [
     "baseCost": 950,
     "profit": 740,
     "retailPrice": 1690,
-    "image": "assets/trending/fs_coffee_vinyl_white.jpg",
-    "description": "Minimalist vinyl record line-art with pour-over coffee cup motif. Dedicated to analog audiophiles and weekend cafe mornings. Ultra-soft breathable combed cotton.",
+    "image": "assets/trending/fs_coffee_grey.jpg",
+    "description": "Retro vinyl record player and warm cafe typography printed on athletic Heather Grey 240 GSM combed cotton full-sleeve shirt.",
     "colors": [
       {
-        "name": "Crisp White",
-        "hex": "#ffffff"
+        "name": "Heather Grey",
+        "hex": "#64748b"
+      },
+      {
+        "name": "Charcoal Black",
+        "hex": "#18181b"
+      },
+      {
+        "name": "Navy Blue",
+        "hex": "#1e3a8a"
       }
     ],
     "sizes": [
@@ -1413,7 +1531,9 @@ const PRODUCTS = [
       "XXL"
     ],
     "colorImages": {
-      "Crisp White": "assets/trending/fs_coffee_vinyl_white.jpg"
+      "Heather Grey": "assets/trending/fs_coffee_grey.jpg",
+      "Charcoal Black": "assets/trending/fs_coffee_grey.jpg",
+      "Navy Blue": "assets/trending/fs_coffee_grey.jpg"
     }
   },
   {
@@ -1426,12 +1546,20 @@ const PRODUCTS = [
     "baseCost": 950,
     "profit": 740,
     "retailPrice": 1690,
-    "image": "assets/trending/fs_botanical_fern_cream.jpg",
-    "description": "Scientific botanical field illustration of Alpine Polypodiopsida Fern with vintage classification typography in rich forest green ink on natural ecru cotton.",
+    "image": "assets/trending/fs_botanical_dark.jpg",
+    "description": "Detailed Alpine fern botanical illustration with taxonomic classification in metallic gold ink on dark Forest Charcoal heavyweight long-sleeve tee.",
     "colors": [
       {
-        "name": "Natural Ecru",
-        "hex": "#f5f5f0"
+        "name": "Forest Charcoal",
+        "hex": "#262e2b"
+      },
+      {
+        "name": "Deep Pine",
+        "hex": "#0f5132"
+      },
+      {
+        "name": "Onyx Black",
+        "hex": "#111216"
       }
     ],
     "sizes": [
@@ -1442,7 +1570,9 @@ const PRODUCTS = [
       "XXL"
     ],
     "colorImages": {
-      "Natural Ecru": "assets/trending/fs_botanical_fern_cream.jpg"
+      "Forest Charcoal": "assets/trending/fs_botanical_dark.jpg",
+      "Deep Pine": "assets/trending/fs_botanical_dark.jpg",
+      "Onyx Black": "assets/trending/fs_botanical_dark.jpg"
     }
   },
   {
@@ -1455,12 +1585,20 @@ const PRODUCTS = [
     "baseCost": 990,
     "profit": 860,
     "retailPrice": 1850,
-    "image": "assets/trending/fs_faiz_poetry_white.jpg",
-    "description": "Immortal revolutionary verse by Faiz Ahmad Faiz 'بول کہ لب آزاد ہیں ترے' in modern editorial typography. 240 GSM heavy combed cotton with double-stitched ribbed cuffs.",
+    "image": "assets/trending/fs_faiz_poetry_dark.jpg",
+    "description": "Revolutionary Faiz Ahmad Faiz Urdu poetry 'بول کہ لب آزاد ہیں تیرے' in bold Nastaliq script printed on Onyx Black 240 GSM luxury full-sleeve shirt.",
     "colors": [
       {
-        "name": "Pure White",
-        "hex": "#ffffff"
+        "name": "Onyx Black",
+        "hex": "#111216"
+      },
+      {
+        "name": "Crimson Maroon",
+        "hex": "#881337"
+      },
+      {
+        "name": "Midnight Navy",
+        "hex": "#1e3a8a"
       }
     ],
     "sizes": [
@@ -1471,7 +1609,9 @@ const PRODUCTS = [
       "XXL"
     ],
     "colorImages": {
-      "Pure White": "assets/trending/fs_faiz_poetry_white.jpg"
+      "Onyx Black": "assets/trending/fs_faiz_poetry_dark.jpg",
+      "Crimson Maroon": "assets/trending/fs_faiz_poetry_dark.jpg",
+      "Midnight Navy": "assets/trending/fs_faiz_poetry_dark.jpg"
     }
   },
   {
@@ -1484,12 +1624,20 @@ const PRODUCTS = [
     "baseCost": 980,
     "profit": 810,
     "retailPrice": 1790,
-    "image": "assets/trending/fs_synthwave_sunset_grey.jpg",
-    "description": "Outrun aesthetic neon sunset horizon with tropical palm tree silhouettes and synthwave grid lines. Heather grey vintage cotton with ribbed cuffs.",
+    "image": "assets/trending/fs_synthwave_dark.jpg",
+    "description": "Neon grid synthwave sun and palm silhouette 80s aesthetic printed with electric pink and cyan inks on pitch Onyx Black heavyweight full-sleeve shirt.",
     "colors": [
       {
+        "name": "Onyx Black",
+        "hex": "#111216"
+      },
+      {
         "name": "Heather Grey",
-        "hex": "#94a3b8"
+        "hex": "#64748b"
+      },
+      {
+        "name": "Midnight Navy",
+        "hex": "#1e3a8a"
       }
     ],
     "sizes": [
@@ -1500,7 +1648,9 @@ const PRODUCTS = [
       "XXL"
     ],
     "colorImages": {
-      "Heather Grey": "assets/trending/fs_synthwave_sunset_grey.jpg"
+      "Onyx Black": "assets/trending/fs_synthwave_dark.jpg",
+      "Heather Grey": "assets/trending/fs_synthwave_dark.jpg",
+      "Midnight Navy": "assets/trending/fs_synthwave_dark.jpg"
     }
   },
   {
@@ -1513,12 +1663,20 @@ const PRODUCTS = [
     "baseCost": 950,
     "profit": 800,
     "retailPrice": 1750,
-    "image": "assets/pk_products/tee_sukoon_urdu.jpg",
-    "description": "Modern Nastaliq letterform 'سکون' (Peace & Serenity) centered in clean Japanese-streetwear minimalist badge layout on 220 GSM super combed cotton.",
+    "image": "assets/trending/tee_sukoon_maroon.jpg",
+    "description": "Sukoon (سکون) elegant Nastaliq calligraphy graphic print on luxury 210 GSM combed heavyweight cotton. Crimson maroon base with high-density print.",
     "colors": [
       {
-        "name": "Pure White",
-        "hex": "#ffffff"
+        "name": "Crimson Maroon",
+        "hex": "#881337"
+      },
+      {
+        "name": "Onyx Black",
+        "hex": "#111216"
+      },
+      {
+        "name": "Deep Navy",
+        "hex": "#1e293b"
       }
     ],
     "sizes": [
@@ -1529,7 +1687,9 @@ const PRODUCTS = [
       "XXL"
     ],
     "colorImages": {
-      "Pure White": "assets/pk_products/tee_sukoon_urdu.jpg"
+      "Crimson Maroon": "assets/trending/tee_sukoon_maroon.jpg",
+      "Onyx Black": "assets/trending/tee_sukoon_maroon.jpg",
+      "Deep Navy": "assets/trending/tee_sukoon_maroon.jpg"
     }
   },
   {
@@ -1542,12 +1702,20 @@ const PRODUCTS = [
     "baseCost": 990,
     "profit": 800,
     "retailPrice": 1790,
-    "image": "assets/pk_products/tee_truck_art_pop.jpg",
-    "description": "240 GSM heavy combed cotton. Vibrant Karachi truck art chamakpatti peacock motif fused with contemporary streetwear pop-art framing.",
+    "image": "assets/trending/tee_truck_art_blue.jpg",
+    "description": "Hand-painted Pakistani truck art peacock and floral motifs rendered in vibrant pop-art silkscreen on Royal Blue 210 GSM cotton.",
     "colors": [
       {
-        "name": "Pure White",
-        "hex": "#ffffff"
+        "name": "Royal Blue",
+        "hex": "#2563eb"
+      },
+      {
+        "name": "Onyx Black",
+        "hex": "#111216"
+      },
+      {
+        "name": "Deep Navy",
+        "hex": "#1e293b"
       }
     ],
     "sizes": [
@@ -1558,7 +1726,9 @@ const PRODUCTS = [
       "XXL"
     ],
     "colorImages": {
-      "Pure White": "assets/pk_products/tee_truck_art_pop.jpg"
+      "Royal Blue": "assets/trending/tee_truck_art_blue.jpg",
+      "Onyx Black": "assets/trending/tee_truck_art_blue.jpg",
+      "Deep Navy": "assets/trending/tee_truck_art_blue.jpg"
     }
   },
   {
@@ -1571,12 +1741,20 @@ const PRODUCTS = [
     "baseCost": 990,
     "profit": 800,
     "retailPrice": 1790,
-    "image": "assets/pk_products/tee_karachi_cyberpunk.jpg",
-    "description": "Saddar neon skyline & Clifton coastal highway in 1980s retro-futuristic synthwave vector with technical grid coordinates on 240 GSM cotton.",
+    "image": "assets/trending/tee_karachi_black.jpg",
+    "description": "Neon-drenched futuristic Karachi 2099 skyline and Urdu typography printed with ultra-vibrant cyan and magenta inks on pitch Onyx Black.",
     "colors": [
       {
-        "name": "Pure White",
-        "hex": "#ffffff"
+        "name": "Onyx Black",
+        "hex": "#111216"
+      },
+      {
+        "name": "Deep Navy",
+        "hex": "#1e293b"
+      },
+      {
+        "name": "Mineral Charcoal",
+        "hex": "#374151"
       }
     ],
     "sizes": [
@@ -1587,7 +1765,9 @@ const PRODUCTS = [
       "XXL"
     ],
     "colorImages": {
-      "Pure White": "assets/pk_products/tee_karachi_cyberpunk.jpg"
+      "Onyx Black": "assets/trending/tee_karachi_black.jpg",
+      "Deep Navy": "assets/trending/tee_karachi_black.jpg",
+      "Mineral Charcoal": "assets/trending/tee_karachi_black.jpg"
     }
   },
   {
