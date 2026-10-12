@@ -42,6 +42,7 @@
           "size": "XL",
           "backCustomName": "HAMZA 07",
           "hasSleevePrint": true,
+          "sleeveImage": "assets/logo.jpg",
           "sleeveText": "MF STREETWEAR",
           "frontImage": "assets/pk_designs/design_tee_truck_art_pop.png",
           "backImage": "assets/pk_designs/design_tee_faiz_bol.png"

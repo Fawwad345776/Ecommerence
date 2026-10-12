@@ -2418,7 +2418,7 @@ window.CustomStudio = {
     garment: "half-sleeve-tee", // "half-sleeve-tee" | "full-sleeve-tee" | "hoodie"
     option: 1, // 1 | 2 | 3 | 4
     currentView: "front", // "front" | "back" | "sleeves"
-    option3Side: "front", // "front" | "back"
+    option3Side: "front", // "front" | "back" (single-side choice)
     color: "Pure White",
     colorHex: "#ffffff",
     size: "L",
@@ -2428,24 +2428,44 @@ window.CustomStudio = {
       opt2Center: "assets/pk_designs/design_tee_truck_art_pop.png",
       opt3Center: "assets/pk_designs/design_tee_sukoon_urdu.png",
       opt4Front: "assets/pk_designs/design_tee_truck_art_pop.png",
-      opt4Back: "assets/pk_designs/design_tee_faiz_bol.png"
+      opt4Back: "assets/pk_designs/design_tee_faiz_bol.png",
+      opt4Sleeve: "assets/logo.jpg"
     },
     backName: "YOUR NAME 10",
     hasSleeves: true,
-    sleeveText: "MF RACING",
     // Base costs
     garmentCosts: {
-      "half-sleeve-tee": { name: "Half Sleeve T-Shirt (210 GSM Combed Cotton)", baseCost: 850, frontImg: "assets/blank_tshirt_front.jpg", backImg: "assets/blank_tshirt_back.jpg" },
-      "full-sleeve-tee": { name: "Full Sleeve T-Shirt (240 GSM Luxury Interlock)", baseCost: 950, frontImg: "assets/trending/fs_plain_white.jpg", backImg: "assets/blank_tshirt_back.jpg" },
-      "hoodie": { name: "Heavyweight Fleece Hoodie (380 GSM Thermal)", baseCost: 2100, frontImg: "assets/blank_hoodie_front.jpg", backImg: "assets/blank_hoodie_back.jpg" }
+      "half-sleeve-tee": { name: "Half Sleeve T-Shirt (210 GSM Combed Cotton)", baseCost: 850 },
+      "full-sleeve-tee": { name: "Full Sleeve T-Shirt (240 GSM Luxury Interlock)", baseCost: 950 },
+      "hoodie": { name: "Heavyweight Fleece Hoodie (380 GSM Thermal)", baseCost: 2100 }
     },
     printFees: {
       1: { name: "Left Hand / Chest Small Logo", fee: 150 },
       2: { name: "Front Center Image Print", fee: 200 },
-      3: { name: "Front / Back Center (Choice)", fee: 200 },
-      4: { name: "Front + Back + Name + Both Sleeves", fee: 700 }
+      3: { name: "Single-Side Center Print (Front OR Back)", fee: 200 },
+      4: { name: "Front + Back + Name (Text) + Sleeves (Image)", fee: 700 }
     },
     merchantProfit: 250 // Rs. 200 + 50 extra markup as requested!
+  },
+
+  getGarmentImage(garmentId, view, colorName) {
+    const gMap = {
+      'half-sleeve-tee': 'half_tee',
+      'full-sleeve-tee': 'full_tee',
+      'hoodie': 'hoodie'
+    };
+    const cMap = {
+      'Pure White': 'white',
+      'Onyx Black': 'black',
+      'Deep Navy': 'navy',
+      'Heather Grey': 'grey',
+      'Royal Blue': 'blue',
+      'Crimson Maroon': 'maroon'
+    };
+    const gKey = gMap[garmentId] || 'half_tee';
+    const vKey = (view === 'back') ? 'back' : 'front';
+    const cKey = cMap[colorName] || 'white';
+    return `assets/studio_blanks/${gKey}_${vKey}_${cKey}.png`;
   },
 
   init() {
@@ -2536,6 +2556,30 @@ window.CustomStudio = {
     this.state.option3Side = side;
     const badge = document.getElementById('badge-opt3-side');
     if (badge) badge.textContent = (side === 'front') ? 'Front Center' : 'Back Center';
+
+    const lbl = document.getElementById('opt3-target-side-label');
+    if (lbl) lbl.textContent = (side === 'front') ? 'Front Center' : 'Back Center';
+
+    const btnF = document.getElementById('opt3-btn-front');
+    const btnB = document.getElementById('opt3-btn-back');
+    if (btnF && btnB) {
+      if (side === 'front') {
+        btnF.style.border = '2px solid #059669';
+        btnF.style.background = '#059669';
+        btnF.style.color = '#ffffff';
+        btnB.style.border = '1.5px solid #cbd5e1';
+        btnB.style.background = '#ffffff';
+        btnB.style.color = '#334155';
+      } else {
+        btnB.style.border = '2px solid #059669';
+        btnB.style.background = '#059669';
+        btnB.style.color = '#ffffff';
+        btnF.style.border = '1.5px solid #cbd5e1';
+        btnF.style.background = '#ffffff';
+        btnF.style.color = '#334155';
+      }
+    }
+
     this.switchView(side);
   },
 
@@ -2566,6 +2610,12 @@ window.CustomStudio = {
         this.state.images.opt4Back = dataUrl;
         const img = document.getElementById('img-opt4-back');
         if (img) img.src = dataUrl;
+      } else if (targetKey === 'opt4-sleeve') {
+        this.state.images.opt4Sleeve = dataUrl;
+        const l = document.getElementById('img-opt4-sleeve-left');
+        const r = document.getElementById('img-opt4-sleeve-right');
+        if (l) l.src = dataUrl;
+        if (r) r.src = dataUrl;
       }
       this.updatePreviewStage();
       if (typeof showToast === 'function') showToast('🎨 Custom artwork uploaded & preview updated!');
@@ -2586,6 +2636,12 @@ window.CustomStudio = {
       this.state.images.opt3Center = src;
       const img = document.getElementById('img-opt3-center');
       if (img) img.src = src;
+    } else if (targetKey === 'opt4-sleeve') {
+      this.state.images.opt4Sleeve = src;
+      const l = document.getElementById('img-opt4-sleeve-left');
+      const r = document.getElementById('img-opt4-sleeve-right');
+      if (l) l.src = src;
+      if (r) r.src = src;
     }
     this.updatePreviewStage();
     if (typeof showToast === 'function') showToast('✨ Applied sample artwork preset!');
@@ -2601,18 +2657,10 @@ window.CustomStudio = {
     this.state.hasSleeves = checked;
     const lSleeve = document.getElementById('overlay-opt4-sleeve-left');
     const rSleeve = document.getElementById('overlay-opt4-sleeve-right');
-    const inp = document.getElementById('input-opt4-sleeves');
+    const uploadWrapper = document.getElementById('wrapper-opt4-sleeve-upload');
     if (lSleeve) lSleeve.style.display = (checked && this.state.option === 4) ? 'flex' : 'none';
     if (rSleeve) rSleeve.style.display = (checked && this.state.option === 4) ? 'flex' : 'none';
-    if (inp) inp.disabled = !checked;
-  },
-
-  updateSleevesText(text) {
-    this.state.sleeveText = text;
-    const l = document.getElementById('text-opt4-sleeve-left');
-    const r = document.getElementById('text-opt4-sleeve-right');
-    if (l) l.textContent = text || 'Left Sleeve';
-    if (r) r.textContent = text || 'Right Sleeve';
+    if (uploadWrapper) uploadWrapper.style.opacity = checked ? '1' : '0.4';
   },
 
   setColor(colorName, hex) {
@@ -2627,15 +2675,14 @@ window.CustomStudio = {
       el.style.border = match ? '2.5px solid #0f172a' : '1.5px solid #cbd5e1';
     });
 
+    // Background of stage remains 100% clean - no tint overlay!
     const tint = document.getElementById('studio-garment-tint');
     if (tint) {
-      if (hex === '#ffffff') {
-        tint.style.opacity = '0';
-      } else {
-        tint.style.backgroundColor = hex;
-        tint.style.opacity = '0.78';
-      }
+      tint.style.opacity = '0';
+      tint.style.display = 'none';
     }
+
+    this.updatePreviewStage();
   },
 
   setSize(size) {
@@ -2658,10 +2705,10 @@ window.CustomStudio = {
     const view = this.state.currentView;
 
     if (imgEl && garment) {
-      imgEl.src = (view === 'back') ? garment.backImg : garment.frontImg;
+      imgEl.src = this.getGarmentImage(this.state.garment, view, this.state.color);
     }
 
-    ['overlay-opt1-chest', 'overlay-opt2-center', 'overlay-opt3-center', 'overlay-opt4-front', 'overlay-opt4-back', 'overlay-opt4-name', 'overlay-opt4-sleeve-left', 'overlay-opt4-sleeve-right'].forEach(id => {
+    ['overlay-opt1-chest', 'overlay-opt2-center', 'overlay-opt3-center', 'overlay-opt3-blank', 'overlay-opt4-front', 'overlay-opt4-back', 'overlay-opt4-name', 'overlay-opt4-sleeve-left', 'overlay-opt4-sleeve-right'].forEach(id => {
       const el = document.getElementById(id);
       if (el) el.style.display = 'none';
     });
@@ -2683,6 +2730,17 @@ window.CustomStudio = {
       if (view === targetSide) {
         const o3 = document.getElementById('overlay-opt3-center');
         if (o3) o3.style.display = 'flex';
+      } else {
+        const o3Blank = document.getElementById('overlay-opt3-blank');
+        const o3BlankText = document.getElementById('overlay-opt3-blank-text');
+        if (o3Blank) {
+          o3Blank.style.display = 'block';
+          if (o3BlankText) {
+            o3BlankText.textContent = (targetSide === 'front')
+              ? "Option 3: Artwork is printed on FRONT ONLY. This back side remains 100% clean blank fabric!"
+              : "Option 3: Artwork is printed on BACK ONLY. This front side remains 100% clean blank fabric!";
+          }
+        }
       }
     } else if (opt === 4) {
       if (view === 'front') {
@@ -2743,7 +2801,7 @@ window.CustomStudio = {
       qty: 1,
       size: this.state.size,
       color: this.state.color,
-      image: (this.state.currentView === 'back') ? garment.backImg : garment.frontImg,
+      image: this.getGarmentImage(this.state.garment, this.state.currentView, this.state.color),
       isCustom: true,
       isCustomPrint: true,
       customConfig: {
@@ -2760,7 +2818,7 @@ window.CustomStudio = {
         option3Side: (this.state.option === 3) ? this.state.option3Side : null,
         backCustomName: (this.state.option === 4) ? this.state.backName : null,
         hasSleevePrint: (this.state.option === 4) ? this.state.hasSleeves : false,
-        sleeveText: (this.state.option === 4) ? this.state.sleeveText : null,
+        sleeveImage: (this.state.option === 4 && this.state.hasSleeves) ? this.state.images.opt4Sleeve : null,
         frontImage: (this.state.option === 1) ? this.state.images.opt1Chest :
                     (this.state.option === 2) ? this.state.images.opt2Center :
                     (this.state.option === 3 && this.state.option3Side === 'front') ? this.state.images.opt3Center :
@@ -2794,15 +2852,19 @@ window.CustomStudio = {
       opt2Center: "assets/pk_designs/design_tee_truck_art_pop.png",
       opt3Center: "assets/pk_designs/design_tee_sukoon_urdu.png",
       opt4Front: "assets/pk_designs/design_tee_truck_art_pop.png",
-      opt4Back: "assets/pk_designs/design_tee_faiz_bol.png"
+      opt4Back: "assets/pk_designs/design_tee_faiz_bol.png",
+      opt4Sleeve: "assets/logo.jpg"
     };
     this.state.backName = "YOUR NAME 10";
     const nameInp = document.getElementById('input-opt4-name');
     if (nameInp) nameInp.value = "YOUR NAME 10";
-    const sleeveInp = document.getElementById('input-opt4-sleeves');
-    if (sleeveInp) sleeveInp.value = "MF RACING";
+    const l = document.getElementById('img-opt4-sleeve-left');
+    const r = document.getElementById('img-opt4-sleeve-right');
+    if (l) l.src = "assets/logo.jpg";
+    if (r) r.src = "assets/logo.jpg";
     this.setColor("Pure White", "#ffffff");
     this.setSize("L");
+    this.setOption3Side("front");
     this.updatePreviewStage();
     this.updatePricing();
     if (typeof showToast === 'function') showToast("↶ Reset custom design to defaults.");

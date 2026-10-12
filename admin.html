@@ -792,8 +792,12 @@
                                       </div>
                                       <div>
                                         <div><strong>Sides:</strong> Front Center + Back Center Graphics</div>
-                                        <div><strong>Back Custom Name:</strong> <span style="background: #eff6ff; color: #1e40af; font-weight: 800; padding: 2px 6px; border-radius: 4px; font-family: monospace;">"${cfg.backCustomName || 'YOUR NAME'}"</span></div>
-                                        <div><strong>Both Sleeves:</strong> ${cfg.hasSleevePrint ? `<span style="background: #ecfdf5; color: #047857; font-weight: 800; padding: 2px 6px; border-radius: 4px; font-family: monospace;">Left & Right: "${cfg.sleeveText || 'MF'}"</span>` : '<span style="color: #94a3b8;">None</span>'}</div>
+                                        <div><strong>Back Custom Name:</strong> <span style="background: #eff6ff; color: #1e40af; font-weight: 800; padding: 2px 6px; border-radius: 4px; font-family: monospace;">"${cfg.backCustomName || 'YOUR NAME'}"</span> (Text)</div>
+                                        <div><strong>Both Sleeves:</strong> ${cfg.hasSleevePrint ? `
+                                          <span style="display: inline-flex; align-items: center; gap: 6px; background: #ecfdf5; color: #047857; font-weight: 800; padding: 2px 8px; border-radius: 4px;">
+                                            ${cfg.sleeveImage ? `<img src="${cfg.sleeveImage}" style="width: 22px; height: 22px; object-fit: contain; border-radius: 2px; background: #0f172a;" title="Sleeve Graphic">` : ''}
+                                            Left & Right Sleeve Badge (Image)
+                                          </span>` : '<span style="color: #94a3b8;">None</span>'}</div>
                                       </div>
                                     </div>
                                   </div>
@@ -949,7 +953,7 @@
                     <td>${i.size || 'M'}</td>
                     <td>${i.color || 'White'}</td>
                     <td>${i.qty}</td>
-                    <td>${i.customConfig ? `Custom Option ${i.customConfig.optionNumber} (${i.customConfig.optionTitle}${i.customConfig.backCustomName ? ` | Name: ${i.customConfig.backCustomName}` : ''}${i.customConfig.hasSleevePrint ? ` | Sleeves: ${i.customConfig.sleeveText}` : ''})` : (i.isCustom ? (i.customSides?.hasFront && i.customSides?.hasBack ? 'Front & Back 2-Sided' : 'Custom Printed') : 'Standard')}</td>
+                    <td>${i.customConfig ? `Custom Option ${i.customConfig.optionNumber} (${i.customConfig.optionTitle}${i.customConfig.backCustomName ? ` | Name (Text): ${i.customConfig.backCustomName}` : ''}${i.customConfig.hasSleevePrint ? ` | Sleeves: Image Badge` : ''})` : (i.isCustom ? (i.customSides?.hasFront && i.customSides?.hasBack ? 'Front & Back 2-Sided' : 'Custom Printed') : 'Standard')}</td>
                   </tr>
                 `).join('')}
               </tbody>

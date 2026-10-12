@@ -255,12 +255,22 @@
                 </span>
               </div>
 
-              <!-- OVERLAY 4D & 4E: Sleeves (Both Sides) -->
-              <div id="overlay-opt4-sleeve-left" style="display: none; position: absolute; top: 38%; left: 6%; width: 56px; height: 60px; border: 1.5px dashed #059669; background: rgba(209, 250, 229, 0.7); border-radius: 6px; align-items: center; justify-content: center; z-index: 11; font-size: 0.62rem; font-weight: 800; color: #065f46; text-align: center; pointer-events: none;">
-                <span id="text-opt4-sleeve-left">Left Sleeve</span>
+              <!-- OVERLAY 4D & 4E: Sleeves (Both Sides) - Image Badges (NOT text) -->
+              <div id="overlay-opt4-sleeve-left" style="display: none; position: absolute; top: 36%; left: 5%; width: 64px; height: 64px; border: 2px dashed #059669; background: rgba(209, 250, 229, 0.55); border-radius: 8px; align-items: center; justify-content: center; z-index: 11; overflow: hidden; pointer-events: none; box-shadow: 0 4px 12px rgba(0,0,0,0.12);">
+                <img id="img-opt4-sleeve-left" src="assets/logo.jpg" alt="Left Sleeve Image" style="max-width: 90%; max-height: 90%; object-fit: contain;">
+                <span style="position: absolute; bottom: 1px; font-size: 0.54rem; background: #065f46; color: #fff; padding: 1px 4px; border-radius: 3px; font-weight: 800; white-space: nowrap;">L Sleeve</span>
               </div>
-              <div id="overlay-opt4-sleeve-right" style="display: none; position: absolute; top: 38%; right: 6%; width: 56px; height: 60px; border: 1.5px dashed #059669; background: rgba(209, 250, 229, 0.7); border-radius: 6px; align-items: center; justify-content: center; z-index: 11; font-size: 0.62rem; font-weight: 800; color: #065f46; text-align: center; pointer-events: none;">
-                <span id="text-opt4-sleeve-right">Right Sleeve</span>
+              <div id="overlay-opt4-sleeve-right" style="display: none; position: absolute; top: 36%; right: 5%; width: 64px; height: 64px; border: 2px dashed #059669; background: rgba(209, 250, 229, 0.55); border-radius: 8px; align-items: center; justify-content: center; z-index: 11; overflow: hidden; pointer-events: none; box-shadow: 0 4px 12px rgba(0,0,0,0.12);">
+                <img id="img-opt4-sleeve-right" src="assets/logo.jpg" alt="Right Sleeve Image" style="max-width: 90%; max-height: 90%; object-fit: contain;">
+                <span style="position: absolute; bottom: 1px; font-size: 0.54rem; background: #065f46; color: #fff; padding: 1px 4px; border-radius: 3px; font-weight: 800; white-space: nowrap;">R Sleeve</span>
+              </div>
+
+              <!-- OVERLAY 3-BLANK: Notification when viewing unprinted side in Option 3 -->
+              <div id="overlay-opt3-blank" style="display: none; position: absolute; top: 42%; left: 14%; width: 72%; padding: 12px 16px; background: rgba(15, 23, 42, 0.9); backdrop-filter: blur(8px); border: 1.5px dashed #a7f3d0; border-radius: 10px; color: #ffffff; text-align: center; z-index: 14; pointer-events: none; box-shadow: 0 8px 24px rgba(0,0,0,0.25);">
+                <div style="font-size: 0.95rem; font-weight: 800; margin-bottom: 3px; color: #a7f3d0;">✨ Pure Blank Fabric Side</div>
+                <div id="overlay-opt3-blank-text" style="font-size: 0.74rem; color: #e2e8f0; font-weight: 600; line-height: 1.3;">
+                  Option 3 prints on 1 side only. The other side remains completely plain blank fabric!
+                </div>
               </div>
             </div>
 
@@ -357,9 +367,9 @@
                   <div>
                     <div style="display: flex; align-items: center; gap: 8px; margin-bottom: 3px;">
                       <span style="font-size: 0.76rem; font-weight: 900; background: #059669; color: #fff; padding: 2px 6px; border-radius: 4px;">OPTION 3</span>
-                      <strong style="font-size: 0.88rem; color: #0f172a;">Front / Back Center (Choice)</strong>
+                      <strong style="font-size: 0.88rem; color: #0f172a;">Single-Side Center Print (Front OR Back Only)</strong>
                     </div>
-                    <span style="font-size: 0.76rem; color: #64748b;">Aapki marzi: sirf Front pe karwayen ya sirf Back pe</span>
+                    <span style="font-size: 0.76rem; color: #64748b;">Dono sides nahi — Aapki choice: Ya sirf Front pe ya sirf Back pe (1-Side Only)</span>
                   </div>
                   <div style="text-align: right;">
                     <strong style="font-size: 0.9rem; color: #0f172a;">+Rs. 200</strong>
@@ -372,9 +382,9 @@
                   <div>
                     <div style="display: flex; align-items: center; gap: 8px; margin-bottom: 3px;">
                       <span style="font-size: 0.76rem; font-weight: 900; background: #7c3aed; color: #fff; padding: 2px 6px; border-radius: 4px;">OPTION 4</span>
-                      <strong style="font-size: 0.88rem; color: #0f172a;">Front + Back + Name + Both Sleeves</strong>
+                      <strong style="font-size: 0.88rem; color: #0f172a;">Front + Back + Name (Text) + Both Sleeves (Image)</strong>
                     </div>
-                    <span style="font-size: 0.76rem; color: #64748b;">Front/Back dono + Back pe Naam + Both Sleeves (Left/Right)</span>
+                    <span style="font-size: 0.76rem; color: #64748b;">Front/Back graphics + Back pe custom name text + Left & Right sleeves pe image badge</span>
                   </div>
                   <div style="text-align: right;">
                     <strong style="font-size: 0.9rem; color: #7c3aed;">+Rs. 700</strong>
@@ -424,24 +434,27 @@
 
               <!-- Controls for Option 3: Front OR Back Center Choice -->
               <div id="controls-opt3" style="display: none;">
-                <div style="margin-bottom: 12px; background: #ecfdf5; border: 1.5px solid #a7f3d0; border-radius: 8px; padding: 10px 12px;">
-                  <span style="font-size: 0.8rem; font-weight: 800; color: #065f46; display: block; margin-bottom: 6px;">
-                    Select Where You Want To Print (User Choice):
-                  </span>
-                  <div style="display: flex; gap: 14px;">
-                    <label style="font-size: 0.82rem; font-weight: 700; color: #0f172a; display: flex; align-items: center; gap: 6px; cursor: pointer;">
-                      <input type="radio" name="opt3-side-choice" value="front" checked onchange="CustomStudio.setOption3Side('front')">
-                      <span>Front Center Print Only</span>
-                    </label>
-                    <label style="font-size: 0.82rem; font-weight: 700; color: #0f172a; display: flex; align-items: center; gap: 6px; cursor: pointer;">
-                      <input type="radio" name="opt3-side-choice" value="back" onchange="CustomStudio.setOption3Side('back')">
-                      <span>Back Center Print Only</span>
-                    </label>
+                <div style="margin-bottom: 14px; background: #f0fdf4; border: 1.5px solid #86efac; border-radius: 10px; padding: 12px 14px;">
+                  <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;">
+                    <span style="font-size: 0.82rem; font-weight: 800; color: #065f46;">
+                      Choose Print Placement (Single-Side Only):
+                    </span>
+                    <span style="font-size: 0.7rem; font-weight: 800; color: #047857; background: #dcfce7; padding: 2px 8px; border-radius: 99px;">
+                      Opposite Side Blank
+                    </span>
+                  </div>
+                  <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px;" id="opt3-side-selector">
+                    <button type="button" id="opt3-btn-front" onclick="CustomStudio.setOption3Side('front')" style="padding: 10px 12px; border-radius: 8px; border: 2px solid #059669; background: #059669; color: #ffffff; font-weight: 800; font-size: 0.8rem; cursor: pointer; text-align: center; transition: all 0.2s ease;">
+                      👕 Front Side Only<br><span style="font-size: 0.7rem; opacity: 0.85; font-weight: 500;">(Back remains blank)</span>
+                    </button>
+                    <button type="button" id="opt3-btn-back" onclick="CustomStudio.setOption3Side('back')" style="padding: 10px 12px; border-radius: 8px; border: 1.5px solid #cbd5e1; background: #ffffff; color: #334155; font-weight: 800; font-size: 0.8rem; cursor: pointer; text-align: center; transition: all 0.2s ease;">
+                      🔄 Back Side Only<br><span style="font-size: 0.7rem; color: #64748b; font-weight: 500;">(Front remains blank)</span>
+                    </button>
                   </div>
                 </div>
 
-                <label style="font-size: 0.8rem; font-weight: 800; color: #334155; margin-bottom: 6px; display: block;">
-                  Upload Design Image for Selected Side:
+                <label style="font-size: 0.8rem; font-weight: 800; color: #334155; margin-bottom: 6px; display: block;" id="label-opt3-upload">
+                  Upload Center Image for Selected Side (<span id="opt3-target-side-label" style="color: #059669; font-weight: 800;">Front Center</span>):
                 </label>
                 <input type="file" id="file-opt3-center" accept="image/*" onchange="CustomStudio.handleFileUpload(event, 'opt3-center')" style="font-size: 0.8rem; width: 100%; padding: 8px; border: 1.5px dashed #cbd5e1; border-radius: 8px; background: #f8fafc; cursor: pointer; margin-bottom: 8px;">
                 <div style="display: flex; gap: 6px; flex-wrap: wrap;">
@@ -456,7 +469,7 @@
                 <!-- 4A: Front Artwork -->
                 <div style="border-bottom: 1px solid #e2e8f0; padding-bottom: 10px;">
                   <label style="font-size: 0.8rem; font-weight: 800; color: #0f172a; margin-bottom: 4px; display: block;">
-                    1. Front Center Artwork:
+                    1. Front Center Artwork (Image Upload):
                   </label>
                   <input type="file" id="file-opt4-front" accept="image/*" onchange="CustomStudio.handleFileUpload(event, 'opt4-front')" style="font-size: 0.8rem; width: 100%; padding: 6px; border: 1px dashed #cbd5e1; border-radius: 6px; background: #f8fafc;">
                 </div>
@@ -464,32 +477,44 @@
                 <!-- 4B: Back Artwork -->
                 <div style="border-bottom: 1px solid #e2e8f0; padding-bottom: 10px;">
                   <label style="font-size: 0.8rem; font-weight: 800; color: #0f172a; margin-bottom: 4px; display: block;">
-                    2. Back Center Artwork:
+                    2. Back Center Artwork (Image Upload):
                   </label>
                   <input type="file" id="file-opt4-back" accept="image/*" onchange="CustomStudio.handleFileUpload(event, 'opt4-back')" style="font-size: 0.8rem; width: 100%; padding: 6px; border: 1px dashed #cbd5e1; border-radius: 6px; background: #f8fafc;">
                 </div>
 
-                <!-- 4C: Back Custom Name Print Input -->
+                <!-- 4C: Back Custom Name Print Input (TEXT ONLY) -->
                 <div style="border-bottom: 1px solid #e2e8f0; padding-bottom: 10px;">
                   <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 4px;">
                     <label for="input-opt4-name" style="font-size: 0.8rem; font-weight: 800; color: #1e40af; margin: 0;">
-                      3. Back Custom Name / Text Print:
+                      3. Back Custom Name / Jersey Number (Text Only):
                     </label>
                     <span style="font-size: 0.7rem; font-weight: 700; color: #2563eb;">Live On Back View</span>
                   </div>
                   <input type="text" id="input-opt4-name" value="YOUR NAME 10" maxlength="22" oninput="CustomStudio.updateBackName(this.value)" placeholder="e.g. BABAR 56 or HAMZA 07" style="font-size: 0.85rem; font-weight: 700; width: 100%; padding: 8px 12px; border: 1.5px solid #93c5fd; border-radius: 8px; background: #eff6ff;">
+                  <span style="font-size: 0.7rem; color: #3b82f6; display: block; margin-top: 4px; font-weight: 600;">
+                    ✓ Sirf Name text hoga — back collar ke neechay stylish print.
+                  </span>
                 </div>
 
-                <!-- 4D: Both Sleeves Print (Left & Right) -->
+                <!-- 4D: Both Sleeves Print (IMAGE ONLY, NO TEXT) -->
                 <div>
                   <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 4px;">
                     <label style="font-size: 0.8rem; font-weight: 800; color: #065f46; margin: 0; display: flex; align-items: center; gap: 6px;">
                       <input type="checkbox" id="check-opt4-sleeves" checked onchange="CustomStudio.toggleSleeves(this.checked)">
-                      <span>4. Print on Both Sleeves (Left & Right)</span>
+                      <span>4. Both Sleeves Print (Left & Right) — Image Only:</span>
                     </label>
-                    <span style="font-size: 0.7rem; font-weight: 800; color: #059669; background: #ecfdf5; padding: 2px 6px; border-radius: 4px;">Both Sides</span>
+                    <span style="font-size: 0.7rem; font-weight: 800; color: #059669; background: #ecfdf5; padding: 2px 6px; border-radius: 4px;">Image Badge</span>
                   </div>
-                  <input type="text" id="input-opt4-sleeves" value="MF RACING" maxlength="16" oninput="CustomStudio.updateSleevesText(this.value)" placeholder="e.g. MF APPAREL or 1947" style="font-size: 0.82rem; font-weight: 700; width: 100%; padding: 8px 12px; border: 1.5px solid #a7f3d0; border-radius: 8px; background: #f0fdf4;">
+                  <div id="wrapper-opt4-sleeve-upload" style="margin-top: 6px;">
+                    <input type="file" id="file-opt4-sleeve" accept="image/*" onchange="CustomStudio.handleFileUpload(event, 'opt4-sleeve')" style="font-size: 0.8rem; width: 100%; padding: 8px; border: 1.5px dashed #a7f3d0; border-radius: 8px; background: #f0fdf4; cursor: pointer; margin-bottom: 6px;">
+                    <div style="display: flex; gap: 6px; flex-wrap: wrap;">
+                      <button type="button" class="btn-preset-mini" onclick="CustomStudio.setPresetImage('opt4-sleeve', 'assets/logo.jpg')" style="font-size: 0.72rem; padding: 4px 10px; border-radius: 6px; border: 1px solid #cbd5e1; background: #fff; cursor: pointer;">★ MF Store Crest Badge</button>
+                      <button type="button" class="btn-preset-mini" onclick="CustomStudio.setPresetImage('opt4-sleeve', 'assets/pk_designs/design_tee_sukoon_urdu.png')" style="font-size: 0.72rem; padding: 4px 10px; border-radius: 6px; border: 1px solid #cbd5e1; background: #fff; cursor: pointer;">★ Sukoon Logo Badge</button>
+                    </div>
+                    <span style="font-size: 0.72rem; color: #059669; display: block; margin-top: 4px; font-weight: 600;">
+                      ✓ Uploaded graphic image badge dono (Left & Right) sleeves pe print hoga (No text on sleeves).
+                    </span>
+                  </div>
                 </div>
 
               </div>
