@@ -1,5 +1,57 @@
 [
   {
+    "orderId": "MF-TEST-390659",
+    "customer": {
+      "name": "Syed Hamza Custom Tester",
+      "phone": "03009876543",
+      "city": "Karachi",
+      "address": "Clifton Block 4, Sea View"
+    },
+    "paymentPlan": "full_advance",
+    "advancePaid": 3050,
+    "codDue": 0,
+    "total": 3050,
+    "trxId": "TEST-MEEZAN-9921",
+    "status": "in_production",
+    "statusMessage": "Custom Studio: 4-Option Test Order",
+    "courier": "Trax Logistics",
+    "hasCustomPrint": true,
+    "items": [
+      {
+        "id": "custom-hoodie-opt4-test",
+        "name": "Custom Fleece Hoodie — Option 4",
+        "category": "hoodies",
+        "price": 3050,
+        "baseCost": 2800,
+        "profit": 250,
+        "qty": 1,
+        "size": "XL",
+        "color": "Onyx Black",
+        "isCustom": true,
+        "isCustomPrint": true,
+        "customConfig": {
+          "garmentId": "hoodie",
+          "garmentTitle": "Heavyweight Fleece Hoodie (380 GSM Thermal)",
+          "optionNumber": 4,
+          "optionTitle": "Front + Back + Name + Both Sleeves",
+          "printFee": 700,
+          "ceeprintoBaseCost": 2100,
+          "merchantProfit": 250,
+          "totalItemPrice": 3050,
+          "color": "Onyx Black",
+          "size": "XL",
+          "backCustomName": "HAMZA 07",
+          "hasSleevePrint": true,
+          "sleeveText": "MF STREETWEAR",
+          "frontImage": "assets/pk_designs/design_tee_truck_art_pop.png",
+          "backImage": "assets/pk_designs/design_tee_faiz_bol.png"
+        }
+      }
+    ],
+    "date": "12/10/2026",
+    "received_at": "2026-10-12T18:58:03.543Z"
+  },
+  {
     "orderId": "MF-4537",
     "customer": {
       "name": "Hamza Farooq",

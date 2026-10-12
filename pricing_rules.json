@@ -45,5 +45,6 @@
   "wallet_name": "Easypaisa / JazzCash",
   "wallet_account_number": "03001234567",
   "account_title": "MF Store",
-  "last_updated": "2026-10-11T10:18:00.000Z"
+  "custom_print_profit": 250,
+  "last_updated": "2026-10-12T22:00:00.000Z"
 }

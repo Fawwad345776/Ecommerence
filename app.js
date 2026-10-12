@@ -2410,6 +2410,405 @@ const AppState = {
   }
 };
 
+// ============================================================================
+// 3.5 CUSTOM APPAREL DESIGN STUDIO CONTROLLER (T-SHIRTS & HOODIES — 4 PRINT MODES)
+// ============================================================================
+window.CustomStudio = {
+  state: {
+    garment: "half-sleeve-tee", // "half-sleeve-tee" | "full-sleeve-tee" | "hoodie"
+    option: 1, // 1 | 2 | 3 | 4
+    currentView: "front", // "front" | "back" | "sleeves"
+    option3Side: "front", // "front" | "back"
+    color: "Pure White",
+    colorHex: "#ffffff",
+    size: "L",
+    // Images & Artwork Data
+    images: {
+      opt1Chest: "assets/logo.jpg",
+      opt2Center: "assets/pk_designs/design_tee_truck_art_pop.png",
+      opt3Center: "assets/pk_designs/design_tee_sukoon_urdu.png",
+      opt4Front: "assets/pk_designs/design_tee_truck_art_pop.png",
+      opt4Back: "assets/pk_designs/design_tee_faiz_bol.png"
+    },
+    backName: "YOUR NAME 10",
+    hasSleeves: true,
+    sleeveText: "MF RACING",
+    // Base costs
+    garmentCosts: {
+      "half-sleeve-tee": { name: "Half Sleeve T-Shirt (210 GSM Combed Cotton)", baseCost: 850, frontImg: "assets/blank_tshirt_front.jpg", backImg: "assets/blank_tshirt_back.jpg" },
+      "full-sleeve-tee": { name: "Full Sleeve T-Shirt (240 GSM Luxury Interlock)", baseCost: 950, frontImg: "assets/trending/fs_plain_white.jpg", backImg: "assets/blank_tshirt_back.jpg" },
+      "hoodie": { name: "Heavyweight Fleece Hoodie (380 GSM Thermal)", baseCost: 2100, frontImg: "assets/blank_hoodie_front.jpg", backImg: "assets/blank_hoodie_back.jpg" }
+    },
+    printFees: {
+      1: { name: "Left Hand / Chest Small Logo", fee: 150 },
+      2: { name: "Front Center Image Print", fee: 200 },
+      3: { name: "Front / Back Center (Choice)", fee: 200 },
+      4: { name: "Front + Back + Name + Both Sleeves", fee: 700 }
+    },
+    merchantProfit: 250 // Rs. 200 + 50 extra markup as requested!
+  },
+
+  init() {
+    this.updatePreviewStage();
+    this.updatePricing();
+  },
+
+  selectGarment(garmentId) {
+    this.state.garment = garmentId;
+    document.querySelectorAll('.garment-opt-card').forEach(el => el.classList.remove('active'));
+    const activeCard = document.getElementById(
+      garmentId === 'half-sleeve-tee' ? 'garment-half-tee' :
+      (garmentId === 'full-sleeve-tee' ? 'garment-full-tee' : 'garment-hoodie')
+    );
+    if (activeCard) {
+      activeCard.classList.add('active');
+      activeCard.style.border = '2px solid #0f172a';
+      activeCard.style.background = '#f8fafc';
+    }
+    ['garment-half-tee', 'garment-full-tee', 'garment-hoodie'].forEach(id => {
+      if (id !== activeCard?.id) {
+        const el = document.getElementById(id);
+        if (el) { el.style.border = '1.5px solid #cbd5e1'; el.style.background = '#ffffff'; }
+      }
+    });
+
+    this.updatePreviewStage();
+    this.updatePricing();
+    if (typeof showToast === 'function') showToast(`👕 Selected ${this.state.garmentCosts[garmentId].name}`);
+  },
+
+  selectOption(optNum) {
+    this.state.option = optNum;
+    for (let i = 1; i <= 4; i++) {
+      const card = document.getElementById(`mode-opt-${i}`);
+      const panel = document.getElementById(`controls-opt${i}`);
+      if (card) {
+        if (i === optNum) {
+          card.classList.add('active');
+          card.style.border = '2px solid #d97706';
+          card.style.background = '#fffbeb';
+        } else {
+          card.classList.remove('active');
+          card.style.border = '1.5px solid #cbd5e1';
+          card.style.background = '#ffffff';
+        }
+      }
+      if (panel) {
+        panel.style.display = (i === optNum) ? (i === 4 ? 'flex' : 'block') : 'none';
+      }
+    }
+
+    const sleevesTab = document.getElementById('btn-view-sleeves');
+    if (sleevesTab) sleevesTab.style.display = (optNum === 4) ? 'inline-block' : 'none';
+
+    if (optNum === 3) {
+      this.switchView(this.state.option3Side);
+    } else if (this.state.currentView === 'sleeves' && optNum !== 4) {
+      this.switchView('front');
+    }
+
+    const modeTag = document.getElementById('studio-active-mode-tag');
+    if (modeTag) {
+      modeTag.textContent = `Mode: ${this.state.printFees[optNum].name}`;
+    }
+
+    this.updatePreviewStage();
+    this.updatePricing();
+    if (typeof showToast === 'function') showToast(`✨ Selected Option ${optNum}: ${this.state.printFees[optNum].name}`);
+  },
+
+  switchView(view) {
+    this.state.currentView = view;
+    ['btn-view-front', 'btn-view-back', 'btn-view-sleeves'].forEach(id => {
+      const btn = document.getElementById(id);
+      if (btn) {
+        const isActive = (id === `btn-view-${view}`);
+        btn.classList.toggle('active', isActive);
+        btn.style.background = isActive ? '#0f172a' : 'transparent';
+        btn.style.color = isActive ? '#ffffff' : '#475569';
+      }
+    });
+
+    this.updatePreviewStage();
+  },
+
+  setOption3Side(side) {
+    this.state.option3Side = side;
+    const badge = document.getElementById('badge-opt3-side');
+    if (badge) badge.textContent = (side === 'front') ? 'Front Center' : 'Back Center';
+    this.switchView(side);
+  },
+
+  handleFileUpload(event, targetKey) {
+    const file = event.target.files && event.target.files[0];
+    if (!file) return;
+
+    const reader = new FileReader();
+    reader.onload = (e) => {
+      const dataUrl = e.target.result;
+      if (targetKey === 'opt1-chest') {
+        this.state.images.opt1Chest = dataUrl;
+        const img = document.getElementById('img-opt1-chest');
+        if (img) img.src = dataUrl;
+      } else if (targetKey === 'opt2-center') {
+        this.state.images.opt2Center = dataUrl;
+        const img = document.getElementById('img-opt2-center');
+        if (img) img.src = dataUrl;
+      } else if (targetKey === 'opt3-center') {
+        this.state.images.opt3Center = dataUrl;
+        const img = document.getElementById('img-opt3-center');
+        if (img) img.src = dataUrl;
+      } else if (targetKey === 'opt4-front') {
+        this.state.images.opt4Front = dataUrl;
+        const img = document.getElementById('img-opt4-front');
+        if (img) img.src = dataUrl;
+      } else if (targetKey === 'opt4-back') {
+        this.state.images.opt4Back = dataUrl;
+        const img = document.getElementById('img-opt4-back');
+        if (img) img.src = dataUrl;
+      }
+      this.updatePreviewStage();
+      if (typeof showToast === 'function') showToast('🎨 Custom artwork uploaded & preview updated!');
+    };
+    reader.readAsDataURL(file);
+  },
+
+  setPresetImage(targetKey, src) {
+    if (targetKey === 'opt1-chest') {
+      this.state.images.opt1Chest = src;
+      const img = document.getElementById('img-opt1-chest');
+      if (img) img.src = src;
+    } else if (targetKey === 'opt2-center') {
+      this.state.images.opt2Center = src;
+      const img = document.getElementById('img-opt2-center');
+      if (img) img.src = src;
+    } else if (targetKey === 'opt3-center') {
+      this.state.images.opt3Center = src;
+      const img = document.getElementById('img-opt3-center');
+      if (img) img.src = src;
+    }
+    this.updatePreviewStage();
+    if (typeof showToast === 'function') showToast('✨ Applied sample artwork preset!');
+  },
+
+  updateBackName(text) {
+    this.state.backName = text;
+    const nameEl = document.getElementById('text-opt4-name');
+    if (nameEl) nameEl.textContent = text || 'YOUR NAME 10';
+  },
+
+  toggleSleeves(checked) {
+    this.state.hasSleeves = checked;
+    const lSleeve = document.getElementById('overlay-opt4-sleeve-left');
+    const rSleeve = document.getElementById('overlay-opt4-sleeve-right');
+    const inp = document.getElementById('input-opt4-sleeves');
+    if (lSleeve) lSleeve.style.display = (checked && this.state.option === 4) ? 'flex' : 'none';
+    if (rSleeve) rSleeve.style.display = (checked && this.state.option === 4) ? 'flex' : 'none';
+    if (inp) inp.disabled = !checked;
+  },
+
+  updateSleevesText(text) {
+    this.state.sleeveText = text;
+    const l = document.getElementById('text-opt4-sleeve-left');
+    const r = document.getElementById('text-opt4-sleeve-right');
+    if (l) l.textContent = text || 'Left Sleeve';
+    if (r) r.textContent = text || 'Right Sleeve';
+  },
+
+  setColor(colorName, hex) {
+    this.state.color = colorName;
+    this.state.colorHex = hex;
+    const label = document.getElementById('studio-active-color-name');
+    if (label) label.textContent = colorName;
+
+    document.querySelectorAll('.studio-color-dot').forEach(el => {
+      const match = el.getAttribute('title') === colorName;
+      el.classList.toggle('active', match);
+      el.style.border = match ? '2.5px solid #0f172a' : '1.5px solid #cbd5e1';
+    });
+
+    const tint = document.getElementById('studio-garment-tint');
+    if (tint) {
+      if (hex === '#ffffff') {
+        tint.style.opacity = '0';
+      } else {
+        tint.style.backgroundColor = hex;
+        tint.style.opacity = '0.78';
+      }
+    }
+  },
+
+  setSize(size) {
+    this.state.size = size;
+    const label = document.getElementById('studio-active-size-label');
+    if (label) label.textContent = `${size} Standard`;
+
+    document.querySelectorAll('.studio-size-pill').forEach(el => {
+      const match = el.textContent.trim() === size;
+      el.classList.toggle('active', match);
+      el.style.border = match ? '2px solid #0f172a' : '1.5px solid #cbd5e1';
+      el.style.background = match ? '#0f172a' : '#ffffff';
+      el.style.color = match ? '#ffffff' : '#0f172a';
+    });
+  },
+
+  updatePreviewStage() {
+    const garment = this.state.garmentCosts[this.state.garment];
+    const imgEl = document.getElementById('studio-garment-img');
+    const view = this.state.currentView;
+
+    if (imgEl && garment) {
+      imgEl.src = (view === 'back') ? garment.backImg : garment.frontImg;
+    }
+
+    ['overlay-opt1-chest', 'overlay-opt2-center', 'overlay-opt3-center', 'overlay-opt4-front', 'overlay-opt4-back', 'overlay-opt4-name', 'overlay-opt4-sleeve-left', 'overlay-opt4-sleeve-right'].forEach(id => {
+      const el = document.getElementById(id);
+      if (el) el.style.display = 'none';
+    });
+
+    const opt = this.state.option;
+
+    if (opt === 1) {
+      if (view === 'front') {
+        const o1 = document.getElementById('overlay-opt1-chest');
+        if (o1) o1.style.display = 'flex';
+      }
+    } else if (opt === 2) {
+      if (view === 'front') {
+        const o2 = document.getElementById('overlay-opt2-center');
+        if (o2) o2.style.display = 'flex';
+      }
+    } else if (opt === 3) {
+      const targetSide = this.state.option3Side;
+      if (view === targetSide) {
+        const o3 = document.getElementById('overlay-opt3-center');
+        if (o3) o3.style.display = 'flex';
+      }
+    } else if (opt === 4) {
+      if (view === 'front') {
+        const o4f = document.getElementById('overlay-opt4-front');
+        if (o4f) o4f.style.display = 'flex';
+      } else if (view === 'back') {
+        const o4b = document.getElementById('overlay-opt4-back');
+        const o4name = document.getElementById('overlay-opt4-name');
+        if (o4b) o4b.style.display = 'flex';
+        if (o4name) o4name.style.display = 'flex';
+      }
+      if (this.state.hasSleeves) {
+        const lS = document.getElementById('overlay-opt4-sleeve-left');
+        const rS = document.getElementById('overlay-opt4-sleeve-right');
+        if (lS) lS.style.display = 'flex';
+        if (rS) rS.style.display = 'flex';
+      }
+    }
+  },
+
+  updatePricing() {
+    const garment = this.state.garmentCosts[this.state.garment];
+    const print = this.state.printFees[this.state.option];
+    const profit = this.state.merchantProfit; // Rs. 250
+
+    const garmentCost = garment.baseCost;
+    const printFee = print.fee;
+    const total = garmentCost + printFee + profit;
+
+    const rowGarmentLabel = document.getElementById('price-row-garment-label');
+    const rowGarmentVal = document.getElementById('price-row-garment-val');
+    const rowPrintLabel = document.getElementById('price-row-print-label');
+    const rowPrintVal = document.getElementById('price-row-print-val');
+    const rowProfitVal = document.getElementById('price-row-profit-val');
+    const totalDisplay = document.getElementById('studio-total-price-display');
+
+    if (rowGarmentLabel) rowGarmentLabel.textContent = `Garment Base (${garment.name.split('(')[0].trim()}):`;
+    if (rowGarmentVal) rowGarmentVal.textContent = `Rs. ${garmentCost.toLocaleString()}`;
+    if (rowPrintLabel) rowPrintLabel.textContent = `Ceeprinto Print Fee (Option ${this.state.option}):`;
+    if (rowPrintVal) rowPrintVal.textContent = `+Rs. ${printFee.toLocaleString()}`;
+    if (rowProfitVal) rowProfitVal.textContent = `+Rs. ${profit.toLocaleString()}`;
+    if (totalDisplay) totalDisplay.textContent = `Rs. ${total.toLocaleString()}`;
+  },
+
+  buildCustomItem() {
+    const garment = this.state.garmentCosts[this.state.garment];
+    const print = this.state.printFees[this.state.option];
+    const profit = this.state.merchantProfit;
+    const total = garment.baseCost + print.fee + profit;
+
+    return {
+      id: `custom-${this.state.garment}-opt${this.state.option}-${Date.now()}`,
+      name: `Custom ${garment.name.split('(')[0].trim()} — Option ${this.state.option}`,
+      category: this.state.garment.includes('hoodie') ? 'hoodies' : 'tees',
+      price: total,
+      baseCost: garment.baseCost + print.fee,
+      profit: profit,
+      qty: 1,
+      size: this.state.size,
+      color: this.state.color,
+      image: (this.state.currentView === 'back') ? garment.backImg : garment.frontImg,
+      isCustom: true,
+      isCustomPrint: true,
+      customConfig: {
+        garmentId: this.state.garment,
+        garmentTitle: garment.name,
+        optionNumber: this.state.option,
+        optionTitle: print.name,
+        printFee: print.fee,
+        ceeprintoBaseCost: garment.baseCost,
+        merchantProfit: profit,
+        totalItemPrice: total,
+        color: this.state.color,
+        size: this.state.size,
+        option3Side: (this.state.option === 3) ? this.state.option3Side : null,
+        backCustomName: (this.state.option === 4) ? this.state.backName : null,
+        hasSleevePrint: (this.state.option === 4) ? this.state.hasSleeves : false,
+        sleeveText: (this.state.option === 4) ? this.state.sleeveText : null,
+        frontImage: (this.state.option === 1) ? this.state.images.opt1Chest :
+                    (this.state.option === 2) ? this.state.images.opt2Center :
+                    (this.state.option === 3 && this.state.option3Side === 'front') ? this.state.images.opt3Center :
+                    (this.state.option === 4) ? this.state.images.opt4Front : null,
+        backImage: (this.state.option === 3 && this.state.option3Side === 'back') ? this.state.images.opt3Center :
+                   (this.state.option === 4) ? this.state.images.opt4Back : null
+      }
+    };
+  },
+
+  addToCart() {
+    const item = this.buildCustomItem();
+    AppState.cart.push(item);
+    localStorage.setItem("mf_cart", JSON.stringify(AppState.cart));
+    if (typeof updateCartUI === 'function') updateCartUI();
+    if (typeof showToast === 'function') showToast(`🛍️ Added Custom ${item.name} to Cart!`);
+  },
+
+  orderNowWithCard() {
+    const item = this.buildCustomItem();
+    AppState.cart = [item];
+    localStorage.setItem("mf_cart", JSON.stringify(AppState.cart));
+    if (typeof updateCartUI === 'function') updateCartUI();
+    if (typeof openCheckoutModal === 'function') openCheckoutModal();
+    if (typeof showToast === 'function') showToast(`💳 Proceeding to Meezan Bank Card checkout!`);
+  },
+
+  resetDefaults() {
+    this.state.images = {
+      opt1Chest: "assets/logo.jpg",
+      opt2Center: "assets/pk_designs/design_tee_truck_art_pop.png",
+      opt3Center: "assets/pk_designs/design_tee_sukoon_urdu.png",
+      opt4Front: "assets/pk_designs/design_tee_truck_art_pop.png",
+      opt4Back: "assets/pk_designs/design_tee_faiz_bol.png"
+    };
+    this.state.backName = "YOUR NAME 10";
+    const nameInp = document.getElementById('input-opt4-name');
+    if (nameInp) nameInp.value = "YOUR NAME 10";
+    const sleeveInp = document.getElementById('input-opt4-sleeves');
+    if (sleeveInp) sleeveInp.value = "MF RACING";
+    this.setColor("Pure White", "#ffffff");
+    this.setSize("L");
+    this.updatePreviewStage();
+    this.updatePricing();
+    if (typeof showToast === 'function') showToast("↶ Reset custom design to defaults.");
+  }
+};
+
 // 4. INITIALIZATION
 document.addEventListener("DOMContentLoaded", () => {
   initProductVariants();
@@ -2432,6 +2831,9 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   setupCustomizerStudio();
+  if (typeof CustomStudio !== 'undefined' && CustomStudio.init) {
+    CustomStudio.init();
+  }
 });
 
 // Fetch Realtime Pricing Rules from Firebase Bridge
@@ -2465,6 +2867,11 @@ function fetchPricingRules() {
         AppState.customizer.price = AppState.customizer.baseCost + AppState.customizer.profit;
         const priceDisp = document.getElementById("customizer-price-display");
         if (priceDisp) priceDisp.textContent = `Rs. ${AppState.customizer.price.toLocaleString()}`;
+
+        if (data.custom_print_profit && window.CustomStudio && window.CustomStudio.state) {
+          window.CustomStudio.state.merchantProfit = parseInt(data.custom_print_profit);
+          if (window.CustomStudio.updatePricing) window.CustomStudio.updatePricing();
+        }
 
         renderProducts();
         updateCartUI();
@@ -5176,21 +5583,24 @@ function submitCustomerOrder() {
     },
     line_items: AppState.cart.map(item => {
       const itemCat = item.category || mapBlankToCategory(item.id);
-      let itemProfit = isHalf ? getCategoryProfit(itemCat, "half_advance") : getCategoryProfit(itemCat, "full_advance");
+      let itemProfit = item.isCustomPrint ? (item.profit || 250) : (isHalf ? getCategoryProfit(itemCat, "half_advance") : getCategoryProfit(itemCat, "full_advance"));
       return {
-        blank_sku: item.blankSku,
+        blank_sku: item.blankSku || (item.customConfig ? item.customConfig.garmentId : null),
         product_name: item.name,
         variant_size: item.size,
         variant_color: item.color,
         quantity: item.qty,
         unit_base_cost_pkr: item.baseCost,
         unit_profit_pkr: itemProfit,
-        unit_retail_pkr: item.baseCost + itemProfit,
-        custom_artwork: item.isCustom ? item.customDetails : null
+        unit_retail_pkr: item.price || (item.baseCost + itemProfit),
+        custom_artwork: item.customConfig ? item.customConfig : (item.isCustom ? item.customDetails : null)
       };
     }),
     created_at: new Date().toISOString()
   };
+
+  const customPrintItems = AppState.cart.filter(item => item.isCustomPrint || item.customConfig);
+  const hasCustomPrint = customPrintItems.length > 0;
 
   const newOrder = {
     orderId,
@@ -5205,6 +5615,8 @@ function submitCustomerOrder() {
     statusMessage: "MF Store Studio: Premium Quality Printing & Hand Inspection",
     courier: "Trax Logistics (Airway Bill Pending)",
     items: [...AppState.cart],
+    hasCustomPrint: hasCustomPrint,
+    customStudioOrders: hasCustomPrint ? customPrintItems.map(it => it.customConfig) : [],
     apiPayload: ceeprintoOrderPayload,
     date: new Date().toLocaleDateString('en-GB')
   };

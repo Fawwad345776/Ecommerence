@@ -40,14 +40,15 @@
           <li><a href="#cat-row-mugs" class="nav-link" data-cat="mugs" onclick="scrollToCategory('mugs')">☕ Mugs</a></li>
           <li><a href="#cat-row-laptop-bags" class="nav-link" data-cat="laptop-bags" onclick="scrollToCategory('laptop-bags')">💼 Laptop Bags</a></li>
           <li><a href="#cat-row-caps" class="nav-link" data-cat="caps" onclick="scrollToCategory('caps')">🧢 Caps</a></li>
+          <li><a href="#custom-studio-section" class="nav-link" style="color: #d97706; font-weight: 800;">🎨 Custom Studio</a></li>
           <li><a href="#orders-tracker" class="nav-link">📦 Track Order</a></li>
         </ul>
       </nav>
 
       <div class="nav-actions">
         <!-- Direct Jump to Customizer -->
-        <a href="#catalog" class="btn-primary nav-explore-btn" style="padding: 10px 22px; font-size: 0.84rem; display: inline-flex;">
-          <span>Explore Catalog</span>
+        <a href="#custom-studio-section" class="btn-primary nav-explore-btn" style="padding: 10px 18px; font-size: 0.84rem; display: inline-flex; background: linear-gradient(135deg, #b45309, #d97706); border: none;">
+          <span>🎨 Custom Studio</span>
         </a>
 
         <!-- Shopping Cart Button -->
@@ -82,6 +83,7 @@
       <div class="mobile-nav-body">
         <div class="mobile-nav-section-title">CATEGORIES</div>
         <ul class="mobile-nav-links">
+          <li><a href="#custom-studio-section" onclick="closeMobileNav();"><span style="color:#d97706;">🎨</span> <strong>Custom Print Studio (4 Modes)</strong></a></li>
           <li><a href="#catalog" onclick="closeMobileNav(); setCatalogFilter('all');"><span>🛍️</span> All Products (64 Designs)</a></li>
           <li><a href="#cat-row-tees" onclick="closeMobileNav(); scrollToCategory('tees');"><span>👕</span> T-Shirts (12 Designs)</a></li>
           <li><a href="#cat-row-full-sleeves" onclick="closeMobileNav(); scrollToCategory('full-sleeves');"><span>👕</span> Full Sleeves (12 Designs)</a></li>
@@ -131,8 +133,11 @@
           </p>
 
           <div class="hero-cta-group" style="display: flex; gap: 10px; flex-wrap: wrap;">
-            <a href="#catalog" class="btn-primary" style="padding: 13px 22px; font-size: 0.92rem; font-weight: 800;">
-              <span>Shop All Products ➔</span>
+            <a href="#custom-studio-section" class="btn-primary" style="padding: 13px 22px; font-size: 0.92rem; font-weight: 800; background: linear-gradient(135deg, #b45309, #d97706); border: none; box-shadow: 0 4px 14px rgba(180,83,9,0.3);">
+              <span>🎨 Custom Print Studio (Tees & Hoodies) ➔</span>
+            </a>
+            <a href="#catalog" class="btn-secondary" style="padding: 13px 20px; font-size: 0.92rem; font-weight: 800;">
+              <span>Shop All Products</span>
             </a>
             <a href="#cat-row-tees" onclick="scrollToCategory('tees')" class="btn-secondary" style="padding: 13px 18px; font-size: 0.88rem; font-weight: 800; border: 1.5px solid #cbd5e1; background: #ffffff; color: #0f172a;">
               <span>👕 T-Shirts</span>
@@ -164,6 +169,437 @@
     </section>
 
     <!-- ==========================================================================
+         CUSTOM APPAREL PRINT STUDIO (T-SHIRTS & HOODIES — 4 PRINT PLACEMENTS)
+         ========================================================================== -->
+    <section class="custom-studio-section" id="custom-studio-section" style="padding: 40px 0 60px; background: #f8fafc; border-bottom: 2px solid #e2e8f0; scroll-margin-top: 80px;">
+      <div id="customizer-studio" style="position: absolute; top: -80px;"></div>
+      <div class="container" style="max-width: 1300px; margin: 0 auto; padding: 0 16px;">
+        
+        <!-- Section Header -->
+        <div style="text-align: center; max-width: 840px; margin: 0 auto 32px;">
+          <div style="display: inline-flex; align-items: center; gap: 8px; background: #fef3c7; border: 1.5px solid #fde68a; padding: 6px 14px; border-radius: 99px; margin-bottom: 12px;">
+            <span style="font-size: 0.88rem;">🎨</span>
+            <span style="font-size: 0.76rem; font-weight: 800; color: #92400e; letter-spacing: 0.6px; text-transform: uppercase;">
+              Exclusive Custom Print Studio • CeePrinto Pakistan Fulfillment
+            </span>
+          </div>
+          <h2 style="font-size: 2.1rem; font-weight: 900; color: #0f172a; line-height: 1.25; margin-bottom: 10px; font-family: var(--font-heading);">
+            Create Your Custom Printed Apparel
+          </h2>
+          <p style="font-size: 0.95rem; color: #475569; line-height: 1.6; margin: 0 auto;">
+            Customize <strong>Half Sleeve T-Shirts</strong>, <strong>Full Sleeve T-Shirts</strong>, and <strong>Heavyweight Fleece Hoodies</strong>. Choose from 4 specialized print placements with instant live preview, Ceeprinto base rates + transparent merchant profit, and 100% secure card checkout.
+          </p>
+        </div>
+
+        <!-- Studio Main Interactive Grid (Left: Preview Stage, Right: Controls) -->
+        <div class="custom-studio-grid" style="display: grid; grid-template-columns: 1fr 1.15fr; gap: 28px; align-items: start;">
+          
+          <!-- LEFT COLUMN: Live Garment Preview Stage -->
+          <div class="studio-stage-wrapper" style="background: #ffffff; border: 1.5px solid #e2e8f0; border-radius: 16px; padding: 20px; box-shadow: 0 4px 20px rgba(0,0,0,0.04); position: sticky; top: 90px;">
+            
+            <!-- Stage Top Bar: Side Switcher & Active Mode Badge -->
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 14px; flex-wrap: wrap; gap: 8px;">
+              <div style="display: inline-flex; background: #f1f5f9; padding: 3px; border-radius: 8px; gap: 4px;" id="studio-view-tabs">
+                <button type="button" class="studio-tab-btn active" id="btn-view-front" onclick="CustomStudio.switchView('front')" style="padding: 6px 14px; border-radius: 6px; font-size: 0.8rem; font-weight: 800; border: none; cursor: pointer; background: #0f172a; color: #ffffff;">
+                  👁️ Front View
+                </button>
+                <button type="button" class="studio-tab-btn" id="btn-view-back" onclick="CustomStudio.switchView('back')" style="padding: 6px 14px; border-radius: 6px; font-size: 0.8rem; font-weight: 800; border: none; cursor: pointer; background: transparent; color: #475569;">
+                  🔄 Back View
+                </button>
+                <button type="button" class="studio-tab-btn" id="btn-view-sleeves" onclick="CustomStudio.switchView('sleeves')" style="display: none; padding: 6px 14px; border-radius: 6px; font-size: 0.8rem; font-weight: 800; border: none; cursor: pointer; background: transparent; color: #475569;">
+                  🧥 Sleeves View
+                </button>
+              </div>
+
+              <span id="studio-active-mode-tag" style="font-size: 0.74rem; font-weight: 800; padding: 4px 10px; border-radius: 6px; background: #fef3c7; color: #92400e; border: 1px solid #fde68a;">
+                Mode: Left Chest Logo
+              </span>
+            </div>
+
+            <!-- Garment Canvas Area -->
+            <div class="studio-canvas-box" id="studio-canvas" style="position: relative; width: 100%; height: 490px; background: radial-gradient(circle at center, #f8fafc 0%, #e2e8f0 100%); border-radius: 12px; overflow: hidden; display: flex; align-items: center; justify-content: center; border: 1px solid #cbd5e1;">
+              
+              <!-- Garment Base Image -->
+              <img id="studio-garment-img" src="assets/blank_tshirt_front.jpg" alt="Garment Preview" style="max-width: 90%; max-height: 90%; object-fit: contain; filter: drop-shadow(0 12px 24px rgba(0,0,0,0.12)); transition: all 0.2s ease;">
+              
+              <!-- Recolor Tint Layer -->
+              <div id="studio-garment-tint" style="position: absolute; inset: 0; pointer-events: none; mix-blend-mode: multiply; opacity: 0; transition: all 0.2s ease;"></div>
+
+              <!-- OVERLAY 1: Left Chest Mini Logo (Option 1) -->
+              <div id="overlay-opt1-chest" style="display: flex; position: absolute; top: 27%; left: 56%; width: 72px; height: 72px; border: 2px dashed #d97706; background: rgba(254, 243, 199, 0.4); border-radius: 6px; align-items: center; justify-content: center; z-index: 10; pointer-events: none; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+                <img id="img-opt1-chest" src="assets/logo.jpg" alt="Logo" style="max-width: 100%; max-height: 100%; object-fit: contain;">
+                <span id="badge-opt1-chest" style="position: absolute; bottom: 2px; font-size: 0.58rem; background: #0f172a; color: #fff; padding: 1px 4px; border-radius: 3px; font-weight: 700; white-space: nowrap;">Left Chest</span>
+              </div>
+
+              <!-- OVERLAY 2: Front Center Print (Option 2) -->
+              <div id="overlay-opt2-center" style="display: none; position: absolute; top: 25%; left: 30%; width: 40%; height: 46%; border: 2px dashed #2563eb; background: rgba(219, 234, 254, 0.35); border-radius: 8px; align-items: center; justify-content: center; z-index: 10; pointer-events: none; overflow: hidden; box-shadow: 0 2px 10px rgba(0,0,0,0.08);">
+                <img id="img-opt2-center" src="assets/pk_designs/design_tee_truck_art_pop.png" alt="Front Graphic" style="max-width: 90%; max-height: 90%; object-fit: contain;">
+                <span style="position: absolute; bottom: 4px; font-size: 0.65rem; background: #1e3a8a; color: #fff; padding: 2px 6px; border-radius: 4px; font-weight: 700;">Front Center Print</span>
+              </div>
+
+              <!-- OVERLAY 3: Front / Back Center Choice (Option 3) -->
+              <div id="overlay-opt3-center" style="display: none; position: absolute; top: 25%; left: 30%; width: 40%; height: 46%; border: 2px dashed #059669; background: rgba(209, 250, 229, 0.35); border-radius: 8px; align-items: center; justify-content: center; z-index: 10; pointer-events: none; overflow: hidden; box-shadow: 0 2px 10px rgba(0,0,0,0.08);">
+                <img id="img-opt3-center" src="assets/pk_designs/design_tee_sukoon_urdu.png" alt="Center Graphic" style="max-width: 90%; max-height: 90%; object-fit: contain;">
+                <span id="badge-opt3-side" style="position: absolute; bottom: 4px; font-size: 0.65rem; background: #065f46; color: #fff; padding: 2px 6px; border-radius: 4px; font-weight: 700;">Front Center</span>
+              </div>
+
+              <!-- OVERLAY 4A: Front Graphic in Option 4 -->
+              <div id="overlay-opt4-front" style="display: none; position: absolute; top: 25%; left: 30%; width: 40%; height: 46%; border: 2px dashed #7c3aed; background: rgba(237, 233, 254, 0.35); border-radius: 8px; align-items: center; justify-content: center; z-index: 10; pointer-events: none; overflow: hidden;">
+                <img id="img-opt4-front" src="assets/pk_designs/design_tee_truck_art_pop.png" alt="Front Graphic" style="max-width: 90%; max-height: 90%; object-fit: contain;">
+                <span style="position: absolute; bottom: 4px; font-size: 0.65rem; background: #5b21b6; color: #fff; padding: 2px 6px; border-radius: 4px; font-weight: 700;">Front Print</span>
+              </div>
+
+              <!-- OVERLAY 4B: Back Graphic in Option 4 -->
+              <div id="overlay-opt4-back" style="display: none; position: absolute; top: 29%; left: 28%; width: 44%; height: 46%; border: 2px dashed #7c3aed; background: rgba(237, 233, 254, 0.35); border-radius: 8px; align-items: center; justify-content: center; z-index: 10; pointer-events: none; overflow: hidden;">
+                <img id="img-opt4-back" src="assets/pk_designs/design_tee_faiz_bol.png" alt="Back Graphic" style="max-width: 90%; max-height: 90%; object-fit: contain;">
+                <span style="position: absolute; bottom: 4px; font-size: 0.65rem; background: #5b21b6; color: #fff; padding: 2px 6px; border-radius: 4px; font-weight: 700;">Back Center Print</span>
+              </div>
+
+              <!-- OVERLAY 4C: Back Custom Name Print -->
+              <div id="overlay-opt4-name" style="display: none; position: absolute; top: 16%; left: 20%; width: 60%; height: 50px; border: 1.5px dashed #2563eb; background: rgba(219, 234, 254, 0.5); border-radius: 6px; align-items: center; justify-content: center; z-index: 12; pointer-events: none;">
+                <span id="text-opt4-name" style="font-family: var(--font-heading); font-size: 1.25rem; font-weight: 900; color: #0f172a; letter-spacing: 2px; text-transform: uppercase;">
+                  YOUR NAME 10
+                </span>
+              </div>
+
+              <!-- OVERLAY 4D & 4E: Sleeves (Both Sides) -->
+              <div id="overlay-opt4-sleeve-left" style="display: none; position: absolute; top: 38%; left: 6%; width: 56px; height: 60px; border: 1.5px dashed #059669; background: rgba(209, 250, 229, 0.7); border-radius: 6px; align-items: center; justify-content: center; z-index: 11; font-size: 0.62rem; font-weight: 800; color: #065f46; text-align: center; pointer-events: none;">
+                <span id="text-opt4-sleeve-left">Left Sleeve</span>
+              </div>
+              <div id="overlay-opt4-sleeve-right" style="display: none; position: absolute; top: 38%; right: 6%; width: 56px; height: 60px; border: 1.5px dashed #059669; background: rgba(209, 250, 229, 0.7); border-radius: 6px; align-items: center; justify-content: center; z-index: 11; font-size: 0.62rem; font-weight: 800; color: #065f46; text-align: center; pointer-events: none;">
+                <span id="text-opt4-sleeve-right">Right Sleeve</span>
+              </div>
+            </div>
+
+            <!-- Stage Bottom Helper -->
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 14px; font-size: 0.78rem; color: #64748b;">
+              <span>🔍 Real-time Ceeprinto DTF Placement Preview</span>
+              <button type="button" onclick="CustomStudio.resetDefaults()" style="background: none; border: none; color: #dc2626; font-size: 0.76rem; font-weight: 700; cursor: pointer; text-decoration: underline;">
+                Reset Design
+              </button>
+            </div>
+          </div>
+
+          <!-- RIGHT COLUMN: Step-by-Step Customizer Controls -->
+          <div class="studio-controls-wrapper" style="display: flex; flex-direction: column; gap: 20px;">
+            
+            <!-- STEP 1: Select Garment -->
+            <div class="studio-card-box" style="background: #ffffff; border: 1.5px solid #e2e8f0; border-radius: 14px; padding: 18px 20px;">
+              <div style="display: flex; align-items: center; gap: 8px; margin-bottom: 12px;">
+                <span style="background: #0f172a; color: #fff; width: 22px; height: 22px; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; font-size: 0.75rem; font-weight: 900;">1</span>
+                <h3 style="font-size: 0.96rem; font-weight: 800; color: #0f172a; margin: 0;">Select Apparel Garment</h3>
+              </div>
+              
+              <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px;">
+                <div class="garment-opt-card active" id="garment-half-tee" onclick="CustomStudio.selectGarment('half-sleeve-tee')" style="border: 2px solid #0f172a; background: #f8fafc; border-radius: 10px; padding: 12px 10px; text-align: center; cursor: pointer; transition: all 0.2s ease;">
+                  <span style="font-size: 1.5rem; display: block; margin-bottom: 4px;">👕</span>
+                  <strong style="font-size: 0.82rem; display: block; color: #0f172a; line-height: 1.2;">Half Sleeve Tee</strong>
+                  <span style="font-size: 0.72rem; color: #64748b; display: block; margin-top: 2px;">210 GSM Cotton</span>
+                  <span style="font-size: 0.75rem; font-weight: 800; color: #d97706; display: block; margin-top: 4px;">Base: Rs. 850</span>
+                </div>
+
+                <div class="garment-opt-card" id="garment-full-tee" onclick="CustomStudio.selectGarment('full-sleeve-tee')" style="border: 1.5px solid #cbd5e1; background: #ffffff; border-radius: 10px; padding: 12px 10px; text-align: center; cursor: pointer; transition: all 0.2s ease;">
+                  <span style="font-size: 1.5rem; display: block; margin-bottom: 4px;">👕</span>
+                  <strong style="font-size: 0.82rem; display: block; color: #0f172a; line-height: 1.2;">Full Sleeve Tee</strong>
+                  <span style="font-size: 0.72rem; color: #64748b; display: block; margin-top: 2px;">240 GSM Heavy</span>
+                  <span style="font-size: 0.75rem; font-weight: 800; color: #d97706; display: block; margin-top: 4px;">Base: Rs. 950</span>
+                </div>
+
+                <div class="garment-opt-card" id="garment-hoodie" onclick="CustomStudio.selectGarment('hoodie')" style="border: 1.5px solid #cbd5e1; background: #ffffff; border-radius: 10px; padding: 12px 10px; text-align: center; cursor: pointer; transition: all 0.2s ease;">
+                  <span style="font-size: 1.5rem; display: block; margin-bottom: 4px;">🧥</span>
+                  <strong style="font-size: 0.82rem; display: block; color: #0f172a; line-height: 1.2;">Fleece Hoodie</strong>
+                  <span style="font-size: 0.72rem; color: #64748b; display: block; margin-top: 2px;">380 GSM Thermal</span>
+                  <span style="font-size: 0.75rem; font-weight: 800; color: #d97706; display: block; margin-top: 4px;">Base: Rs. 2,100</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- STEP 2: Select 4 Custom Design Print Placement Modes -->
+            <div class="studio-card-box" style="background: #ffffff; border: 1.5px solid #e2e8f0; border-radius: 14px; padding: 18px 20px;">
+              <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 12px;">
+                <div style="display: flex; align-items: center; gap: 8px;">
+                  <span style="background: #0f172a; color: #fff; width: 22px; height: 22px; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; font-size: 0.75rem; font-weight: 900;">2</span>
+                  <h3 style="font-size: 0.96rem; font-weight: 800; color: #0f172a; margin: 0;">Select Custom Design Print Mode</h3>
+                </div>
+                <span style="font-size: 0.7rem; font-weight: 800; color: #059669; background: #ecfdf5; padding: 2px 8px; border-radius: 99px;">
+                  Ceeprinto Rates
+                </span>
+              </div>
+
+              <!-- 4 Mode Cards -->
+              <div style="display: flex; flex-direction: column; gap: 10px;">
+                
+                <!-- Option 1 -->
+                <div class="print-mode-card active" id="mode-opt-1" onclick="CustomStudio.selectOption(1)" style="border: 2px solid #d97706; background: #fffbeb; border-radius: 10px; padding: 12px 14px; cursor: pointer; transition: all 0.2s ease; display: flex; justify-content: space-between; align-items: center;">
+                  <div>
+                    <div style="display: flex; align-items: center; gap: 8px; margin-bottom: 3px;">
+                      <span style="font-size: 0.76rem; font-weight: 900; background: #d97706; color: #fff; padding: 2px 6px; border-radius: 4px;">OPTION 1</span>
+                      <strong style="font-size: 0.88rem; color: #0f172a;">Left Hand / Left Chest Small Logo</strong>
+                    </div>
+                    <span style="font-size: 0.76rem; color: #64748b;">Subtle, elegant left chest crest logo placement</span>
+                  </div>
+                  <div style="text-align: right;">
+                    <strong style="font-size: 0.9rem; color: #0f172a;">+Rs. 150</strong>
+                    <span style="display: block; font-size: 0.68rem; color: #059669; font-weight: 700;">Print Fee</span>
+                  </div>
+                </div>
+
+                <!-- Option 2 -->
+                <div class="print-mode-card" id="mode-opt-2" onclick="CustomStudio.selectOption(2)" style="border: 1.5px solid #cbd5e1; background: #ffffff; border-radius: 10px; padding: 12px 14px; cursor: pointer; transition: all 0.2s ease; display: flex; justify-content: space-between; align-items: center;">
+                  <div>
+                    <div style="display: flex; align-items: center; gap: 8px; margin-bottom: 3px;">
+                      <span style="font-size: 0.76rem; font-weight: 900; background: #2563eb; color: #fff; padding: 2px 6px; border-radius: 4px;">OPTION 2</span>
+                      <strong style="font-size: 0.88rem; color: #0f172a;">Front Center Image Print</strong>
+                    </div>
+                    <span style="font-size: 0.76rem; color: #64748b;">Bold classic front chest centered artwork print</span>
+                  </div>
+                  <div style="text-align: right;">
+                    <strong style="font-size: 0.9rem; color: #0f172a;">+Rs. 200</strong>
+                    <span style="display: block; font-size: 0.68rem; color: #059669; font-weight: 700;">Print Fee</span>
+                  </div>
+                </div>
+
+                <!-- Option 3 -->
+                <div class="print-mode-card" id="mode-opt-3" onclick="CustomStudio.selectOption(3)" style="border: 1.5px solid #cbd5e1; background: #ffffff; border-radius: 10px; padding: 12px 14px; cursor: pointer; transition: all 0.2s ease; display: flex; justify-content: space-between; align-items: center;">
+                  <div>
+                    <div style="display: flex; align-items: center; gap: 8px; margin-bottom: 3px;">
+                      <span style="font-size: 0.76rem; font-weight: 900; background: #059669; color: #fff; padding: 2px 6px; border-radius: 4px;">OPTION 3</span>
+                      <strong style="font-size: 0.88rem; color: #0f172a;">Front / Back Center (Choice)</strong>
+                    </div>
+                    <span style="font-size: 0.76rem; color: #64748b;">Aapki marzi: sirf Front pe karwayen ya sirf Back pe</span>
+                  </div>
+                  <div style="text-align: right;">
+                    <strong style="font-size: 0.9rem; color: #0f172a;">+Rs. 200</strong>
+                    <span style="display: block; font-size: 0.68rem; color: #059669; font-weight: 700;">1-Side Print</span>
+                  </div>
+                </div>
+
+                <!-- Option 4 -->
+                <div class="print-mode-card" id="mode-opt-4" onclick="CustomStudio.selectOption(4)" style="border: 1.5px solid #cbd5e1; background: #ffffff; border-radius: 10px; padding: 12px 14px; cursor: pointer; transition: all 0.2s ease; display: flex; justify-content: space-between; align-items: center;">
+                  <div>
+                    <div style="display: flex; align-items: center; gap: 8px; margin-bottom: 3px;">
+                      <span style="font-size: 0.76rem; font-weight: 900; background: #7c3aed; color: #fff; padding: 2px 6px; border-radius: 4px;">OPTION 4</span>
+                      <strong style="font-size: 0.88rem; color: #0f172a;">Front + Back + Name + Both Sleeves</strong>
+                    </div>
+                    <span style="font-size: 0.76rem; color: #64748b;">Front/Back dono + Back pe Naam + Both Sleeves (Left/Right)</span>
+                  </div>
+                  <div style="text-align: right;">
+                    <strong style="font-size: 0.9rem; color: #7c3aed;">+Rs. 700</strong>
+                    <span style="display: block; font-size: 0.68rem; color: #7c3aed; font-weight: 800;">Deluxe All-Over</span>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+            <!-- STEP 3: Upload Design Artwork & Placement Details -->
+            <div class="studio-card-box" id="studio-upload-panel" style="background: #ffffff; border: 1.5px solid #e2e8f0; border-radius: 14px; padding: 18px 20px;">
+              <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 12px;">
+                <div style="display: flex; align-items: center; gap: 8px;">
+                  <span style="background: #0f172a; color: #fff; width: 22px; height: 22px; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; font-size: 0.75rem; font-weight: 900;">3</span>
+                  <h3 style="font-size: 0.96rem; font-weight: 800; color: #0f172a; margin: 0;">Upload Artwork & Placement Details</h3>
+                </div>
+              </div>
+
+              <!-- Controls for Option 1: Left Chest Logo Upload -->
+              <div id="controls-opt1" style="display: block;">
+                <label style="font-size: 0.8rem; font-weight: 800; color: #334155; margin-bottom: 6px; display: block;">
+                  Upload Left Chest Logo (PNG, JPG, WEBP)
+                </label>
+                <div style="display: flex; gap: 10px; align-items: center; margin-bottom: 8px;">
+                  <input type="file" id="file-opt1-chest" accept="image/*" onchange="CustomStudio.handleFileUpload(event, 'opt1-chest')" style="font-size: 0.8rem; width: 100%; padding: 8px; border: 1.5px dashed #cbd5e1; border-radius: 8px; background: #f8fafc; cursor: pointer;">
+                </div>
+                <div style="display: flex; gap: 6px; flex-wrap: wrap;">
+                  <button type="button" class="btn-preset-mini" onclick="CustomStudio.setPresetImage('opt1-chest', 'assets/logo.jpg')" style="font-size: 0.72rem; padding: 4px 10px; border-radius: 6px; border: 1px solid #cbd5e1; background: #fff; cursor: pointer;">★ MF Store Crest</button>
+                  <button type="button" class="btn-preset-mini" onclick="CustomStudio.setPresetImage('opt1-chest', 'assets/pk_designs/design_tee_sukoon_urdu.png')" style="font-size: 0.72rem; padding: 4px 10px; border-radius: 6px; border: 1px solid #cbd5e1; background: #fff; cursor: pointer;">★ Sukoon Logo</button>
+                </div>
+              </div>
+
+              <!-- Controls for Option 2: Front Center Print Upload -->
+              <div id="controls-opt2" style="display: none;">
+                <label style="font-size: 0.8rem; font-weight: 800; color: #334155; margin-bottom: 6px; display: block;">
+                  Upload Front Center Artwork (High Resolution)
+                </label>
+                <div style="display: flex; gap: 10px; align-items: center; margin-bottom: 8px;">
+                  <input type="file" id="file-opt2-center" accept="image/*" onchange="CustomStudio.handleFileUpload(event, 'opt2-center')" style="font-size: 0.8rem; width: 100%; padding: 8px; border: 1.5px dashed #cbd5e1; border-radius: 8px; background: #f8fafc; cursor: pointer;">
+                </div>
+                <div style="display: flex; gap: 6px; flex-wrap: wrap;">
+                  <button type="button" class="btn-preset-mini" onclick="CustomStudio.setPresetImage('opt2-center', 'assets/pk_designs/design_tee_truck_art_pop.png')" style="font-size: 0.72rem; padding: 4px 10px; border-radius: 6px; border: 1px solid #cbd5e1; background: #fff; cursor: pointer;">★ Truck Art Pop</button>
+                  <button type="button" class="btn-preset-mini" onclick="CustomStudio.setPresetImage('opt2-center', 'assets/pk_designs/design_tee_karachi_cyberpunk.png')" style="font-size: 0.72rem; padding: 4px 10px; border-radius: 6px; border: 1px solid #cbd5e1; background: #fff; cursor: pointer;">★ Karachi 2099</button>
+                </div>
+              </div>
+
+              <!-- Controls for Option 3: Front OR Back Center Choice -->
+              <div id="controls-opt3" style="display: none;">
+                <div style="margin-bottom: 12px; background: #ecfdf5; border: 1.5px solid #a7f3d0; border-radius: 8px; padding: 10px 12px;">
+                  <span style="font-size: 0.8rem; font-weight: 800; color: #065f46; display: block; margin-bottom: 6px;">
+                    Select Where You Want To Print (User Choice):
+                  </span>
+                  <div style="display: flex; gap: 14px;">
+                    <label style="font-size: 0.82rem; font-weight: 700; color: #0f172a; display: flex; align-items: center; gap: 6px; cursor: pointer;">
+                      <input type="radio" name="opt3-side-choice" value="front" checked onchange="CustomStudio.setOption3Side('front')">
+                      <span>Front Center Print Only</span>
+                    </label>
+                    <label style="font-size: 0.82rem; font-weight: 700; color: #0f172a; display: flex; align-items: center; gap: 6px; cursor: pointer;">
+                      <input type="radio" name="opt3-side-choice" value="back" onchange="CustomStudio.setOption3Side('back')">
+                      <span>Back Center Print Only</span>
+                    </label>
+                  </div>
+                </div>
+
+                <label style="font-size: 0.8rem; font-weight: 800; color: #334155; margin-bottom: 6px; display: block;">
+                  Upload Design Image for Selected Side:
+                </label>
+                <input type="file" id="file-opt3-center" accept="image/*" onchange="CustomStudio.handleFileUpload(event, 'opt3-center')" style="font-size: 0.8rem; width: 100%; padding: 8px; border: 1.5px dashed #cbd5e1; border-radius: 8px; background: #f8fafc; cursor: pointer; margin-bottom: 8px;">
+                <div style="display: flex; gap: 6px; flex-wrap: wrap;">
+                  <button type="button" class="btn-preset-mini" onclick="CustomStudio.setPresetImage('opt3-center', 'assets/pk_designs/design_tee_sukoon_urdu.png')" style="font-size: 0.72rem; padding: 4px 10px; border-radius: 6px; border: 1px solid #cbd5e1; background: #fff; cursor: pointer;">★ Sukoon Print</button>
+                  <button type="button" class="btn-preset-mini" onclick="CustomStudio.setPresetImage('opt3-center', 'assets/pk_designs/design_hoodie_qalandar.png')" style="font-size: 0.72rem; padding: 4px 10px; border-radius: 6px; border: 1px solid #cbd5e1; background: #fff; cursor: pointer;">★ Mast Qalandar</button>
+                </div>
+              </div>
+
+              <!-- Controls for Option 4: Front + Back + Custom Name + Both Sleeves -->
+              <div id="controls-opt4" style="display: none; flex-direction: column; gap: 12px;">
+                
+                <!-- 4A: Front Artwork -->
+                <div style="border-bottom: 1px solid #e2e8f0; padding-bottom: 10px;">
+                  <label style="font-size: 0.8rem; font-weight: 800; color: #0f172a; margin-bottom: 4px; display: block;">
+                    1. Front Center Artwork:
+                  </label>
+                  <input type="file" id="file-opt4-front" accept="image/*" onchange="CustomStudio.handleFileUpload(event, 'opt4-front')" style="font-size: 0.8rem; width: 100%; padding: 6px; border: 1px dashed #cbd5e1; border-radius: 6px; background: #f8fafc;">
+                </div>
+
+                <!-- 4B: Back Artwork -->
+                <div style="border-bottom: 1px solid #e2e8f0; padding-bottom: 10px;">
+                  <label style="font-size: 0.8rem; font-weight: 800; color: #0f172a; margin-bottom: 4px; display: block;">
+                    2. Back Center Artwork:
+                  </label>
+                  <input type="file" id="file-opt4-back" accept="image/*" onchange="CustomStudio.handleFileUpload(event, 'opt4-back')" style="font-size: 0.8rem; width: 100%; padding: 6px; border: 1px dashed #cbd5e1; border-radius: 6px; background: #f8fafc;">
+                </div>
+
+                <!-- 4C: Back Custom Name Print Input -->
+                <div style="border-bottom: 1px solid #e2e8f0; padding-bottom: 10px;">
+                  <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 4px;">
+                    <label for="input-opt4-name" style="font-size: 0.8rem; font-weight: 800; color: #1e40af; margin: 0;">
+                      3. Back Custom Name / Text Print:
+                    </label>
+                    <span style="font-size: 0.7rem; font-weight: 700; color: #2563eb;">Live On Back View</span>
+                  </div>
+                  <input type="text" id="input-opt4-name" value="YOUR NAME 10" maxlength="22" oninput="CustomStudio.updateBackName(this.value)" placeholder="e.g. BABAR 56 or HAMZA 07" style="font-size: 0.85rem; font-weight: 700; width: 100%; padding: 8px 12px; border: 1.5px solid #93c5fd; border-radius: 8px; background: #eff6ff;">
+                </div>
+
+                <!-- 4D: Both Sleeves Print (Left & Right) -->
+                <div>
+                  <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 4px;">
+                    <label style="font-size: 0.8rem; font-weight: 800; color: #065f46; margin: 0; display: flex; align-items: center; gap: 6px;">
+                      <input type="checkbox" id="check-opt4-sleeves" checked onchange="CustomStudio.toggleSleeves(this.checked)">
+                      <span>4. Print on Both Sleeves (Left & Right)</span>
+                    </label>
+                    <span style="font-size: 0.7rem; font-weight: 800; color: #059669; background: #ecfdf5; padding: 2px 6px; border-radius: 4px;">Both Sides</span>
+                  </div>
+                  <input type="text" id="input-opt4-sleeves" value="MF RACING" maxlength="16" oninput="CustomStudio.updateSleevesText(this.value)" placeholder="e.g. MF APPAREL or 1947" style="font-size: 0.82rem; font-weight: 700; width: 100%; padding: 8px 12px; border: 1.5px solid #a7f3d0; border-radius: 8px; background: #f0fdf4;">
+                </div>
+
+              </div>
+            </div>
+
+            <!-- STEP 4: Color & Size Selection -->
+            <div class="studio-card-box" style="background: #ffffff; border: 1.5px solid #e2e8f0; border-radius: 14px; padding: 18px 20px;">
+              <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 12px;">
+                <div style="display: flex; align-items: center; gap: 8px;">
+                  <span style="background: #0f172a; color: #fff; width: 22px; height: 22px; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; font-size: 0.75rem; font-weight: 900;">4</span>
+                  <h3 style="font-size: 0.96rem; font-weight: 800; color: #0f172a; margin: 0;">Garment Color & Size</h3>
+                </div>
+              </div>
+
+              <!-- Color dots -->
+              <div style="margin-bottom: 14px;">
+                <span style="font-size: 0.78rem; font-weight: 700; color: #64748b; display: block; margin-bottom: 6px;">
+                  Color: <strong id="studio-active-color-name" style="color: #0f172a;">Pure White</strong>
+                </span>
+                <div style="display: flex; gap: 10px; align-items: center;" id="studio-color-palette">
+                  <div class="studio-color-dot active" onclick="CustomStudio.setColor('Pure White', '#ffffff')" title="Pure White" style="width: 28px; height: 28px; border-radius: 50%; background: #ffffff; border: 2.5px solid #0f172a; cursor: pointer;"></div>
+                  <div class="studio-color-dot" onclick="CustomStudio.setColor('Onyx Black', '#0f172a')" title="Onyx Black" style="width: 28px; height: 28px; border-radius: 50%; background: #0f172a; border: 1.5px solid #cbd5e1; cursor: pointer;"></div>
+                  <div class="studio-color-dot" onclick="CustomStudio.setColor('Deep Navy', '#1e3a8a')" title="Deep Navy" style="width: 28px; height: 28px; border-radius: 50%; background: #1e3a8a; border: 1.5px solid #cbd5e1; cursor: pointer;"></div>
+                  <div class="studio-color-dot" onclick="CustomStudio.setColor('Heather Grey', '#64748b')" title="Heather Grey" style="width: 28px; height: 28px; border-radius: 50%; background: #64748b; border: 1.5px solid #cbd5e1; cursor: pointer;"></div>
+                  <div class="studio-color-dot" onclick="CustomStudio.setColor('Royal Blue', '#1d4ed8')" title="Royal Blue" style="width: 28px; height: 28px; border-radius: 50%; background: #1d4ed8; border: 1.5px solid #cbd5e1; cursor: pointer;"></div>
+                  <div class="studio-color-dot" onclick="CustomStudio.setColor('Crimson Maroon', '#881337')" title="Crimson Maroon" style="width: 28px; height: 28px; border-radius: 50%; background: #881337; border: 1.5px solid #cbd5e1; cursor: pointer;"></div>
+                </div>
+              </div>
+
+              <!-- Size selector -->
+              <div>
+                <span style="font-size: 0.78rem; font-weight: 700; color: #64748b; display: block; margin-bottom: 6px;">
+                  Size: <strong id="studio-active-size-label" style="color: #0f172a;">L (Large)</strong>
+                </span>
+                <div style="display: flex; gap: 8px;" id="studio-size-pills">
+                  <button type="button" class="studio-size-pill" onclick="CustomStudio.setSize('S')" style="padding: 6px 14px; border-radius: 6px; border: 1.5px solid #cbd5e1; background: #fff; font-size: 0.82rem; font-weight: 800; cursor: pointer;">S</button>
+                  <button type="button" class="studio-size-pill" onclick="CustomStudio.setSize('M')" style="padding: 6px 14px; border-radius: 6px; border: 1.5px solid #cbd5e1; background: #fff; font-size: 0.82rem; font-weight: 800; cursor: pointer;">M</button>
+                  <button type="button" class="studio-size-pill active" onclick="CustomStudio.setSize('L')" style="padding: 6px 14px; border-radius: 6px; border: 2px solid #0f172a; background: #0f172a; color: #fff; font-size: 0.82rem; font-weight: 800; cursor: pointer;">L</button>
+                  <button type="button" class="studio-size-pill" onclick="CustomStudio.setSize('XL')" style="padding: 6px 14px; border-radius: 6px; border: 1.5px solid #cbd5e1; background: #fff; font-size: 0.82rem; font-weight: 800; cursor: pointer;">XL</button>
+                  <button type="button" class="studio-size-pill" onclick="CustomStudio.setSize('XXL')" style="padding: 6px 14px; border-radius: 6px; border: 1.5px solid #cbd5e1; background: #fff; font-size: 0.82rem; font-weight: 800; cursor: pointer;">XXL</button>
+                </div>
+              </div>
+            </div>
+
+            <!-- STEP 5: Transparent Ceeprinto Pricing Receipt (Rs. 250 Profit) -->
+            <div class="studio-card-box" style="background: #ffffff; border: 1.5px solid #e2e8f0; border-radius: 14px; padding: 18px 20px;">
+              <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid #f1f5f9; padding-bottom: 8px; margin-bottom: 12px;">
+                <span style="font-size: 0.74rem; font-weight: 800; color: #64748b; text-transform: uppercase;">
+                  Ceeprinto Pricing Breakdown:
+                </span>
+                <span style="font-size: 0.72rem; font-weight: 800; color: #047857; background: #ecfdf5; padding: 2px 8px; border-radius: 99px;">
+                  ✓ Transparent Markup
+                </span>
+              </div>
+
+              <div style="display: flex; flex-direction: column; gap: 8px; font-size: 0.85rem;">
+                <div style="display: flex; justify-content: space-between;">
+                  <span style="color: #475569;" id="price-row-garment-label">Garment Base (Half Sleeve Tee):</span>
+                  <strong style="color: #0f172a;" id="price-row-garment-val">Rs. 850</strong>
+                </div>
+                <div style="display: flex; justify-content: space-between;">
+                  <span style="color: #475569;" id="price-row-print-label">Ceeprinto Print Fee (Option 1):</span>
+                  <strong style="color: #0f172a;" id="price-row-print-val">+Rs. 150</strong>
+                </div>
+                <div style="display: flex; justify-content: space-between; color: #047857; background: #f0fdf4; padding: 4px 8px; border-radius: 6px;">
+                  <span style="font-weight: 700;">Merchant Store Profit (Markup):</span>
+                  <strong id="price-row-profit-val">+Rs. 250</strong>
+                </div>
+              </div>
+
+              <!-- Total Row -->
+              <div style="display: flex; justify-content: space-between; align-items: center; border-top: 1.5px dashed #cbd5e1; padding-top: 12px; margin-top: 12px;">
+                <div>
+                  <span style="font-size: 0.74rem; font-weight: 800; color: #64748b; text-transform: uppercase; display: block;">Total Price:</span>
+                  <span style="font-size: 1.6rem; font-weight: 900; color: #0f172a; font-family: var(--font-heading);" id="studio-total-price-display">
+                    Rs. 1,250
+                  </span>
+                </div>
+                <div style="text-align: right;">
+                  <span style="font-size: 0.72rem; color: #059669; font-weight: 700; background: #ecfdf5; padding: 3px 8px; border-radius: 99px;">
+                    💳 100% Secure Card Payment
+                  </span>
+                </div>
+              </div>
+
+              <!-- Action Buttons -->
+              <div style="display: grid; grid-template-columns: 1fr 1.2fr; gap: 10px; margin-top: 16px;">
+                <button type="button" class="btn-secondary" onclick="CustomStudio.addToCart()" style="padding: 13px; font-size: 0.88rem; font-weight: 800; border: 2px solid #0f172a; background: #fff; color: #0f172a; border-radius: 8px; cursor: pointer;">
+                  🛒 Add to Cart
+                </button>
+                <button type="button" class="btn-primary" onclick="CustomStudio.orderNowWithCard()" style="padding: 13px; font-size: 0.92rem; font-weight: 900; background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%); color: #fff; border-radius: 8px; cursor: pointer; border: none; box-shadow: 0 4px 14px rgba(15,23,42,0.25);">
+                  💳 Order Now with Card
+                </button>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================================
          ALL PRODUCTS DASHBOARD (ORGANIZED BY CATEGORY)
          ========================================================================== -->
     <section class="products-section" id="catalog">
@@ -174,6 +610,13 @@
             ⚡ Quick Jump by Category:
           </span>
           <div class="top-category-nav-bar" id="top-category-bar">
+            <div class="top-cat-pill" onclick="document.getElementById('custom-studio-section').scrollIntoView({behavior: 'smooth'})" style="border: 2px solid #fde68a; background: #fffbeb;">
+              <span class="cat-icon">🎨</span>
+              <div>
+                <strong style="color: #92400e;">Custom Studio</strong>
+                <small>4 Print Modes</small>
+              </div>
+            </div>
             <div class="top-cat-pill" onclick="scrollToCategory('tees')">
               <span class="cat-icon">👕</span>
               <div>
